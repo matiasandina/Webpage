@@ -5,12 +5,16 @@ date: 2017-11-14
 tags: ["teaching","learning"]
 ---
 
-This post is inspired by my brief experience with the education system in the United States (US) and the way some students approach learning. 
-  
-The take home message culture
-
-Synthetic questions,  Summarize 
+This post is inspired by my brief experience with the education system in the United States (US) and the way some students approach learning. I do not know what it is. Maybe it has to do with the tsunami of multiple-choice exams they have to go through, the endless preparation for another standardized test or the glorification of the *take-home message* culture.  
 
 ## How do you make a cake?
 
-I 
+I wrote a question for an assignment that was pointing towards mechanisms at the level of the synapse that could result in drug tolerance. The question went something like 
+
+> what is the mechanism of XYZ at the synapse and how is it related to tolerance?
+
+As you can see, guessing will not really help to answer the question between *wrong* and *less wrong* options; you have to know what XYZ does and some bits and pieces that make up synapses.  
+
+If I was given this question, my first impulse is to Google. So I did:
+
+![Mechanism-Google](/img/Google_Tolerance_Mechanisms.JPG)

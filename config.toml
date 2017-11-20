@@ -1,4 +1,4 @@
-baseurl = "https://matiasandina.github.io"
+baseurl = "https://matiasandina.netlify.com"
 DefaultContentLanguage = "en"
 title = "Matias Andina"
 theme = "beautifulhugo"

@@ -10,7 +10,7 @@ I will add here ideas and projects from my teaching experiences.
 
 NATSCI191 - Final Project.
 
-I designed different experiments (using Google Forms and Matlab Psychtoolbox). Students participated as subjects, later analyzed the data, and presented their findings in class. Information about this project is available on [GitHub](). 
+I designed different experiments (using Google Forms and Matlab Psychtoolbox). Students participated as subjects, later analyzed the data, and presented their findings in class. Information about this project is available on [GitHub](https://github.com/matiasandina/NATSCI191). 
 
 The learning objectives were:
 

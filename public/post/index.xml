@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Matias Andina</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Matias Andina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
+    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Teaching Nonsense</title>
+      <link>/post/2017-11-16-about-teaching-nonsense/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/post/2017-11-16-about-teaching-nonsense/</guid>
+      <description>Life without purposeLiving without a purpose is something I am unable to do. I am into the rules of the game, the idea that there’s a goal, and we are trying to achieve something, do something, create an object or service that was not there before and now fulfills a function. There are few games that I play for the sake of keep playing like the learning game. But, more often than not, I stand on the side of finite games.</description>
+    </item>
+    
+    <item>
+      <title>How do you make a cake?</title>
+      <link>/post/2017-11-14-how-to-make-a-cake/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/post/2017-11-14-how-to-make-a-cake/</guid>
+      <description>This post is inspired by my brief experience with the education system in the United States (US) and the way some students approach learning.
+The take home message culture
+Synthetic questions, Summarize
+How do you make a cake?I
+</description>
+    </item>
+    
+    <item>
+      <title>Learning and Memory</title>
+      <link>/post/2017-11-13-learning-and-memory/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/post/2017-11-13-learning-and-memory/</guid>
+      <description>In Argentina, my research was focused in Contextual Pavlovian Conditioning of the crab Neohelice granulata. The original paradigm was thoroughly described by Fustiñana et al., 2013. We were able to expand this paradigm and unveil new unexpected long-term memories. Working in the Neurobiology of the Memory Lab has been a fulfilling experience. My research was materialized in my graduation thesis:
+“Study of different long-term memories and participation of synaptic ERK/MAPK in memory consolidation”</description>
+    </item>
+    
+  </channel>
+</rss>

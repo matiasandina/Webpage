@@ -4,7 +4,7 @@ subtitle:
 comments: false
 ---
 
-I continuously find myself mesmerized by the complexity of life. I finished my Biology Degree at University of Buenos Aires in 2015 and moved to the United States in order to continue my studies as a PhD student at University of Massachusetts Amherst. 
+I continuously find myself mesmerized by the complexity of life. I finished my Biology Degree at University of Buenos Aires in 2015 and moved to the United States in order to continue my studies as a PhD student at University of Massachusetts Amherst. You can find my CV [here](https://github.com/matiasandina/Webpage/blob/master/CV.pdf).
 
 
 ## My Questions

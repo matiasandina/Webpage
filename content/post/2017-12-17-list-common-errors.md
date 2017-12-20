@@ -10,7 +10,7 @@ I'm writing this post to document my own learning on reading from [Teaching Tips
 
 ## Assignments and Feedback
 
-Chapter 7 and 8 on McKeachie's Teaching tips are quite interesting and develop different lines of thought about assignments. One thing I can relate to is the idea of providing general examples of errors students normally do. This procedure comes handy when dealing with essay questions (the ones I like far more than any other). The idea is to provide feedback that can be helpful while, at the same time, having a place for students to identify common mistakes and help them internalize good practices while writing. 
+Chapters 7 and 8 on McKeachie's Teaching tips are quite interesting and develop different lines of thought about assignments. One thing I can relate to is the idea of providing general examples of errors students normally do. This procedure comes handy when dealing with essay questions (the ones I like far more than any other). The idea is to provide feedback that can be helpful while, at the same time, having a place for students to identify common mistakes and help them internalize good practices while writing. 
 
 I will be developing further this idea, polishing the list and hopefully including it on my future rubrics.
 

@@ -56,7 +56,7 @@ Grade inflation existed for a noble cause in the past. If my students were depen
 
 What happens when everyone gets an A? That is a question that has been seriously treated [here](http://www.gradeinflation.com/tcr2012grading.pdf). I will add some humor to an overly long and boring post.
 
-[](https://imgur.com/gallery/qv5tOf8)
+![](static/img/everyone_special.jpg)
 
 ### Deflating
 
@@ -69,6 +69,11 @@ There is a lingering question about *curving*: Where does the normal distributio
 
 I understand concerns about individual cases. But most of the defenders of grade inflation are 
 "A professor has the right to give the grades he wants, but that’s always been understood with a responsibility that’s attached to it, mainly to see to it that you don’t debase our common currency - Harvey Mansfield"
+
+
+## General Improvement
+
+It is probably true that teaching has improved. Productivity, access to information, and computer proficienty have certainly improved. Those are fantastic news, but they should not serve as supporting evidence for scale deformation. If indeed we are training the best generation of students ever every year, then shortening the dynamic range is not informative (remember grades are a communication tool). If anything, the rescaling should maintain an informative dynamic range and there is good reason to set higher competency standards.
 
 ## Meet criteria
 

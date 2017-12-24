@@ -29,6 +29,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #  src = "img/hexagon.jpg"
 #  desc = "Hexagon"
 
+[permalinks]
+  post = "/:year/:month/:title/"
+
+
 [Author]
   name = "Matias Andina"
   website = "yourwebsite.com"

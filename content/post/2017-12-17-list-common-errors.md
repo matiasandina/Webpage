@@ -6,7 +6,7 @@ tags: ["teaching","learning", "DocumentingLearning"]
 
 ---
 
-I'm writing this post to document my own learning on reading from [Teaching Tips](https://books.google.com/books/about/McKeachie_s_Teaching_Tips_Strategies_Res.html?id=v_0zqB13lW8C) and [Teaching at its Best](https://books.google.com/books/about/Teaching_at_Its_Best.html?id=NC5P8z-u-H0C). This particular post has to do with engaging students to contribute with questions to class. 
+I'm writing this post to document my own learning on reading from [Teaching Tips](https://books.google.com/books/about/McKeachie_s_Teaching_Tips_Strategies_Res.html?id=v_0zqB13lW8C) and [Teaching at its Best](https://books.google.com/books/about/Teaching_at_Its_Best.html?id=NC5P8z-u-H0C).  
 
 ## Assignments and Feedback
 

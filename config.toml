@@ -38,7 +38,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   website = "yourwebsite.com"
   email = "matiasandina@gmail.com"
   github = "matiasandina"
-  twitter = "username"
+  twitter = "NeuroMLA"
   linkedin = "matias-andina-58a0a4b5"
   
 [[menu.main]]

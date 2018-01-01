@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Thu, 28 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teaching for Mastery</title>
+      <link>/2018/01/teaching-for-mastery/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2018/01/teaching-for-mastery/</guid>
+      <description>Grading on ProgressGrading on progress makes sense, equal effort equal remuneration. But the question we are trying to quantify with a grade is another one. We are trying to get a quantity in any scale that represents achievement. Particularly, we are interested in degree of achievement of the goals set at the beginning of the course by the professor.
+Great, so…How much do students learn? That is a difficult question, let’s simplify by assuming some conditions:</description>
+    </item>
     
     <item>
       <title>Rules of Composition</title>

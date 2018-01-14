@@ -14,9 +14,11 @@ Here's to the list things you are doing instead of research. I wasted some time 
 * New computer, sync between your own files.
 * Re-install life, yes you are going to use custom preferences.
 
+![](https://imgs.xkcd.com/comics/backups.png)
+
 * Deciding whether OS `A` or OS `B` is better.
 
-![](https://xkcd.com/1445/)
+![](https://imgs.xkcd.com/comics/efficiency.png)
 
 * Deciding you should use a double boot.
 * Being delusional and wishing to have just one copy per file between multiple OS.
@@ -27,7 +29,6 @@ Here's to the list things you are doing instead of research. I wasted some time 
 
 * Proprietary software.
 * Excel.
-
 * Track changes didn't work.
 * Likely that co-worker didn't track changes.
 * Filenames are not useful. 
@@ -36,20 +37,22 @@ Here's to the list things you are doing instead of research. I wasted some time 
 
 ![](http://www.phdcomics.com/comics/archive/phd052810s.gif)
 
+
 * Reference managers
 * WYSIWYG vs LATEX
+* LATEX fonts and templates.
 * Special characters (as in anything outside the English Language).
-* PDF does not compile for X reason.
-* LATEX fonts.
-* LATEX templates.
-* LATEX
+* PDF does not compile for `X reason`.
+
+
+* University mail is not compatible with gmail.  
 
 * R working directory.
 * MATLAB PATH.
 * Working directories, paths and beyond.
-* Packages, libraries, modules, snippets of codes that updated and are thus incompatible.
+* Packages, libraries, modules, snippets of codes that updated and are thus incompatible.  
 
-* University mail is not compatible with gmail.
+![](https://imgs.xkcd.com/comics/twitter_bot.png)
 
 * Making meaningless lists like this one.
 * Making meaningful lists of things you will never do.

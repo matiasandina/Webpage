@@ -23,7 +23,7 @@ Here's to the list things you are doing instead of research. I wasted some time 
 * Compatibility between different OS running on different people's devices.
 * Compatibility between people.
 
-![](https://xkcd.com/927/)
+![](https://imgs.xkcd.com/comics/standards.png)
 
 * Proprietary software.
 * Excel.
@@ -34,7 +34,7 @@ Here's to the list things you are doing instead of research. I wasted some time 
 * `n` copies of the same file. Everywhere.
 * `MYfile_Version_3.044_final_seriously_I_promise_OKFINE.something`
 
-![](http://phdcomics.com/comics.php?f=1323)
+![](http://www.phdcomics.com/comics/archive/phd052810s.gif)
 
 * Reference managers
 * WYSIWYG vs LATEX
@@ -56,4 +56,4 @@ Here's to the list things you are doing instead of research. I wasted some time 
 
 * People writing dates in notoriously diverging formats.
 
-![](https://xkcd.com/1179/)
+![](https://imgs.xkcd.com/comics/iso_8601.png)

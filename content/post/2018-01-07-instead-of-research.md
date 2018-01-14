@@ -44,15 +44,17 @@ Here's to the list things you are doing instead of research. I wasted some time 
 * LATEX templates.
 * LATEX
 
-* R working directory
-* MATLAB PATH
-* working directories, paths and beyond.
+* R working directory.
+* MATLAB PATH.
+* Working directories, paths and beyond.
 * Packages, libraries, modules, snippets of codes that updated and are thus incompatible.
 
-* University mail is not compatible with gmail. 
+* University mail is not compatible with gmail.
 
 * Making meaningless lists like this one.
 * Making meaningful lists of things you will never do.
+
+![](http://www.phdcomics.com/comics/archive/phd073010s.gif)
 
 * People writing dates in notoriously diverging formats.
 

@@ -76,7 +76,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 
 staticman:
-    api: https://api.staticman.net/v2/entry/<USERNAME>/<REPOSITORY-BLOGNAME>/master/comments
+    api: https://api.staticman.net/v2/entry/matiasandina/Webpage/master/comments
     pulls: https://github.com/matiasandina/Webpage/pulls
     recaptcha:
       sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"

@@ -74,3 +74,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "tags"
     weight = 5
 
+[[staticman]]
+    api= "https://api.staticman.net/v2/entry/matiasandina/Webpage/master/comments"
+    pulls= "https://github.com/matiasandina/Webpage/pulls"

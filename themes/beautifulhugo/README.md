@@ -18,50 +18,86 @@ This theme is designed to look great on both large-screen and small-screen (mobi
 
 ### Syntax highlighting
 
-This theme has support for either Hugo's lightning fast Chroma, or both server side and client side highlighting.
+This theme has support for either Hugo's lightning fast Chroma, or both server side and client side highlighting. See [the Hugo docs for more](https://gohugo.io/content-management/syntax-highlighting/).
 
-#### Chroma
+#### Chroma - New server side syntax highlighting
 
 To enable Chroma, add the following to your site parameters:
 
 ```
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-[params]
-    useChroma = true
 ```
 
-Then, you can use a different style by running:
+Then, you can generate a different style by running:
 
 ```
-hugo gen chromastyles --style=manni > static/css/syntax.css
+hugo gen chromastyles --style=trac > static/css/syntax.css
 ```
 
-See [the Hugo docs for more](https://gohugo.io/content-management/syntax-highlighting/).
+#### Pygments - Old server side syntax highlighting
 
-#### Server side syntax highlighting
-
-Use the `highlight` shortcode (with Pygments),
-see [the Hugo documentation](http://gohugo.io/extras/highlighting/) for more information.
-
-To use this feature install Pygments (`pip install Pygments`) and add
+To use this feature install Pygments (`pip install Pygments`) and add the following to your site parameters:
 
 ```
-pygmentsUseClasses = true
+pygmentsStyle = "trac"
 pygmentsUseClassic = true
 ```
 
-to your `config.toml`.
+Pygments is mostly compatable with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments.
 
-#### Client side syntax highlighting
+#### Highlight.js - Client side syntax highlighting
 
-Use triple backticks ( ``` ) or triple tilde ( ~~~ ) around code blocks.
+[Params]
+    useHLJS = true
 
-Client side highlighting does not require pygments to be installed. This currently is only active if you have not selected Chroma, because they don't play well together.
+Client side highlighting does not require pygments to be installed. This will use `highlight.min.css` instead of `syntax.css` for highlighting (effectively disabling Chroma). Highlight.js has a wider range of support for languages and themes, and an alternative highlighting engine.
 
 ### Disqus support
 
 To use this feature, uncomment and fill out the `disqusShortname` parameter in `config.toml`.
+
+### Staticman support
+
+Add *staticman* configuration section in `config.toml` or `config.yaml`
+
+Sample `config.yaml` configuration
+
+```
+  staticman:
+    api: https://api.staticman.net/v2/entry/<USERNAME>/<REPOSITORY-BLOGNAME>/master/comments
+    pulls: https://github.com/<USERNAME>/<REPOSITORY-BLOGNAME>/pulls
+    recaptcha:
+      sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
+      secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
+```
+
+You must also configure the `staticman.yml` in you blog website.
+
+```
+comments:
+  allowedFields: ["name", "email", "website", "comment"]
+  branch            : "master"
+  commitMessage     : "New comment in {options.slug}"
+  path: "data/comments/{options.slug}"
+  filename          : "comment-{@timestamp}"
+  format            : "yaml"
+  moderation        : true
+  requiredFields    : ['name', 'email', 'comment']
+  transforms:
+    email           : md5
+  generatedFields:
+    date:
+      type          : "date"
+      options:
+        format      : "iso8601"
+  reCaptcha:
+    enabled: true
+    siteKey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
+    secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
+```
+
+
 
 ### Google Analytics
 

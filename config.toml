@@ -74,8 +74,3 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "tags"
     weight = 5
 
-[staticman]
-  endpoint = "https://api.staticman.net/v2/entry/"
-  username = "matiasandina"
-  repository = "Webpage"
-  branch = "master"

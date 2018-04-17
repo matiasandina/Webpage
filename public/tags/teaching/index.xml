@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>t-tests for correlation</title>
+      <link>/2018/04/t-tests-for-correlation/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2018/04/t-tests-for-correlation/</guid>
+      <description>I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
+We used an independent sample t-test and found a significant correlations (t(df)=…).
+It also comes in the shape of non-significant data, maybe even more haunting than the first version.
+We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.</description>
+    </item>
     
     <item>
       <title>Teaching for Mastery</title>

@@ -5,20 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>t-tests for correlation</title>
-  <meta property="og:title" content="t-tests for correlation" />
-  <meta name="twitter:title" content="t-tests for correlation" />
-  <meta name="description" content="I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
-We used an independent sample t-test and found a significant correlations (t(df)=…).
-It also comes in the shape of non-significant data, maybe even more haunting than the first version.
-We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.">
-  <meta property="og:description" content="I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
-We used an independent sample t-test and found a significant correlations (t(df)=…).
-It also comes in the shape of non-significant data, maybe even more haunting than the first version.
-We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.">
-  <meta name="twitter:description" content="I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
-We used an independent sample t-test and found a significant correlations (t(df)=…).
-It also …">
+  <title>Matlab list_files</title>
+  <meta property="og:title" content="Matlab list_files" />
+  <meta name="twitter:title" content="Matlab list_files" />
+  <meta name="description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
+Gimme all the files in…
+Will be easily accomplished in R">
+  <meta property="og:description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
+Gimme all the files in…
+Will be easily accomplished in R">
+  <meta name="twitter:description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language …">
   <meta name="author" content="Matias Andina"/>
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="/img/m-gray.jpg" />
@@ -26,12 +22,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@NeuroMLA" />
   <meta name="twitter:creator" content="@NeuroMLA" />
-  <meta property="og:url" content="/2018/04/t-tests-for-correlation/" />
+  <meta property="og:url" content="/2018/04/matlab-list_files/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Matias Andina" />
 
   <meta name="generator" content="Hugo 0.30.2" />
-  <link rel="canonical" href="/2018/04/t-tests-for-correlation/" />
+  <link rel="canonical" href="/2018/04/matlab-list_files/" />
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matias Andina">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -184,13 +180,13 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>t-tests for correlation</h1>
+              <h1>Matlab list_files</h1>
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 20, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 24, 2018
   
   
   
@@ -211,31 +207,130 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:</p>
+        <p>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in <code>R</code> mode. Something along the lines of:</p>
 <blockquote>
-<p>We used an independent sample t-test and found a significant correlations (t(df)=…).</p>
+<p>Gimme all the files in…</p>
 </blockquote>
-<p>It also comes in the shape of non-significant data, maybe even more haunting than the first version.</p>
-<blockquote>
-<p>We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.</p>
-</blockquote>
-<p>These phrases are not actual statements made by my students on paper <strong>but</strong> they come quite close. I have been trying to wrap my head around their confusion between correlation and t-test, which persists even though I remove points on papers and make announcements in class. It persists whether I repeat the material from a different angle, draw stuff on the board, and have face to face interaction with firm believers of the <em>t-correlation</em> theory. I have made frustrated comments during TA meetings only to find that other TAs experience the same issue. One of the TAs was adamant about it, she even makes them sing! But the confusion is still intact.</p>
-<div id="how-to" class="section level2">
-<h2>How to</h2>
-<p>It’s not my full intention to preach about what a <em>t-test</em> or a correlation analysis are (although see below). I’m trying to figure out what makes students be so confused about these two. More thoughts on this topic will come in the near future.</p>
-</div>
-<div id="two-different-worlds" class="section level2">
-<h2>Two different worlds</h2>
-<p>Correlation and factor analysis are essentially different. Continuous vs discrete. A car’s transmission can be automatic <em>or</em> manual. There is no scale, no range of values. We can study how a continuous variable (such as miles per gallon) is affected by the type of transmission.</p>
-<p><img src="/post/2018-04-20-t-test-correlation_files/figure-html/factor-t-1.png" width="672" /></p>
-<p>Moreover, we are trying to collapse the groups into a comparison of their means, standard deviations, and N. But let’s focus on the means, let’s reduce the previous scatterplot to two dots.</p>
-<p><img src="/post/2018-04-20-t-test-correlation_files/figure-html/mean-comp-1.png" width="672" /></p>
-<p>The underlying question is: Are these 2 values <em>statistically</em> different? We can test for it, using a t-test!</p>
-<p>Using a <em>t-test</em> we can find that there is a 7.245 difference between groups, which is unlikely to be found by chance. How unlikely? Well, assumptions being made, p=0.001.</p>
-<p>On the other hand, we could be interested in studying the relationship between two continuous variables. The nature of these variables is fairly different from discrete ones. Both variables are unconstrained regarding the values they can take (Big, small and fractions allowed!). In this case, we can take a look at how the weight of cars is related to the miles per gallon.</p>
-<p><img src="/post/2018-04-20-t-test-correlation_files/figure-html/wt-mpg-1.png" width="672" /></p>
-<p>We would see that, overall, heavier cars tend to be able to drive less miles per gallon of gas. In principle, with a correlation analysis we wouldn’t be able to establish causal relationships. Is it the weight causing the mileage per gallon to go down? We can’t address that question with this type of analysis. But we can test whether there is a <em>significant</em> association using a linear correlation test.</p>
-<p>The correlation analysis shows a significant negative correlation (r = -0.868), which is different from zero, unlikely to be found by chance (p = <span class="math inline">\(1.2939587\times 10^{-10}\)</span>).</p>
+<p>Will be easily accomplished in <code>R</code></p>
+<pre class="r"><code>list.files(...)</code></pre>
+<p>This command can handle many many options, with <code>pattern</code> being among my favorite. More importantly, this command returns a useful <code>character</code> vector. No extra dots, no list of lists, no array. Just, useful. On the other hand, Matlab has <code>dir</code> and <code>ls</code> both of which are not satisfactory.</p>
+<pre class="octave"><code>dir
+
+.                                                      
+..                                    
+something.m                            
+something_else.m                               
+LookHere.m
+</code></pre>
+<p>Yes…Matlab’s version can also handle some form of regular expression matching. But, mind the dots and the structure! Matlab’s <code>dir</code> has a ton of things on it.</p>
+<pre class="octave"><code>&gt;&gt; q = dir
+
+q = 
+
+  20×1 struct array with fields:
+
+    name
+    folder
+    date
+    bytes
+    isdir
+    datenum</code></pre>
+<p>Matlab <code>ls</code> function is also full of deadly traps.</p>
+<pre class="octave"><code>qq = ls
+
+qq =
+
+  20×28 char array
+
+    &#39;.                           &#39;
+    &#39;..                          &#39;
+    &#39;many_things_here.ext        &#39;
+</code></pre>
+<div id="the-solution" class="section level2">
+<h2>The solution</h2>
+<p>I found myself fighting for a character vector or array (<code>nx1</code>) I can feed into a function/loop/whatever.</p>
+<p>So after many many many times fighting against classes, with functions that expect <code>char</code> instead of <code>string</code>, or <code>cell</code>, or <code>whatever</code>, I decided to create something that resembles (at least partially) the functionality I was looking for. It’s not perfect, in fact, please enlighten me with a better approach. For now, I will be using <code>list_files.m</code>. Wanna use it? Be my guest, see below:</p>
+<pre class="octave"><code>
+% The idea of this function is to have something that works to list files
+% Matlab has too many weird things with dir/patterns/etc...
+% It could be slow if calling in a BIG dir and then subsetting
+% Otherwise it should work pretty fast
+
+function filenames = list_files(varargin)
+
+% Open input parser
+p = inputParser();
+
+% Add possible values
+addOptional(p, &#39;Interactive&#39;, true, @islogical)
+addOptional(p, &#39;Dirname&#39;, &#39;0&#39;, @ischar)
+addOptional(p, &#39;Pattern&#39;, {&#39;.&#39;}, @iscell)
+addOptional(p, &#39;FullPath&#39;, false, @islogical)
+
+
+% parse
+parse(p, varargin{:});
+
+% retrieve things from parser
+Interactive = p.Results.Interactive;
+Dirname = p.Results.Dirname;
+Pattern = p.Results.Pattern;
+FullPath = p.Results.FullPath;
+
+
+%% Dirname goes first
+% If we didn&#39;t provide a Dirname, both defaults will hold
+% If we provided a Dirname, we will read from there
+
+if (Interactive &amp;&amp; string(Dirname) == &#39;0&#39;)
+
+    dirname = uigetdir();
+
+else
+    
+    dirname = Dirname;
+    
+end
+
+
+if ~isdir(dirname)
+    error(&#39;Dirname not valid, check dirname provided is character and exists.&#39;)
+end
+
+% actually call dir
+    d=dir(dirname);
+% Remove the dots matlab puts to things
+    d=d(~ismember({d.name},{&#39;.&#39;,&#39;..&#39;}));
+
+    % Get filenames
+    % Output as an mx1 cell
+    
+    filenames = {d.name}&#39;;
+
+        
+%% Subset by pattern
+    
+    default_pattern = string(Pattern) == &#39;.&#39;;
+
+    if (~default_pattern) % non default case
+    
+    % join cell patterns separated by the &#39;or&#39; regular expression
+    query_expression = strjoin(Pattern, &#39;|&#39;);
+    
+    %  Subset the patterns
+    filenames = filenames(~cellfun(@isempty,regexp(filenames, query_expression)));
+    end
+    
+    % By default we return just the name
+    % If you want the full path, call it!
+    % it currently works only for 1 folder
+    % Recursive = TRUE will be super nice!
+    
+    if FullPath
+    filenames = fullfile(unique({d.folder}), filenames);
+    end
+end
+</code></pre>
 </div>
 
       </article>
@@ -244,13 +339,9 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="/2018/01/instead-of-research/" data-toggle="tooltip" data-placement="top" title="Instead of Research">&larr; Previous Post</a>
+              <a href="/2018/04/t-tests-for-correlation/" data-toggle="tooltip" data-placement="top" title="t-tests for correlation">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="/2018/04/matlab-list_files/" data-toggle="tooltip" data-placement="top" title="Matlab list_files">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

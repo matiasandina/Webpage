@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Matlab list_files</title>
+      <link>/2018/04/matlab-list_files/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2018/04/matlab-list_files/</guid>
+      <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
+Gimme all the files in…
+Will be easily accomplished in R</description>
+    </item>
     
     <item>
       <title>t-tests for correlation</title>

@@ -33,7 +33,7 @@
     <item>
       <title>Ideas</title>
       <link>/tags/ideas/</link>
-      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/tags/ideas/</guid>
       <description></description>
@@ -60,9 +60,18 @@
     <item>
       <title>Learning</title>
       <link>/tags/learning/</link>
-      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matlab</title>
+      <link>/tags/matlab/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/tags/matlab/</guid>
       <description></description>
     </item>
     
@@ -81,6 +90,15 @@
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/tags/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     

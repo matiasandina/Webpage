@@ -4,9 +4,9 @@ subtitle:
 comments: false
 ---
 
-I continuously find myself mesmerized by the complexity of life. I finished my Biology Degree at University of Buenos Aires in 2015 and moved to the United States in order to continue my studies as a PhD student at University of Massachusetts Amherst. You can find my CV [here](https://github.com/matiasandina/Webpage/blob/master/CV.pdf).
+I continuously find myself mesmerized by the complexity of life. I finished my Biology Degree at University of Buenos Aires in 2015 and moved to the United States in order to continue my studies at University of Massachusetts Amherst. You can find my CV [here](https://github.com/matiasandina/Webpage/blob/master/CV.pdf).
 
 
 ## My Questions
 
-I believe that multicellular systems, and especially the nervous system, are best understood as a combination of heterogeneous single-cell behaviors. These are the result of stimuli integration via sub-cellular signalling and network level activity. How does the nervous system function based on its architecture? We animals face a permanent stream of information, must process it and behave accordingly to survive and thrive. what are the computations underlying a behavioral output? I dream of increasing our understanding about complex processes underlying behavioral responses involving motivation and need.
+I believe that multicellular systems, and especially the nervous system, are best understood as a combination of heterogeneous single-cell behaviors. We animals face a permanent stream of information, must process it and behave accordingly to survive and thrive. How does the nervous system function based on its architecture? How does the brain encode stimuli and valence? What are the computations underlying a behavioral output? I dream of increasing our understanding about complex processes underlying behavioral responses involving stimuli encoding, motivation, and need.

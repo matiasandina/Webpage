@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Matias Andina</title>
-    <link>/tags/research/</link>
-    <description>Recent content in Research on Matias Andina</description>
+    <title>Design on Matias Andina</title>
+    <link>/tags/design/</link>
+    <description>Recent content in Design on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
     <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <guid>/2018/05/making-atlas-images/</guid>
       <description>This post is to make a quick description/recipe for making. This post is as much for communication as for personal records.
 Step 1 - The atlas itself Starting material should be as good quality as possible. I used .eps files from Paxinos Rat Brain Atlas for doing this. On the cheap side of life, a very nice online resource can be found here. Images could be imported to most image processing freeware and processed in a very similar way.</description>
-    </item>
-    
-    <item>
-      <title>Learning and Memory</title>
-      <link>/2017/11/learning-and-memory/</link>
-      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/learning-and-memory/</guid>
-      <description>In Argentina, my research was focused in Contextual Pavlovian Conditioning of the crab Neohelice granulata. The original paradigm was thoroughly described by Fustiñana et al., 2013. We were able to expand this paradigm and unveil new unexpected long-term memories. Working in the Neurobiology of the Memory Lab has been a fulfilling experience. My research was materialized in my graduation thesis:
-“Study of different long-term memories and participation of synaptic ERK/MAPK in memory consolidation”</description>
     </item>
     
   </channel>

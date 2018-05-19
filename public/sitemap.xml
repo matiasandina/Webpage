@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018/05/making-atlas-images/</loc>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/04/matlab-list_files/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
   </url>
@@ -69,7 +74,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -84,6 +89,12 @@
   
   <url>
     <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/design/</loc>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -142,7 +153,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -154,7 +165,7 @@
   
   <url>
     <loc>/tags/research/</loc>
-    <lastmod>2017-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

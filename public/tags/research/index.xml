@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Github style calendar heatmaps</title>
+      <link>/2018/05/github-style-calendar-heatmaps/</link>
+      <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2018/05/github-style-calendar-heatmaps/</guid>
+      <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
+library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color palettelibrary(ggthemes) # theme tufteLet’s generate a data.</description>
+    </item>
     
     <item>
       <title>Making atlas images</title>

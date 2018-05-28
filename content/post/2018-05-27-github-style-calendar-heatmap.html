@@ -1,0 +1,148 @@
+---
+title: "Github style calendar heatmaps"
+author: "Matias Andina"
+date: 2018-05-27
+tags: ["research", "design", "R"]
+---
+
+
+
+<p>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in <code>d3</code> and javascript. But, of course, I wanted to make it in <code>R</code>. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(viridis)  # Color palette
+library(ggthemes) # theme tufte</code></pre>
+<p>Let’s generate a <code>data.frame</code> for May 2018.</p>
+<pre class="r"><code># choose dates
+start_date &lt;- ymd(&quot;2018-05-01&quot;)
+end_date &lt;- ymd(&quot;2018-05-31&quot;)
+
+d &lt;- data_frame(
+    date = seq(start_date, end_date, by = &quot;days&quot;),
+    month = month(date),
+    year = format(date, &quot;%Y&quot;),
+    week = as.integer(format(date, &quot;%W&quot;)) + 1,  # Week starts at 1
+    day = factor(weekdays(date, T), 
+                 levels = rev(c(&quot;Mon&quot;, &quot;Tue&quot;, &quot;Wed&quot;, &quot;Thu&quot;,
+                                &quot;Fri&quot;, &quot;Sat&quot;, &quot;Sun&quot;))))</code></pre>
+<p>This is how our data looks like now</p>
+<pre class="r"><code>head(d)</code></pre>
+<pre><code>## # A tibble: 6 x 5
+##   date       month year   week day  
+##   &lt;date&gt;     &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt; &lt;fct&gt;
+## 1 2018-05-01  5.00 2018   19.0 Tue  
+## 2 2018-05-02  5.00 2018   19.0 Wed  
+## 3 2018-05-03  5.00 2018   19.0 Thu  
+## 4 2018-05-04  5.00 2018   19.0 Fri  
+## 5 2018-05-05  5.00 2018   19.0 Sat  
+## 6 2018-05-06  5.00 2018   19.0 Sun</code></pre>
+<p>Now, let’s assume I registered some events in my life and that my data looks something like: A date column (<em>date</em>), and the number of events that happened on a particular date (<em>n</em>).</p>
+<pre class="r"><code>df</code></pre>
+<pre><code>## # A tibble: 13 x 2
+##    date           n
+##    &lt;date&gt;     &lt;int&gt;
+##  1 2018-05-15     1
+##  2 2018-05-16     1
+##  3 2018-05-17     1
+##  4 2018-05-18     2
+##  5 2018-05-19     4
+##  6 2018-05-20     2
+##  7 2018-05-21     2
+##  8 2018-05-22     2
+##  9 2018-05-23     2
+## 10 2018-05-24     5
+## 11 2018-05-25     2
+## 12 2018-05-26     1
+## 13 2018-05-27     4</code></pre>
+<p>I can join both <code>data.frames</code> and visualize!</p>
+<pre class="r"><code>df_plot &lt;- d %&gt;% left_join(df, by = &quot;date&quot;) 
+
+df_plot %&gt;%
+  mutate(n=ifelse(is.na(n), 0, n)) %&gt;% ## Fill the NAs with zeros
+  ggplot(aes(date, n)) +
+  geom_line(lwd=0.7)+
+  geom_point(size=2, shape=21, fill=&quot;black&quot;, colour=&quot;white&quot;, stroke=2)+
+    theme_classic() +
+  theme(panel.background = element_rect(colour = &quot;black&quot;))+
+  ylab(&quot;Number of events&quot;)</code></pre>
+<p><img src="/post/2018-05-27-github-style-calendar-heatmap_files/figure-html/line-plot-1.png" width="672" /></p>
+<p>This plot is rather unremarkable. Not only because it is a small toy-like dataset, but because it fails to inform. Let’s try to make it better!</p>
+<pre class="r"><code>calendar_plot &lt;- function(data, color.scale = &quot;viridis&quot;,
+                          viridis.pal = &quot;D&quot;, dir = 1){
+    
+    p &lt;- ggplot(data, aes(x = week, y = day, fill = n)) +
+                geom_tile(color = &quot;white&quot;, size = 0.8) +
+        facet_wrap(&quot;year&quot;, ncol = 1) +
+        theme_tufte() +
+        theme(axis.ticks = element_blank(),
+              legend.position = &quot;bottom&quot;,
+              legend.key.width = unit(1, &quot;cm&quot;),
+              strip.text = element_text(hjust = 0.01,
+                                        face = &quot;bold&quot;, size = 12),
+              text = element_text(size=16)) + 
+      ylab(&quot;&quot;)
+    
+    
+    
+    # Let&#39;s add more than one possible pallete. Default keeps being viridis
+    # Add case switch? or add &#39;none&#39; for user to define their own ?
+    
+   if(color.scale==&quot;viridis&quot;){
+  
+     
+    p &lt;- p + scale_fill_viridis(name=&quot;Number of Events&quot;, 
+                           option = viridis.pal,  # Variable color palette
+                           direction = dir,  # Variable color direction
+                           na.value = &quot;grey93&quot;,
+                           limits = c(1, max(data$n)))
+  
+   } else if(color.scale == &#39;greens&#39;) {
+     
+      p &lt;- p + scale_fill_gradient(name=&quot;Number of Events&quot;,
+                                   low=&quot;lightyellow2&quot;, high=&quot;darkgreen&quot;, 
+                                   na.value = &quot;grey93&quot;)
+   } else{
+     
+     error(&quot;Accepted color.scale are &#39;viridis&#39; and &#39;greens&#39;&quot;)
+     
+   }
+
+    
+    ## x axis control of labels
+    
+    
+    num_months &lt;- length(unique(data$month))
+    
+    if(num_months &gt; 1){
+      
+      p &lt;- p + scale_x_continuous(
+            expand = c(0, 0),
+            breaks = seq(1, 52, length = 12),
+            labels = c(&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;,
+                       &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;))
+
+    } else {
+      
+      # do nothing
+      
+      p &lt;- p + xlab(&quot;Week Number.&quot;)
+      
+    }
+        
+      
+    
+    print(p)
+}</code></pre>
+<p>We can use <code>calendar_plot()</code> function now to make a plot in <em>calendar-like</em> shape. It is easier to see the data, even with such as small dataset. Below there are two color scale representations of the same data.</p>
+<pre class="r"><code>calendar_plot(df_plot, &#39;greens&#39;)</code></pre>
+<p><img src="/post/2018-05-27-github-style-calendar-heatmap_files/figure-html/calendar-plot-1.png" width="672" /></p>
+<pre class="r"><code>calendar_plot(df_plot, viridis.pal = &quot;B&quot;)</code></pre>
+<p><img src="/post/2018-05-27-github-style-calendar-heatmap_files/figure-html/calendar-plot-2.png" width="672" /></p>
+<hr />
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Great resources <a href="https://vuorre.netlify.com/post/2016/2016-03-24-github-waffle-plot/">here</a>, <a href="http://ethen8181.github.io/Business-Analytics/articles/calendar_heatmaps/calendar_heatmaps.html">and here</a><a href="#fnref1">↩</a></p></li>
+</ol>
+</div>

@@ -7,7 +7,7 @@ tags: ["research", "design"]
 ---
 
 
-This post is to make a quick description/recipe for making. This post is as much for communication as for personal records.  
+This post contains a quick description/recipe for making vectorial brain atlas images suitable for publication and presentations. This post is as much for communication as for personal records.  
 
 ## Step 1 - The atlas itself
 

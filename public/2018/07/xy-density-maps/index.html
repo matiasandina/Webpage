@@ -5,9 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>R</title>
-  <meta property="og:title" content="R" />
-  <meta name="twitter:title" content="R" />
+  <title>XY-density-maps</title>
+  <meta property="og:title" content="XY-density-maps" />
+  <meta name="twitter:title" content="XY-density-maps" />
+  <meta name="description" content="I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments. I will explore different packages and doing comparisons of the results.">
+  <meta property="og:description" content="I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments. I will explore different packages and doing comparisons of the results.">
+  <meta name="twitter:description" content="I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 …">
   <meta name="author" content="Matias Andina"/>
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="/img/m-gray.jpg" />
@@ -15,13 +18,13 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@NeuroMLA" />
   <meta name="twitter:creator" content="@NeuroMLA" />
-  <meta property="og:url" content="/tags/r/" />
+  <meta property="og:url" content="/2018/07/xy-density-maps/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Matias Andina" />
 
   <meta name="generator" content="Hugo 0.30.2" />
-  <link rel="canonical" href="/tags/r/" />
-  <link rel="alternate" href="/tags/r/index.xml" type="application/rss+xml" title="Matias Andina">
+  <link rel="canonical" href="/2018/07/xy-density-maps/" />
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matias Andina">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -156,14 +159,37 @@
 
 
     
+  
+  
+  
+
+
+
+
+  
+
   <header class="header-section ">
+    
     <div class="intro-header no-img">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>#R</h1>
-              <hr class="small">
+            <div class="post-heading">
+              <h1>XY-density-maps</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on July 13, 2018
+  
+  
+  
+</span>
+
+
+                
             </div>
           </div>
         </div>
@@ -171,112 +197,134 @@
     </div>
   </header>
 
+
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments. I will explore different packages and doing comparisons of the results.</p>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<pre class="r"><code>suppressPackageStartupMessages(library(reshape2))
+suppressPackageStartupMessages(library(RColorBrewer))
+suppressPackageStartupMessages(library(KernSmooth))
+suppressPackageStartupMessages(library(raster))
+suppressPackageStartupMessages(library(gplots))
+suppressPackageStartupMessages(library(ggplot2))</code></pre>
+</div>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>I have an example dataset with <code>XY</code> position of the animal. I also have other morphological data that is irrelevant for this case. See example below:</p>
+<pre><code>##          X        Y Orientation MinorAxis MajorAxis
+## 1 325.5522 158.9700   -1.550285  50.47925  130.5679
+## 2 323.3055 156.6896   -1.569706  51.29840  130.3467
+## 3 321.7411 154.8107    1.545683  52.13492  130.3881
+## 4 320.8373 153.3294    1.512549  52.67011  130.6403
+## 5 320.0381 152.5523    1.477299  53.07783  130.1023
+## 6 319.3961 152.2019    1.439171  53.75891  129.6706</code></pre>
+<p>I will do some setup that is common for all the graphs (aka, color palette and the dimensions of the arena).</p>
+<pre class="r"><code># Get color palette 
+
+refCol &lt;- colorRampPalette(rev(brewer.pal(6,&#39;Spectral&#39;)))
+mycol &lt;- refCol(6)
+
+# define bin sizes
+bin_size &lt;- 40
+
+# Camera resolution is 640x480. Hence...
+xbins &lt;- 640/bin_size 
+ybins &lt;- 480/bin_size</code></pre>
+</div>
+<div id="ggplot2" class="section level2">
+<h2>ggplot2</h2>
+<p>The reason I always go to <code>ggplot2</code> first is because it’s awesome, I buy into the grammar and find it intuitive to accumulate layers over layers. The underlying thought is that <code>ggplot2</code> handles all problems. In this case the result has some pros (layers, layers and more layer), and some cons (basically, it doesn’t look amazing).</p>
+<pre class="r"><code>p &lt;- ggplot(rat_pos, aes(X,Y)) +
+  stat_density2d(geom = &#39;tile&#39;, aes(fill = ..density..), contour = FALSE,
+                 n = c(xbins, ybins)) +
+  #geom_point() + 
+  #geom_path(alpha=0.1) +
+  coord_equal() +
+  theme_minimal() +
+  scale_fill_gradientn(colors =  mycol) +
+  geom_vline(xintercept = c(0,640))+
+  geom_hline(yintercept = c(0,480))
+
+print(p)</code></pre>
+<p><img src="/post/2018-07-13-XY-density-maps_files/figure-html/ggplot2-option-1-1.png" width="672" /></p>
+<p>This is interesting because we can overlay things into the plot. For example the trace:</p>
+<pre class="r"><code>p + geom_path(alpha=0.1)</code></pre>
+<p><img src="/post/2018-07-13-XY-density-maps_files/figure-html/ggplot2-option-1-trace-1.png" width="672" /></p>
+<p>We can further remove the axis (or any other modifications we feel like doing).</p>
+<pre class="r"><code>p + geom_path(alpha=0.5) + theme_void()</code></pre>
+<p><img src="/post/2018-07-13-XY-density-maps_files/figure-html/ggplot2-option-1-noborder-1.png" width="672" /></p>
+<p>I found that, if we calculate the density externally, it looks smoother. This is a mixed, <code>bkde2D</code> mediated, <code>ggplot2</code> approach (aka the best of 2 worlds).</p>
+<pre class="r"><code>bins &lt;- bkde2D(as.matrix(rat_pos[,1:2]), bandwidth = c(xbins, ybins),
+               gridsize = c(640L, 480L))
+
+bins_to_plot &lt;- melt(bins$fhat)
+
+
+ggplot(bins_to_plot, aes(Var1, Var2, fill = value)) +
+  geom_raster()+
+  coord_equal() +
+  theme_minimal() +
+  scale_fill_gradientn(colors =  mycol) +
+  geom_vline(xintercept = c(0,640))+
+  geom_hline(yintercept = c(0,480))+
+  theme_void()</code></pre>
+<p><img src="/post/2018-07-13-XY-density-maps_files/figure-html/ggplot2-option-2-1.png" width="672" /></p>
+</div>
+<div id="using-raster-package" class="section level2">
+<h2>Using raster package</h2>
+<p>Raster package is maybe an older solution, which is surprisingly low demand. In 3 code lines we get a perfectly functional plot. On the other hand, it’s not the best looking graph and we get the caveats (yes, <code>base</code> graphics).</p>
+<pre class="r"><code>r &lt;- raster(xmn=0, ymn=0, xmx=640, ymx=480, res=20)
+x &lt;- rasterize(rat_pos[,1:2], r, fun=&#39;count&#39;)
+plot(x, xlim=c(0,640), ylim=c(0,480), xaxt=&#39;n&#39;, ann=FALSE, yaxt=&#39;n&#39;)</code></pre>
+<p><img src="/post/2018-07-13-XY-density-maps_files/figure-html/raster-package-1.png" width="672" /></p>
+</div>
+<div id="using-gplots-package" class="section level1">
+<h1>Using gplots package</h1>
+<p>This package produces a nice plot. I must confess I did not look to much into it because it’s really similar to what <code>ggplot2</code> can do with tiles. I was biased towards a smoother version of the world.</p>
+<pre class="r"><code># create plot
+q &lt;- hist2d(rat_pos[,1:2], same.scale=TRUE,
+       nbins=c(xbins, ybins),
+       col = mycol, xaxt=&#39;n&#39;, ann=FALSE, yaxt=&#39;n&#39;)</code></pre>
+<p><img src="/post/2018-07-13-XY-density-maps_files/figure-html/gplots-package-1.png" width="672" /></p>
+<div id="documentation" class="section level2">
+<h2>Documentation</h2>
+<p>I have found a good amount of advice and inspiration in the links below.</p>
+<ul>
+<li><a href="http://stat405.had.co.nz/ggmap.pdf" class="uri">http://stat405.had.co.nz/ggmap.pdf</a></li>
+<li><a href="https://stackoverflow.com/questions/24078774/overlay-two-ggplot2-stat-density2d-plots-with-alpha-channels?lq=1" class="uri">https://stackoverflow.com/questions/24078774/overlay-two-ggplot2-stat-density2d-plots-with-alpha-channels?lq=1</a></li>
+<li><a href="https://www.r-bloggers.com/5-ways-to-do-2d-histograms-in-r/" class="uri">https://www.r-bloggers.com/5-ways-to-do-2d-histograms-in-r/</a></li>
+<li><a href="https://stackoverflow.com/questions/24845652/specifying-the-scale-for-the-density-in-ggplot2s-stat-density2d" class="uri">https://stackoverflow.com/questions/24845652/specifying-the-scale-for-the-density-in-ggplot2s-stat-density2d</a></li>
+</ul>
+</div>
+</div>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="/2018/05/github-style-calendar-heatmaps/" data-toggle="tooltip" data-placement="top" title="Github style calendar heatmaps">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="/2018/07/xy-density-maps/">
-                <h2 class="post-title">XY-density-maps</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on July 13, 2018
-              </p>
-              <div class="post-entry">
-                
-                  I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments. I will explore different packages and doing comparisons of the results.
-                  <a href="/2018/07/xy-density-maps/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="//tags/r/">R</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="/2018/05/github-style-calendar-heatmaps/">
-                <h2 class="post-title">Github style calendar heatmaps</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on May 27, 2018
-              </p>
-              <div class="post-entry">
-                
-                  I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
-library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color palettelibrary(ggthemes) # theme tufteLet’s generate a data.
-                  <a href="/2018/05/github-style-calendar-heatmaps/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="//tags/research/">research</a>&nbsp;
-                  
-                    #<a href="//tags/design/">design</a>&nbsp;
-                  
-                    #<a href="//tags/r/">R</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="/2018/04/matlab-list_files/">
-                <h2 class="post-title">Matlab list_files</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on April 24, 2018
-              </p>
-              <div class="post-entry">
-                
-                  For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
-Gimme all the files in…
-Will be easily accomplished in R
-                  <a href="/2018/04/matlab-list_files/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="//tags/learning/">learning</a>&nbsp;
-                  
-                    #<a href="//tags/ideas/">ideas</a>&nbsp;
-                  
-                    #<a href="//tags/r/">R</a>&nbsp;
-                  
-                    #<a href="//tags/matlab/">Matlab</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-        </div>
         
-      </div>
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -319,7 +367,7 @@ library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color pale
           
           <li>
             
-            <a href="/tags/r/index.xml" title="RSS">
+            <a href="/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>

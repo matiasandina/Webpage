@@ -180,7 +180,8 @@ calendar_plot(df_plot, viridis.pal = "B")
 I was curious about how data would look like for a longer span. Here's the data for a longer time interval.  
 
 ```{r updated-data, echo=FALSE}
-df <- read.csv('2018-05-27-github-style-calendar-heatmap_files/longer_data.csv', stringsAsFactors = FALSE)
+
+df <- read.csv(file = 'data_for_posts/2018-05-27_longer_data.csv', stringsAsFactors = FALSE)
 
 df$date <- ymd(df$date)
 

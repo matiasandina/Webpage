@@ -67,7 +67,7 @@ df_plot %&gt;%
   theme(panel.background = element_rect(colour = &quot;black&quot;))+
   ylab(&quot;Number of events&quot;)</code></pre>
 <p><img src="/post/2018-05-27-github-style-calendar-heatmap_files/figure-html/line-plot-1.png" width="672" /></p>
-<p>This plot is rather unremarkable. Not only because it is a small toy-like dataset, but because it fails to inform. Let’s try to make it better!</p>
+<p>My goal is not to analyze long term trends like seasonality. Thus, this plot is rather unremarkable. Not only because it is a small toy-like dataset, but because it fails to inform calendar information. Let’s try to make it better!</p>
 <pre class="r"><code>calendar_plot &lt;- function(data, color.scale = &quot;viridis&quot;,
                           viridis.pal = &quot;D&quot;, dir = 1){
     
@@ -140,6 +140,14 @@ df_plot %&gt;%
 <pre class="r"><code>calendar_plot(df_plot, viridis.pal = &quot;B&quot;)</code></pre>
 <p><img src="/post/2018-05-27-github-style-calendar-heatmap_files/figure-html/calendar-plot-2.png" width="672" /></p>
 <hr />
+<div id="update" class="section level2">
+<h2>UPDATE</h2>
+<p>I was curious about how data would look like for a longer span. Here’s the data for a longer time interval.</p>
+<pre class="r"><code>calendar_plot(df_plot)</code></pre>
+<p><img src="/post/2018-05-27-github-style-calendar-heatmap_files/figure-html/update-plot-1.png" width="672" /></p>
+<p>When I did this update, I realized that my <code>calendar_plot()</code> function should handle internally the creation of the <code>data.frame</code> named <code>d</code> that serves as a placeholder. I guess that will happen in a following update <code>:)</code>.</p>
+<hr />
+</div>
 <div class="footnotes">
 <hr />
 <ol>

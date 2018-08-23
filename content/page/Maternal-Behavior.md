@@ -12,7 +12,7 @@ Here's a nice picture of the mPOA with triple labelling: Fluorogold (yellow), Es
 
 
 {{< figure src="/img/esr1_immuno.png" 
-    caption="Triple labelling in mPOA" 
+    caption="Immunohistochemistry in mPOA" 
     caption-position="bottom" 
     caption-effect="fade"
     width="800px">}}

@@ -8,4 +8,6 @@ During my time in the University of Massachusetts Amherst I studied maternal beh
 
 This work materialized in my MSc. thesis: **Mapping a pup-resposive pathway from medial preoptic area to ventral tegmental area.**
 
-![Triple labelling in mPOA](/img/esr1_immuno)
+Here's a nice picture of the mPOA with triple labelling: Fluorogold (yellow), Esr1 (red), c-Fos (white). 
+
+![Triple labelling in mPOA](/img/esr1_immuno.png)

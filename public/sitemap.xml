@@ -83,11 +83,6 @@
   </url>
   
   <url>
-    <loc>/2017/11/learning-and-memory/</loc>
-    <lastmod>2017-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
@@ -144,6 +139,14 @@
   </url>
   
   <url>
+    <loc>/page/learning-and-memory/</loc>
+  </url>
+  
+  <url>
+    <loc>/page/maternal-behavior/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/matlab/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -151,7 +154,6 @@
   
   <url>
     <loc>/tags/memory/</loc>
-    <lastmod>2017-11-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

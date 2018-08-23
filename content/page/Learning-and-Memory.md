@@ -1,7 +1,6 @@
 ---
 title: Learning and Memory
 subtitle: Learning in Crabs
-date: 2017-11-13
 tags: ["research", "memory", "learning"]
 ---
 

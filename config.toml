@@ -13,7 +13,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [Params]
   subtitle = " "
   logo = "img/m-gray.jpg"
-  favicon = "img/favicon.ico"
+  favicon = "img/webpage_logo.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
@@ -53,6 +53,21 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Research"
     weight = 2
 
+# We put the items below the parent "Research"
+
+[[menu.main]]
+    parent = "Research"
+    name = "Learning and Memory"
+    url = "page/Learning-and-Memory"
+    weight = 1
+
+[[menu.main]]
+    parent = "Research"
+    name = "Maternal Behavior"
+    url = "page/Maternal-Behavior"
+    weight = 2
+    
+
 [[menu.main]]
     name = "Teaching"
     url = "page/teaching/"
@@ -63,12 +78,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "post/"
     weight = 4
 
-
-[[menu.main]]
-    parent = "Research"
-    name = "Learning and Memory"
-    url = "post/2017-11-13-Learning-and-Memory"
-    weight = 1
 
 [[menu.main]]
     name = "Tags"

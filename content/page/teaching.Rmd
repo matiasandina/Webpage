@@ -27,4 +27,6 @@ Some things that need to improve:
 
 ### Courses
 
-* NATSCI191 Animal Behavior, Fall 2017
+* Spring 2018, Methods of Inquiry in Psychology
+* Fall 2017, NATSCI191 Animal Behavior
+

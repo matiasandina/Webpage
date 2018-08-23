@@ -5,29 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Matlab list_files</title>
-  <meta property="og:title" content="Matlab list_files" />
-  <meta name="twitter:title" content="Matlab list_files" />
-  <meta name="description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
-Gimme all the files in…
-Will be easily accomplished in R">
-  <meta property="og:description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
-Gimme all the files in…
-Will be easily accomplished in R">
-  <meta name="twitter:description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language …">
+  <title>Maternal Behavior</title>
+  <meta property="og:title" content="Maternal Behavior" />
+  <meta name="twitter:title" content="Maternal Behavior" />
+  <meta name="description" content="Tranistion from virgin to maternal state">
+  <meta property="og:description" content="Tranistion from virgin to maternal state">
+  <meta name="twitter:description" content="Tranistion from virgin to maternal state">
   <meta name="author" content="Matias Andina"/>
-  <link href='/img/webpage_logo.ico' rel='icon' type='image/x-icon'/>
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="/img/m-gray.jpg" />
   <meta name="twitter:image" content="/img/m-gray.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@NeuroMLA" />
   <meta name="twitter:creator" content="@NeuroMLA" />
-  <meta property="og:url" content="/2018/04/matlab-list_files/" />
+  <meta property="og:url" content="/1/01/maternal-behavior/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Matias Andina" />
 
   <meta name="generator" content="Hugo 0.30.2" />
-  <link rel="canonical" href="/2018/04/matlab-list_files/" />
+  <link rel="canonical" href="/1/01/maternal-behavior/" />
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matias Andina">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -115,9 +111,9 @@
               <a class="navlinks-parent" href="javascript:void(0)">Research</a>
               <div class="navlinks-children">
                 
-                  <a href="/page/Learning-and-Memory">Learning and Memory</a>
+                  <a href="/post/Learning-and-Memory">Learning and Memory</a>
                 
-                  <a href="/page/Maternal-Behavior">Maternal Behavior</a>
+                  <a href="/post/Maternal-Behavior">Maternal Behavior</a>
                 
               </div>
             </li>
@@ -182,13 +178,17 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Matlab list_files</h1>
+              <h1>Maternal Behavior</h1>
+                
+                  
+                    <h2 class="post-subheading">Tranistion from virgin to maternal state</h2>
+                  
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 24, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on January 1, 0001
   
   
   
@@ -209,144 +209,18 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in <code>R</code> mode. Something along the lines of:</p>
-<blockquote>
-<p>Gimme all the files in…</p>
-</blockquote>
-<p>Will be easily accomplished in <code>R</code></p>
-<pre class="r"><code>list.files(...)</code></pre>
-<p>This command can handle many many options, with <code>pattern</code> being among my favorite. More importantly, this command returns a useful <code>character</code> vector. No extra dots, no list of lists, no array. Just, useful. On the other hand, Matlab has <code>dir</code> and <code>ls</code> both of which are not satisfactory.</p>
-<pre class="octave"><code>dir
+        <p>During my time in the University of Massachusetts Amherst I studied maternal behavior in rats. I learned several new techniques and had my first experience working with rodents (actually switched from invertebrates to vertebrates!).</p>
 
-.                                                      
-..                                    
-something.m                            
-something_else.m                               
-LookHere.m
-</code></pre>
-<p>Yes…Matlab’s version can also handle some form of regular expression matching. But, mind the dots and the structure! Matlab’s <code>dir</code> has a ton of things on it.</p>
-<pre class="octave"><code>&gt;&gt; q = dir
-
-q = 
-
-  20×1 struct array with fields:
-
-    name
-    folder
-    date
-    bytes
-    isdir
-    datenum</code></pre>
-<p>Matlab <code>ls</code> function is also full of deadly traps.</p>
-<pre class="octave"><code>qq = ls
-
-qq =
-
-  20×28 char array
-
-    &#39;.                           &#39;
-    &#39;..                          &#39;
-    &#39;many_things_here.ext        &#39;
-</code></pre>
-<div id="the-solution" class="section level2">
-<h2>The solution</h2>
-<p>I found myself fighting for a character vector or array (<code>nx1</code>) I can feed into a function/loop/whatever.</p>
-<p>So after many many many times fighting against classes, with functions that expect <code>char</code> instead of <code>string</code>, or <code>cell</code>, or <code>whatever</code>, I decided to create something that resembles (at least partially) the functionality I was looking for. It’s not perfect, in fact, please enlighten me with a better approach. For now, I will be using <code>list_files.m</code>. Wanna use it? Be my guest, see below:</p>
-<pre class="octave"><code>
-% The idea of this function is to have something that works to list files
-% Matlab has too many weird things with dir/patterns/etc...
-% It could be slow if calling in a BIG dir and then subsetting
-% Otherwise it should work pretty fast
-
-function filenames = list_files(varargin)
-
-% Open input parser
-p = inputParser();
-
-% Add possible values
-addOptional(p, &#39;Interactive&#39;, true, @islogical)
-addOptional(p, &#39;Dirname&#39;, &#39;0&#39;, @ischar)
-addOptional(p, &#39;Pattern&#39;, {&#39;.&#39;}, @iscell)
-addOptional(p, &#39;FullPath&#39;, false, @islogical)
-
-
-% parse
-parse(p, varargin{:});
-
-% retrieve things from parser
-Interactive = p.Results.Interactive;
-Dirname = p.Results.Dirname;
-Pattern = p.Results.Pattern;
-FullPath = p.Results.FullPath;
-
-
-%% Dirname goes first
-% If we didn&#39;t provide a Dirname, both defaults will hold
-% If we provided a Dirname, we will read from there
-
-if (Interactive &amp;&amp; string(Dirname) == &#39;0&#39;)
-
-    dirname = uigetdir();
-
-else
-    
-    dirname = Dirname;
-    
-end
-
-
-if ~isdir(dirname)
-    error(&#39;Dirname not valid, check dirname provided is character and exists.&#39;)
-end
-
-% actually call dir
-    d=dir(dirname);
-% Remove the dots matlab puts to things
-    d=d(~ismember({d.name},{&#39;.&#39;,&#39;..&#39;}));
-
-    % Get filenames
-    % Output as an mx1 cell
-    
-    filenames = {d.name}&#39;;
-
-        
-%% Subset by pattern
-    
-    default_pattern = string(Pattern) == &#39;.&#39;;
-
-    if (~default_pattern) % non default case
-    
-    % join cell patterns separated by the &#39;or&#39; regular expression
-    query_expression = strjoin(Pattern, &#39;|&#39;);
-    
-    %  Subset the patterns
-    filenames = filenames(~cellfun(@isempty,regexp(filenames, query_expression)));
-    end
-    
-    % By default we return just the name
-    % If you want the full path, call it!
-    % it currently works only for 1 folder
-    % Recursive = TRUE will be super nice!
-    
-    if FullPath
-    filenames = fullfile(unique({d.folder}), filenames);
-    end
-end
-</code></pre>
-</div>
+<p>This work materialized in my MSc. thesis: <strong>Mapping a maternally-relevant pathway from medial preoptic area to ventral tegmental area.</strong></p>
 
       </article>
 
       
         <ul class="pager blog-pager">
           
-            <li class="previous">
-              <a href="/2018/04/t-tests-for-correlation/" data-toggle="tooltip" data-placement="top" title="t-tests for correlation">&larr; Previous Post</a>
-            </li>
-          
           
             <li class="next">
-              <a href="/2018/05/making-atlas-images/" data-toggle="tooltip" data-placement="top" title="Making atlas images">Next Post &rarr;</a>
+              <a href="/1/01/learning-and-memory/" data-toggle="tooltip" data-placement="top" title="Learning and Memory">Next Post &rarr;</a>
             </li>
           
         </ul>

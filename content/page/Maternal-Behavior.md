@@ -10,4 +10,9 @@ This work materialized in my MSc. thesis: **Mapping a pup-resposive pathway from
 
 Here's a nice picture of the mPOA with triple labelling: Fluorogold (yellow), Esr1 (red), c-Fos (white). 
 
-![Triple labelling in mPOA](/img/esr1_immuno.png)
+
+{{< figure src="/img/esr1_immuno.png" 
+    caption="Triple labelling in mPOA" 
+    caption-position="bottom" 
+    caption-effect="fade"
+    width="800px">}}

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing challenge Day 1</title>
+      <link>/2018/08/writing-challenge-day-1/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2018/08/writing-challenge-day-1/</guid>
+      <description>Writing Challenge It&amp;rsquo;s been a while since I have sevearal things to write in the back of my mind. I finally got the will to commit myself to one of those goal oriented challenges: Writing 2000 words a day.
+It might sound like a bit much, now that I think about it, but today is Day 1 so I might as well get to do it. I have not limited the type of content I will write, my aim is to get as fluent as possible and to have writing become habitual.</description>
+    </item>
     
     <item>
       <title>XY-density-maps</title>

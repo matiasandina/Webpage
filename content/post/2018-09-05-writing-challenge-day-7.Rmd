@@ -7,8 +7,6 @@ tags: ["writing", "DocumentingLearning"]
 
 ---
 
-# First week
-
 This week I did a couple of new things.
 
 * I moved to Boston.

@@ -6,7 +6,11 @@ tags: ["research"]
 
 During my time in the University of Massachusetts Amherst I studied maternal behavior in rats. I learned several new techniques and had my first experience working with rodents (actually switched from invertebrates to vertebrates!). 
 
-This work materialized in my MSc. thesis: **Mapping a pup-resposive pathway from medial preoptic area to ventral tegmental area.**
+{{< figure src="/img/rat_pup.jpg" 
+    caption="Rat pup of around 12 days old." 
+    caption-position="bottom" 
+    caption-effect="fade"
+    width="300px">}}
 
 Here's a nice picture of the mPOA with triple labelling: Fluorogold (yellow), Esr1 (red), c-Fos (white). 
 
@@ -15,4 +19,6 @@ Here's a nice picture of the mPOA with triple labelling: Fluorogold (yellow), Es
     caption="Immunohistochemistry in mPOA" 
     caption-position="bottom" 
     caption-effect="fade"
-    width="800px">}}
+    width="300px">}}
+    
+This work materialized in my MSc. thesis: [**Mapping a pup-resposive pathway from medial preoptic area to ventral tegmental area.**](https://www.scholarworks.umass.edu/masters_theses_2/701/)

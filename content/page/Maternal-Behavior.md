@@ -12,7 +12,7 @@ During my time in the University of Massachusetts Amherst I studied maternal beh
     caption-effect="fade"
     width="300px">}}
 
-Here's a nice picture of the mPOA with triple labelling: Fluorogold (yellow), Esr1 (red), c-Fos (white). 
+Here's a nice picture of mPOA neurons with triple labelling: VTA-projecting (Fluorogold, yellow), Esr1 (red), c-Fos (white). 
 
 
 {{< figure src="/img/esr1_immuno.png" 

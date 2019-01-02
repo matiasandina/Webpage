@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R pipeline -- It&#39;s a trap!</title>
+      <link>/2019/01/r-pipeline----its-a-trap/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2019/01/r-pipeline----its-a-trap/</guid>
+      <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!.This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
+Raw dataHaving data feels so good, that itching feeling in your fingers, the rush to know.</description>
+    </item>
     
     <item>
       <title>Writing challenge day 28</title>

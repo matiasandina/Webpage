@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>R pipeline -- It&#39;s a trap!</title>
+  <meta property="og:title" content="R pipeline -- It&#39;s a trap!" />
+  <meta name="twitter:title" content="R pipeline -- It&#39;s a trap!" />
+  <meta name="description" content="Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!.This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
+Raw dataHaving data feels so good, that itching feeling in your fingers, the rush to know.">
+  <meta property="og:description" content="Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!.This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
+Raw dataHaving data feels so good, that itching feeling in your fingers, the rush to know.">
+  <meta name="twitter:description" content="Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!.This day is great because you have collected some …">
+  <meta name="author" content="Matias Andina"/>
+  <link href='/img/webpage_logo.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="/img/m-gray.jpg" />
+  <meta name="twitter:image" content="/img/m-gray.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@NeuroMLA" />
+  <meta name="twitter:creator" content="@NeuroMLA" />
+  <meta property="og:url" content="/2019/01/r-pipeline----its-a-trap/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Matias Andina" />
+
+  <meta name="generator" content="Hugo 0.30.2" />
+  <link rel="canonical" href="/2019/01/r-pipeline----its-a-trap/" />
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matias Andina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="/css/syntax.css" /><link rel="stylesheet" href="/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Matias Andina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Research</a>
+              <div class="navlinks-children">
+                
+                  <a href="/page/Learning-and-Memory">Learning and Memory</a>
+                
+                  <a href="/page/Maternal-Behavior">Maternal Behavior</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Teaching" href="/page/teaching/">Teaching</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="/post/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Matias Andina" href="/">
+            <img class="avatar-img" src="/img/m-gray.jpg" alt="Matias Andina" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>R pipeline -- It&#39;s a trap!</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on January 2, 2019
+  
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: <em>What a lovely day for some data analysis!</em>.
+This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.</p>
+<div id="raw-data" class="section level2">
+<h2>Raw data</h2>
+<p>Having data feels so good, that itching feeling in your fingers, the rush to know. How does it look like? You <em>need</em> to know. But let’s be honest, data doesn’t come clean. You have to fight your way to the squeaky clean machine readable <code>data.frame</code>.</p>
+<p>Manufacturers don’t care for tidiness or openness, they use the format that works for them. They care for proprietary software solutions, that help them help you, for a little contribution. Of course, your data is your <em>own</em> and there has to be a way of getting it out of the tin software. So you pull up your sleeves and go for it, <em>there must be a way to get a text file out of this</em>. Fortunately, but not after a lot of clicking, you find a way to get your <code>raw_data.csv</code> file exported.</p>
+<p>Companies are not entirely to blame here. The scientific community (aka, the consumers) demands a visually friendly display, with Excel <code>Copy+Paste</code> capabilities. No wonder why universal text formats are many many clicks away in most software and you need several data wrangling steps before having the thing you want: <em>a tidy table</em>. Data coming from organizations (e.g, UN) is not super clean either (countries keep changing their names, how dare they!?).</p>
+<p>One example of my past struggles on the matter lives in <a href="https://stackoverflow.com/questions/41728439/tidy-data-frame-with-repeated-column-names">StackOverflow</a>.</p>
+</div>
+<div id="untitled1" class="section level2">
+<h2>Untitled1</h2>
+<p>You are now more than ready to <code>read.csv(...)</code> your file. You open a new empty script and rush through commands. Read it, do some quick wrangling, maybe even a manual edit. The goal at this stage is to swift through it. You accept hard-coding some values, why not?</p>
+<p><code>df &lt;- df[3:3245, 18:22]</code> doesn’t sound that bad at this stage.</p>
+<p>Before you can tell, you end up with less than 50 lines of code that accomplish the task, a sort of <code>x + y + z -&gt; result</code>. This feels good!</p>
+</div>
+<div id="plot" class="section level2">
+<h2>Plot</h2>
+<p>You plot the data, yes you might even use <em>base graphics</em> at this stage. It looks horrible, but the relationship is there, you smile. It’s encouraging, in your next meeting, you will discuss the great advances in your research line (added n=3 to a group).</p>
+</div>
+<div id="periodic" class="section level2">
+<h2>Periodic</h2>
+<p>But something holds you when you try to escape back to the real world. You know that this process is gonna happen more than once. Hopefully every week or so, you’re going to get your <code>sample of interest</code> read in that <code>machine of hell</code> and, if you want a quick taste of that sweet data, you’d better clean your script and make it a nice <em>pipeline</em>. Here’s where your Advanced R (<a href="http://adv-r.had.co.nz/" class="uri">http://adv-r.had.co.nz/</a>) voice whispers to you: <em>Everything to parameters, parameters to functions.</em></p>
+</div>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<p>Let’s think in more general terms now…Where is the regular expressions God when I need it?</p>
+<p>You don’t really remember but there’s Google and there’s <code>stringr</code>. You’re quite sure you’ll find a way to extract all relevant info and recycle it through the pipeline. You create universal values that are shared, <code>ID_this</code>, <code>ID_that</code>, naming names wasn’t that difficult after all.</p>
+<p>Your vision is still clear, maybe it’s because of the coffee, so you quickly wrap your sequential steps into functions that directly resemble them. You proudly name the files after the steps they perform (as if you would remember what <code>clean_and_tidy_df.R</code> does three months from now).</p>
+<p>You still have a sequence, it now looks like <code>x = f(...) + y = g(...) + z = h(...) -&gt; result</code>. Not bad for a couple hours of work.</p>
+</div>
+<div id="climax" class="section level2">
+<h2>Climax</h2>
+<p>You find yourself at the climax of your endeavor. You can easily do a sequence of calls to functions. Moreover, everything is fresh in your memory and you have not tested your functions extensively. Things appear to work because you haven’t invested enough effort to break them.</p>
+<ul>
+<li>What will happen when dates change?</li>
+<li>Is your description of the problem(s) correct?</li>
+<li>Are your solutions working despite not being authoritative (aka, how many unknown unknowns waiting to bite you?)?</li>
+<li>You are the only one running this code now, is that going to be the case <em>forever</em>?</li>
+</ul>
+<p>All this ignorance feels a lot like happiness. Again, you are strongly tempted to get up from your desk and go live your life.</p>
+</div>
+<div id="wake-up" class="section level2">
+<h2>Wake up</h2>
+<p>It doesn’t really matter how long it takes, your code will break. You realize your functions depend on global parameters like the date, the folder structure, the file names, and a stupid pattern on row 7, that is manually typed on <code>machine of hell</code> and therefore might contain human errors.</p>
+<p>You cry, at least for a microsecond. Then you decide it’s time to bring the big guns to the fight. Everything will be standardized. It’s time for <code>list.files()</code> and <code>lapply()</code> to save the day.</p>
+</div>
+<div id="everything-is-a-list" class="section level2">
+<h2>Everything is a list</h2>
+<p>You create <code>wrapper_of_clean_and_tidy_df.R</code> and all sorts of other wrapper functions that can handle lists. Why? Because <em>everything is a list now</em>. You will load all the data, make a huge list, loop over, and apply all-purpose functions. Remember <code>x</code>? Neither do I, but it’s somewhere there, running at the bottom.</p>
+<p>But this <code>list -&gt; list -&gt; list -&gt; list of results</code> is a bit confusing, where is the stuff I care about?. Don’t even get me started with the lists of lists.</p>
+</div>
+<div id="checkpoints" class="section level2">
+<h2>Checkpoints</h2>
+<p>Even if you will be the only one running this code, you are in deep need of some hints that point you towards what is going on.
+You also have big objects that were only meaningful on the very first time, things that you never want to calculate again. But <em>What if some day…?</em> Yes, you know how this one goes. So, go ahead, you are allowed to add this line:</p>
+<p><code>readline(prompt = &quot;This was only computed once in the life of the Universe, compute again [Y/N]? &gt; &quot;)</code></p>
+<p>Checkpoints are also useful tools to handle errors that might come in the data, find typos, sort out dates, prevent the wrong data type from entering a function, among others.</p>
+<p>For example, you might be expecting something that looks like <code>yyyy-mm-dd_filename.csv</code>, but for some reason you end up trying to read <code>other_filename.csv</code>. Well, good luck converting <code>other</code> to date format. Moreover, are you really trying to use <code>&quot;[0-9]{4}-[0-9]{2}-[0-9]{2}&quot;</code> as the pattern to match to <code>yyyy-mm-dd</code>? Come on…you can do better than this!</p>
+<p>Wondering where are those <code>NAs</code> coming from? Wondering what’s the length of a NULL character? Been there, done that. Don’t worry, enough checkpoints can solve the problem.</p>
+<p>At this point, after another couple hours, your code is working under several layers of <code>if(condition) {...} else {...}</code> statements. Good job, feeling like a programmer yet?</p>
+</div>
+<div id="what-does-the-code-do-again" class="section level2">
+<h2>What does the code do again?</h2>
+<p>Because your code is now looking like:</p>
+<p><code>wrapper of wrapper of x + wrapper of wrapper of y + wrapper of wrapper of z -&gt; ???</code></p>
+<p>You have no idea what’s going on unless you run the whole chain. But you did your work and it pays off. The code works like a charm! You can see lines of code dropping, messages being output, prompts being asked and answered, graphs popping every now and then. You even check some errors by trying to run corrupted data, errors are being thrown! Heaven.</p>
+<p>You are ready now, the code is working, time to collect a <em>shit ton</em> of data.</p>
+</div>
+<div id="why-are-you-doing-this-to-yourself" class="section level2">
+<h2>Why are you doing this to yourself?</h2>
+<p>You didn’t optimize for <em>that</em> much data. Your code is now running at a brand new speed: <em>turtle</em>. You can go get coffee, stop to chat a for a while with the students in another lab and come back to the computer, only to see it improve a few % points.</p>
+<p>You did this to yourself. You don’t need those 17 extra plots in between calculations every single time. You have no time to look at them if you are running hundreds of tiny files as inputs. Besides, you already know that your method works, the calibration curve is calibrated and the machine parameters lie within the expected distribution.</p>
+</div>
+<div id="save-before-continue" class="section level2">
+<h2>Save before continue</h2>
+<p>Gaming rules apply, before fighting the boss, save the game, just in case you know…you die in the fight. You don’t want to start all over, do you?</p>
+<p>But we seldom do this unless we absolutely have to. We don’t like to leave a trail of intermediate computations. In a sense, this might be dangerous, what if something broke in between, but because we have an old copy we are able to go through the pipeline without noticing? It makes me cringe.</p>
+<p>But you don’t want to calculate years of data just to look how much the new addition changes the output, right? Start saving intermediate steps!</p>
+</div>
+<div id="package" class="section level2">
+<h2>Package</h2>
+<p>You said you were going to have the data analysed by tomorrow, but you spent the whole day waiting for it to run, debugging and trying to make the pipeline even more tight. That thing you did, the saving intermediate files, turned out to be far more complicated than what you expected. You realized exactly how many environment variables were being created and used during the pipeline. You re-learn the term <code>scoping</code> and you learn to worship it. Nah, 10 arguments it’s not too much, you will <em>surely</em> remember them all when you call the function! No data so far, no data that you can <em>show</em> to another human being.</p>
+<p>It’s well past midnight, your eyes hurt, there’s no more ice cream to keep you excited. But a question creeps into your mind, a revelation:</p>
+<p><em>Should I start from scratch and make this my own package? Yes..that’s what I’m gonna do…!</em></p>
+<hr />
+<p>Stop! It’s a trap!</p>
+</div>
+<div id="steps-of-the-race-to-the-bottom" class="section level2">
+<h2>Steps of the race to the bottom</h2>
+<p>Just as recap…be my guest.</p>
+<ol style="list-style-type: decimal">
+<li>You have a <code>raw_data.csv</code>.</li>
+<li>You open an empty script (<em>Untitled1</em>) and write a few lines that do sequentially something like x + y + z -&gt; result.</li>
+<li>You make a <em>very</em> raw representation (even using base graphics).</li>
+<li>You <em>know</em> this is going to be periodically done, so you shift to functions, you parametrize some things.</li>
+<li>Now you have x = f(…), y = g(…), and z(…).</li>
+<li>You are happy because you still can do something like f(…) + g(…) + z(….).</li>
+<li>You realize your functions depend on global parameters like the date in which you do each of your experiments.</li>
+<li>You decide you are going to take this a step forward, here comes <code>list.files</code> and <code>lapply()</code> to save the day.</li>
+<li>You wrap your main functions inside other functions that are compatible with lists (because now EVERYTHING is a list).</li>
+<li>You realize that you lost.</li>
+<li>You add checkpoints, questions, exceptions (for all those moments where data behave as well…normal messy data).</li>
+<li>Your code has grown so much you have no clue what it does unless you run the full script, so now it looks like wrapper of wrapper x + wrapper of wrapper y + wrapper of wrapper z -&gt; entangled results.</li>
+<li>You are so happy that you can run all those files like a charm (and it works!) so you acquire a shit ton of data.</li>
+<li>You didn’t optimize for “a shit ton of data”, your code is slow now. Also…what were you thinking? You don’t need those 17 extra plots in between calculations. You have no time to look at them now that you are running hundreds of tiny files as inputs.</li>
+<li>Calculations take forever now. You realize that you had to save intermediate steps.</li>
+<li>Even if you tried saving them, most of your functions are dependent on other tiny values (dates, number of trials, number of rows of matrix named “WHATEVER”).</li>
+<li>Make your own R package.</li>
+</ol>
+</div>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="/2018/11/query-pubmed-in-r/" data-toggle="tooltip" data-placement="top" title="Query Pubmed in R">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:matiasandina@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/matiasandina" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/NeuroMLA" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/matias-andina-58a0a4b5" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="yourwebsite.com">Matias Andina</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="/">Matias Andina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

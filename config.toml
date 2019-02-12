@@ -30,13 +30,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #  src = "img/hexagon.jpg"
 #  desc = "Hexagon"
 
+
+[staticman]
+    api= "https://api.staticman.net/v2/entry/matiasandina/Webpage/master/comments"
+    pulls= "https://github.com/matiasandina/Webpage/pulls"
+
+
+
 [permalinks]
   post = "/:year/:month/:title/"
 
 
 [Author]
   name = "Matias Andina"
-  website = "yourwebsite.com"
+  website = "matiasandina.netlify.com"
   email = "matiasandina@gmail.com"
   github = "matiasandina"
   twitter = "NeuroMLA"
@@ -84,6 +91,3 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "tags"
     weight = 5
 
-[[staticman]]
-    api= "https://api.staticman.net/v2/entry/matiasandina/Webpage/master/comments"
-    pulls= "https://github.com/matiasandina/Webpage/pulls"

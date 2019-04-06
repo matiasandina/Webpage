@@ -18,8 +18,8 @@
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/10/skype-a-scientist-part-1/</guid>
-      <description>I have been lucky to participate in the project lead by Sarah McAnultycalled Skype a scientist. So far, I have done calls with two grades:
-3rd Grade Johnston Elementary School, Irving, TX.7th Grade Isbell Middle School, Santa Paula, CA.I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
+      <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. So far, I have done calls with two grades:
+ 3rd Grade Johnston Elementary School, Irving, TX. 7th Grade Isbell Middle School, Santa Paula, CA.  I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/09/writing-challenge-day-28/</guid>
       <description>This month has been fast. The writing has been really interesting, I was able to get some old stories written and had a lot of fun doing it. I would like to continue with the habit, it is already making it easier for me to put words into text. I’m not sure about the quality, but I experience the writing ease for both Spanish and English.
-The dataI had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
+The data I had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ The dataI had some pretty long bouts on Saturday and Sunday, writing close to 3
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/09/writing-challenge-day-21/</guid>
       <description>Third week has had ups and downs. I finished another short story. But I keep losing the word count battle. Yes, again, work.
-The dataThe word count data is somewhat similar to what I’ve seen for last week. Definitely writing bouts are going down, just being able to write a few words before bedtime knocks me over.
+The data The word count data is somewhat similar to what I’ve seen for last week. Definitely writing bouts are going down, just being able to write a few words before bedtime knocks me over.
 Looking at the aggregate, the downward slope of the third week is a little bit disappointing.</description>
     </item>
     
@@ -70,7 +70,7 @@ It might sound like a bit much, now that I think about it, but today is Day 1 so
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/05/github-style-calendar-heatmaps/</guid>
       <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
-library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color palettelibrary(ggthemes) # theme tufteLet’s generate a data.</description>
+library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.</description>
     </item>
     
     <item>
@@ -100,9 +100,10 @@ Step 1 - The atlas itself Starting material should be as good quality as possibl
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/page/maternal-behavior/</guid>
       <description>During my time in the University of Massachusetts Amherst I studied maternal behavior in rats. I learned several new techniques and had my first experience working with rodents (actually switched from invertebrates to vertebrates!).
-Rat pup of around 12 days old.
- Here&amp;rsquo;s a nice picture of mPOA neurons with triple labelling: VTA-projecting (Fluorogold, yellow), Esr1 (red), c-Fos (white).
-Immunohistochemistry in mPOA</description>
+  Rat pup of around 12 days old.
+    Here&amp;rsquo;s a nice picture of mPOA neurons with triple labelling: VTA-projecting (Fluorogold, yellow), Esr1 (red), c-Fos (white).
+  Immunohistochemistry in mPOA
+    This work materialized in my MSc.</description>
     </item>
     
   </channel>

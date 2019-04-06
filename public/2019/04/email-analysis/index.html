@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Email analysis</title>
+  <meta property="og:title" content="Email analysis" />
+  <meta name="twitter:title" content="Email analysis" />
+  <meta name="description" content="I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
+Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.">
+  <meta property="og:description" content="I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
+Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.">
+  <meta name="twitter:description" content="I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some …">
+  <meta name="author" content="Matias Andina"/>
+  <link href='/img/webpage_logo.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="/img/m-gray.jpg" />
+  <meta name="twitter:image" content="/img/m-gray.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@NeuroMLA" />
+  <meta name="twitter:creator" content="@NeuroMLA" />
+  <meta property="og:url" content="/2019/04/email-analysis/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Matias Andina" />
+
+  <meta name="generator" content="Hugo 0.54.0" />
+  <link rel="canonical" href="/2019/04/email-analysis/" />
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Matias Andina">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="/css/syntax.css" /><link rel="stylesheet" href="/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Matias Andina</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Research</a>
+              <div class="navlinks-children">
+                
+                  <a href="/page/Learning-and-Memory">Learning and Memory</a>
+                
+                  <a href="/page/Maternal-Behavior">Maternal Behavior</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Teaching" href="/page/teaching/">Teaching</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="/post/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Matias Andina" href="/">
+            <img class="avatar-img" src="/img/m-gray.jpg" alt="Matias Andina" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Email analysis</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 6, 2019
+  
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+
+<p>I am keen on tracking things. Some people call this <em>personal analytics</em>, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.</p>
+<div id="emails-from-gmail" class="section level2">
+<h2>Emails from Gmail</h2>
+<p>Reading emails in python is quite simple, we need to import the mailbox library. My file is called <code>correo</code> and comes from downloading my Gmail stuff out of <a href="https://takeout.google.com/settings/takeout" class="uri">https://takeout.google.com/settings/takeout</a>. It can take a while so be patient.</p>
+<pre class="python"><code>import mailbox
+# read in mbox
+mbox = mailbox.mbox(&#39;correo&#39;)
+# Show what we have here
+for key in mbox[0].keys():
+    print(key)</code></pre>
+<p>This should return something that looks like:</p>
+<pre><code>X-GM-THRID
+X-Gmail-Labels
+Received
+MIME-Version
+Date
+To
+From
+Subject
+Content-Type
+Content-Disposition
+Message-Id</code></pre>
+<p>Let’s save the info we care about into a new file. We select <code>subject</code>, <code>from</code>, <code>date</code>, <code>to</code>, and some variables that allow us to keep track of things (i.e, labels and threads).</p>
+<pre class="python"><code>import csv
+with open(&quot;gmail_mbox.csv&quot;, &quot;w&quot;) as outfile:
+    writer = csv.writer(outfile)
+    for message in mbox:
+        writer.writerow([message[&#39;subject&#39;], message[&#39;from&#39;],
+        message[&#39;date&#39;], message[&#39;to&#39;],
+        message[&#39;X-Gmail-Labels&#39;], message[&#39;X-GM-THRID&#39;]])</code></pre>
+</div>
+<div id="emails-from-thunderbird" class="section level2">
+<h2>Emails from Thunderbird</h2>
+<p>I keep 3 accounts in Thunderbird. Using the <a href="https://addons.thunderbird.net/en-US/thunderbird/addon/importexporttools/">ImportExportTools Add-on</a>, I exported things into <code>.mbox</code> format. Following a similar procedure to the one depicted above, I got the other three accounts exported to <code>.csv</code> files. Just be sure you select the correct keys (see example below, this might change for other email clients).</p>
+<pre class="python"><code>with open(&quot;MIT_mbox.csv&quot;, &quot;w&quot;) as outfile:
+    writer = csv.writer(outfile)
+    for message in mbox:
+        writer.writerow([message[&#39;Subject&#39;],
+        message[&#39;From&#39;], message[&#39;Date&#39;],
+        message[&#39;To&#39;],message[&#39;Status&#39;]])</code></pre>
+</div>
+<div id="data-cleaning" class="section level2">
+<h2>Data cleaning</h2>
+<p>Let’s switch from python to R<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<pre class="r"><code>df &lt;- read.csv(&quot;data_for_posts/gmail_mbox.csv&quot;,
+               header=FALSE, encoding=&quot;UTF-8&quot;)
+
+names(df) &lt;- c(&#39;subject&#39;, &#39;from&#39;, &#39;date&#39;, &#39;to&#39;, &#39;label&#39;, &#39;thread&#39;)</code></pre>
+<p>Unfortunately emails come tagged (things like <code>&quot;\\?=&quot;</code> and other nasty stuff) and you might have to deal with different encodings (the perks of speaking multiple languages). As an example, let’s see what Quora sends me.</p>
+<pre class="r"><code>df %&gt;% filter(str_detect(from, &quot;Quora&quot;)) %&gt;% dplyr::select(from) %&gt;% slice(1:10)</code></pre>
+<pre><code>##                                                              from
+## 1                         Quora Digest &lt;digest-noreply@quora.com&gt;
+## 2                         Quora Digest &lt;digest-noreply@quora.com&gt;
+## 3                         Quora Digest &lt;digest-noreply@quora.com&gt;
+## 4  =?utf-8?q?Selecci=C3=B3n_de_Quora?= &lt;digest-noreply@quora.com&gt;
+## 5                         Quora Digest &lt;digest-noreply@quora.com&gt;
+## 6                         Quora Digest &lt;digest-noreply@quora.com&gt;
+## 7                         Quora Digest &lt;digest-noreply@quora.com&gt;
+## 8  =?utf-8?q?Selecci=C3=B3n_de_Quora?= &lt;digest-noreply@quora.com&gt;
+## 9  =?utf-8?q?Selecci=C3=B3n_de_Quora?= &lt;digest-noreply@quora.com&gt;
+## 10 =?utf-8?q?Selecci=C3=B3n_de_Quora?= &lt;digest-noreply@quora.com&gt;</code></pre>
+<p>That’s nasty…Let’s do some cleaning. This function comes really handy for text replacement.</p>
+<pre class="r"><code>devtools::source_url(&quot;https://raw.githubusercontent.com/hrbrmstr/hrbrmisc/master/R/qp.r&quot;)
+
+qp_decode</code></pre>
+<pre><code>## function (x) 
+## {
+##     stringi::stri_replace_all_fixed(qp_encoded, qp_before, qp_after, 
+##         vectorize_all = FALSE)
+## }</code></pre>
+<p>We are going to modify the function a bit, we add <code>x</code> as the string we pass for cleaning and we will remove the tags progressively.</p>
+<pre class="r"><code>qp_decode &lt;- function(x) {
+  
+  # other email taggs
+  x &lt;- stringr::str_remove_all(x, pattern = &quot;=\\?[U-u][T-t][F-f]-8\\?[Q-q]\\?&quot;)
+  x &lt;- stringr::str_remove_all(x, pattern = &quot;\\?=&quot;)
+  x &lt;- stringr::str_remove_all(x, &quot;=\\?[I-i][S-s][O-o]-8859-1\\?Q\\?&quot;)
+  
+  stringi::stri_replace_all_fixed(x, qp_before, qp_after, vectorize_all=FALSE)
+  
+}</code></pre>
+<p>We are ready to use our super cool function and clean the text! Not perfect, but gets us 90% of the way.</p>
+<pre class="r"><code>df &lt;- df %&gt;% mutate_at(.vars = vars(subject, from, to, label), .funs = qp_decode) </code></pre>
+<p>Let’s see how emails from Quora changed with this new encoding:</p>
+<pre class="r"><code>df %&gt;% filter(str_detect(from, &quot;Quora&quot;)) %&gt;% dplyr::select(from) %&gt;% slice(1:10)</code></pre>
+<pre><code>##                                             from
+## 1        Quora Digest &lt;digest-noreply@quora.com&gt;
+## 2        Quora Digest &lt;digest-noreply@quora.com&gt;
+## 3        Quora Digest &lt;digest-noreply@quora.com&gt;
+## 4  Selección_de_Quora &lt;digest-noreply@quora.com&gt;
+## 5        Quora Digest &lt;digest-noreply@quora.com&gt;
+## 6        Quora Digest &lt;digest-noreply@quora.com&gt;
+## 7        Quora Digest &lt;digest-noreply@quora.com&gt;
+## 8  Selección_de_Quora &lt;digest-noreply@quora.com&gt;
+## 9  Selección_de_Quora &lt;digest-noreply@quora.com&gt;
+## 10 Selección_de_Quora &lt;digest-noreply@quora.com&gt;</code></pre>
+<p>Let’s filter those from “Received” or “Sent” (in Spanish, “Recibidos” or “Enviado”).</p>
+<pre class="r"><code>emails &lt;- df %&gt;%
+  filter(str_detect(label, &quot;Recibidos|Enviado&quot;))</code></pre>
+<p>To save you from reading a considerable amount of code, I will load the other accounts and modify them accordingly in the background. I will finally merge everything together. Just enjoy the kitten while the code is running on the background.</p>
+<p><img src="img/001-kitty.jpg" style="display: block; margin: auto;" /></p>
+</div>
+<div id="analysis" class="section level2">
+<h2>Analysis</h2>
+<p>There’s still some stuff to clean but I’d rather go into the analysis. So, let’s get some questions to guide our purpose:</p>
+<ol style="list-style-type: decimal">
+<li>Who sends me the most emails? Who receives emails from me?</li>
+<li>When do I get emails (mostly)?</li>
+<li>When should I do something about it (aka, reply)?</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> We have to dance with parsing dates and times. I highly recommend being familiar with <code>lubridate</code> (for example, see <a href="https://rdrr.io/cran/lubridate/man/parse_date_time.html" class="uri">https://rdrr.io/cran/lubridate/man/parse_date_time.html</a>).</p>
+</blockquote>
+<div id="most-frequent-senders" class="section level3">
+<h3>Most frequent senders</h3>
+<p>Just because I’m curious, let’s take a look at who are the all time senders!</p>
+<pre><code>## # A tibble: 10 x 2
+##    from                      n
+##    &lt;chr&gt;                 &lt;int&gt;
+##  1 Quora                   393
+##  2 Maggie                  316
+##  3 Yair                    216
+##  4 Luciano                 173
+##  5 Sarah                   167
+##  6 &quot;\&quot;Bank&quot;                161
+##  7 &quot;\&quot;Amazon.com\&quot;&quot;        139
+##  8 Mariana                 138
+##  9 pubchase@zappylab.com   131
+## 10 &quot;\&quot;Mendeley\&quot;&quot;          126</code></pre>
+<p>It’s cool to know that my lingering feeling (“wow…<code>Quora</code> just spams the hell out of me”) is supported by data. Other big spammers are, of course, the Bank and Amazon. People I work with and friends come high up too. Funny to see Mendeley and Pubchase on the top ten, it’s been a long journey of them sending me papers, thank you for that<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
+</div>
+<div id="from-me-to-you" class="section level3">
+<h3>From me to you</h3>
+<p>Let’s try to find the people I directly send the most emails to. I tend to send a lot of automatic reminders via email to myself so I removed me from the destination.</p>
+<pre><code>## # A tibble: 5 x 2
+##   to          n
+##   &lt;chr&gt;   &lt;int&gt;
+## 1 Mariana   192
+## 2 Mariana   126
+## 3 Yair       86
+## 4 Mélanie    64
+## 5 Beata      59</code></pre>
+<p>Looks like both my former advisers get most of my output (yes, same name first name, not related).</p>
+</div>
+</div>
+<div id="working-with-dates-and-times" class="section level2">
+<h2>Working with dates and times</h2>
+<p>Every time I have to deal with dates, I have a miniature panic attack. As a general rule, you have to have all the variables that you want to use as separate columns (i.e, year, month, day, week_day, time, …). The <code>lubridate</code> package helps a lot, but it’s still quite an effort.</p>
+<p>Working only with times of the day, regardless of date itself is problematic. Working with periods is difficult, so <code>as.numeric(x, &quot;hour&quot;)</code> is a friend.</p>
+<p>Here’s a hint of how the <code>date</code> column in the original data actually looks like. This may or might not look the same way for you, it depends on your date settings.</p>
+<pre class="r"><code>emails %&gt;% select(date) %&gt;% slice(1:5)</code></pre>
+<pre><code>##                              date
+## 1 Sat, 23 Mar 2019 08:57:48 -0700
+## 2 Sat, 23 Mar 2019 08:57:32 -0700
+## 3 Sat, 23 Mar 2019 20:25:31 -0400
+## 4 Sat, 23 Mar 2019 08:57:46 -0700
+## 5 Sat, 23 Mar 2019 08:57:35 -0700</code></pre>
+<p>Let’s create all the variables we need. It seems like a lot because it <em>should</em> work out of the box and it doesn’t, but it’s actually somewhat straight-forward to get most of what we want.</p>
+<pre class="r"><code>emails &lt;- emails %&gt;%
+  separate(date, into=c(&quot;wday&quot;, &quot;date&quot;), sep = &quot;, &quot;) %&gt;%
+  # Fixing the fact that some dates do not have weekday
+  mutate(to_fix = ifelse(wday %in% wday(1:7, label=TRUE , abbr = TRUE), &quot;OK&quot;, &quot;fix&quot;),
+         date = ifelse(to_fix == &quot;OK&quot;, date, wday),
+         wday=ifelse(to_fix==&quot;OK&quot;, wday, NA),
+         wday=fct_relevel(wday,
+                          levels=c(&quot;Mon&quot;, &quot;Tue&quot;, &quot;Wed&quot;, &quot;Thu&quot;, &quot;Fri&quot;, &quot;Sat&quot;, &quot;Sun&quot;))) %&gt;%
+  select(-to_fix)
+
+
+# remove emails with no date
+emails &lt;- emails %&gt;% janitor::convert_to_NA(strings =  &quot;&quot;) %&gt;%
+  filter(!is.na(date))
+
+
+# switch everything to my timezone
+# Sys.timezone() gives &quot;America/New_York&quot;
+# some parsing migth fail
+
+emails &lt;- emails %&gt;%
+  mutate(date = str_remove(date, &quot;\\(.+\\)&quot;),
+         my_date = dmy_hms(date, tz = &quot;America/New_York&quot;),
+         my_day = day(my_date),
+         my_month = month(my_date),
+         my_month_abb = month(my_date, label=TRUE, abbr = TRUE),
+         my_year = year(my_date),
+         my_time = data.table::as.ITime(my_date),
+         hour_num = my_time %&gt;% as.integer() %&gt;% `/` (60*60),
+         only_date = ymd(paste(my_year, my_month, my_day, sep=&quot;-&quot;)))</code></pre>
+</div>
+<div id="birdseye" class="section level2">
+<h2>Birdseye</h2>
+<p>Let’s look at how the whole email movement looks like. In the last couple of years, I clearly felt the load rising and rising. The lack of data in the early years is mostly due to me not downloading everything from the Hotmail account (it’s too late, too far in the past to fix :P). Besides, the trend likely holds quite well.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/tile-plot-1.png" width="672" /></p>
+<p>If we split by input and output, we can easily see that the input-output ratio went nuts when I moved to the US.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>This is not really surprising, given the amount of unsolicited advertising I started getting since the move. Yes, I’m talking to you again Quora/Amazon/people trying to sell me stuff<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. Of course, University related chains likely take a big chunk of the pie.</p>
+<p>I don’t feel like parsing out each sender out of the sheer amount. I have had the Gmail and Hotmail accounts for more than 10 years, but the University email is something relatively recent. All in all, considering the time I’ve had each account, the input rate coming from universities worries me.</p>
+<pre class="r"><code>table(emails$account)</code></pre>
+<pre><code>
+  Gmail hotmail     MIT   umass 
+   7481   10331    1297    7122 </code></pre>
+<div id="when" class="section level3">
+<h3>When</h3>
+<p>Let’s add the time of the day to the equation. This plot was made using <code>ggbeeswarm</code> package, I highly recommend checking it, it’s pure power. I got help to put the labels in the <code>y</code> axis from ‘00:00’ to ‘24:00’. You can find a toy example in <a href="https://stackoverflow.com/questions/55463735/how-to-force-scale-y-datetime-scale-to-show-2400-instead-of-0000-in-r/55464995#55464995">this StackOverflow question</a>.</p>
+<p><img src="img/email-analysis-beeswarm.png" width="677" /></p>
+<div id="daily-news" class="section level4">
+<h4>Daily news</h4>
+<p>What’s the average number of emails per day? I’m including all the emails in from 2015 to 2019, including those that go directly to trash.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>For those looking for some tabulated info, here it is:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">my_year</th>
+<th align="right">mean_n</th>
+<th align="right">min_n</th>
+<th align="right">max_n</th>
+<th align="right">mode_n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2015</td>
+<td align="right">6.775076</td>
+<td align="right">1</td>
+<td align="right">30</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">2016</td>
+<td align="right">10.198300</td>
+<td align="right">1</td>
+<td align="right">45</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">2017</td>
+<td align="right">14.533333</td>
+<td align="right">1</td>
+<td align="right">68</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">2018</td>
+<td align="right">13.030899</td>
+<td align="right">1</td>
+<td align="right">66</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="right">2019</td>
+<td align="right">18.906977</td>
+<td align="right">1</td>
+<td align="right">132</td>
+<td align="right">7</td>
+</tr>
+</tbody>
+</table>
+<p>I am more inclined to graphics, the following figure shows not only an increasing mean, but, surprisingly, a widening range.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+</div>
+</div>
+<div id="all-days-were-not-created-equal" class="section level3">
+<h3>All days were not created equal</h3>
+<p>Of course, the number of emails somewhat depends on the day of the week. We can easily see a decreasing trend.</p>
+<pre class="r"><code>table(emails$wday)</code></pre>
+<pre><code>
+ Mon  Tue  Wed  Thu  Fri  Sat  Sun 
+4720 4748 4469 4326 3928 1938 1970 </code></pre>
+<p>Although day of the week has influence on the amount of emails received, the time of the day seems to have a stronger, more permanent effect.</p>
+<pre class="r"><code>emails %&gt;%
+filter(!is.na(wday)) %&gt;%
+ggplot(aes(wday, hour_num)) +
+  ggbeeswarm::geom_quasirandom(alpha=0.1)+
+  theme_bw(base_size = 16)+
+  facet_wrap(~simple_label, nrow=2)+
+  xlab(&quot;&quot;) + ylab(&quot;Time of the day&quot;)+
+  theme(legend.position = &quot;none&quot;)+
+  scale_y_continuous(breaks = 2*0:12,
+                     labels = function(x) {paste0(floor(x),&quot;:00&quot;)})</code></pre>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+</div>
+<div id="everything-together" class="section level3">
+<h3>Everything together</h3>
+<p>If we pool all the data together, it seems that I receive/send emails at all times, although there is more movement in the accounts around 10:00 and 16:30. Overall, the distributions are quite similar<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<div id="just-for-fun" class="section level4">
+<h4>Just for fun</h4>
+<p>Just for the fun of data visualization. Here’s the same plot but adding <code>coord_polar</code> to it. I believe it creates a very weird but good looking thing. It’s not really a clock but there’s something about it I can’t stop looking at<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>.</p>
+<pre class="r"><code>theme_clock &lt;- theme(axis.ticks.y = element_blank(),
+          axis.ticks.x = element_line(color=&quot;black&quot;),
+          axis.text.x = element_text(size=12, face=&quot;bold&quot;),
+          axis.text.y = element_blank(),
+          panel.background = element_rect(fill=NA, color=&quot;black&quot;),
+          panel.grid.major.y = element_line(color=&quot;gray50&quot;),
+          panel.grid.major.x = element_line(color=&quot;gray10&quot;, linetype = 2),
+          legend.position = &quot;none&quot;)
+
+
+ggplot(emails,
+       aes(x=hour_num)) +
+    geom_density(aes(fill=simple_label), alpha=0.8) +
+    xlab(&quot;&quot;) + ylab(&quot;&quot;) +
+    theme_clock +
+    scale_x_continuous(breaks = 2*0:12,
+                     labels = function(x) {paste0(floor(x),&quot;:00&quot;)})+
+    scale_y_continuous(breaks = c(0, 50))+
+    facet_wrap(~simple_label) +
+    scale_fill_manual(values=c(&quot;orange&quot;, &quot;gray20&quot;))+
+    coord_polar() </code></pre>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/polar-plot-1.png" width="672" /></p>
+</div>
+</div>
+<div id="split-in-two" class="section level3">
+<h3>Split in two</h3>
+<p>As you can see from the figures above, the emails in the received bucket have two humps (wink, Bactrian camel, little prince), but I send emails at almost all times (except maybe between 2 AM and 5 AM). This is a <strong>bad habit</strong>, I should not be sending emails all the time, I should batch to diminish the costs associated with shifting tasks. I could just put a rule of thumb and check emails only once a day (e.g, 12:00:00). However, this might not be the best case, it chunks the response time in two very broad categories (either I get back to you somewhat quick, within 2 hours, or I take almost a full day to reply).</p>
+<pre class="r"><code>emails %&gt;% filter(simple_label == &quot;Received&quot;) %&gt;%
+  mutate(response_period = seconds_to_period(data.table::as.ITime(&quot;12:00:00&quot;) - my_time),
+         response_seconds = as.numeric(response_period),
+         # If the delay between response and received time is negative
+         # Means the email got in the day before
+         # Adjust for 24 hours delay (86400 seconds in 24 hs)
+         response_seconds = ifelse(response_seconds &lt; 0,
+                                   abs(response_seconds) + 86400,
+                                   response_seconds),
+         response_minutes = response_seconds/60) %&gt;%
+  ggplot(aes(response_minutes)) +
+  geom_histogram(bins=30)+
+  scale_x_continuous(breaks=seq(0, 2200, 200))+
+  xlab(&quot;Time to reply (min)&quot;) + theme_clock</code></pre>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>Additionally, checking emails only once might make me miss something somewhat fleeting. In general, I want to read things during the time they are relevant (did anybody say free pizza?). The primary goal, then, is to minimize the times I check/send emails without <strong>1)</strong> impacting my perceived response rate and <strong>2)</strong> missing out too much info during the day. Ideally, I would check emails <em>twice</em> a day and respond immediately, unless I need to harness some brain power to create an elaborate response<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>.</p>
+<p>Because I’m not smart enough to figure out the minimization problem (trust me, I tried), I just wrote a “cost function” and calculated the cost for several combinations of times.</p>
+<pre class="r"><code>values &lt;- emails %&gt;%
+  filter(simple_label==&quot;Received&quot;) %&gt;%
+  mutate(val = as.numeric(seconds_to_period(my_time))) %&gt;%
+  pull(val)
+
+# calculate linear distance to minimize 
+
+dist_to_min &lt;- function(values, possible_times){
+ 
+  min_time &lt;- min(possible_times)
+  max_time &lt;- max(possible_times)
+  
+  
+  # do nothing to first batch
+corrected_values &lt;- ifelse(values &lt; max_time,
+                           values,
+       # shift the ones answered on next day, this already gives positive distance
+                          86400 - values + min_time)
+
+  
+  to_second &lt;- between(corrected_values, min_time, max_time)
+  second_batch &lt;- corrected_values[to_second]
+  first_batch &lt;- corrected_values[!to_second]  
+  
+  # Calculate distance (should be all positive)
+  dist_second &lt;- max_time - second_batch 
+  
+  dist_first &lt;- ifelse(first_batch &lt; min_time,
+                       min_time - first_batch,
+                       corrected_values)
+
+  total_dist &lt;- sum(c(dist_first, dist_second))
+  
+  return(total_dist)
+}</code></pre>
+<p>Now we can use our <code>dist_to_min</code> function in a loop. We’ll calculate from the first second of the day, to the last (86400) every half hour (1800 sec).</p>
+<pre class="r"><code># Create the data to iterate over
+val &lt;- seq(1, 86400, 1800)
+val &lt;- data.frame(t(combn(val,2)))
+names(val) &lt;- c(&quot;Var1&quot;, &quot;Var2&quot;)
+distance &lt;- numeric(length=nrow(val))
+
+# For loop...
+for (i in 1:nrow(val)){
+  possible_times &lt;- val[i, ]
+  
+  distance[i] &lt;- dist_to_min(values, possible_times)
+  
+}</code></pre>
+<p>The function calculates the distance we want to minimize. The output looks like this.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>Sounds like the combinations we care about are those below 2.5e+8.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>This is to say that, from now on, I will be answering my emails in either one of these combinations.</p>
+<pre><code>  first_batch second_batch
+1   12H 0M 1S    18H 0M 1S
+2   11H 0M 1S   17H 30M 1S</code></pre>
+</div>
+<div id="a-finer-grain" class="section level3">
+<h3>A finer grain</h3>
+<p>Just for the fun of it, let’s take a closer look, a second by second analysis. It seems like machine programmed emails peak at 2 and 3 seconds past midnight.</p>
+<pre><code>       time simple_label Freq
+1  00:00:02     Received   77
+2  00:00:03     Received   43
+3  15:32:51     Received    6
+4  10:17:11     Received    5
+5  12:05:40     Received    5
+6  12:09:11     Received    5
+7  12:42:03     Received    5
+8  15:30:29     Received    5
+9  17:17:06     Received    5
+10 09:07:15     Received    4</code></pre>
+<p>Who are these emails coming from anyway?</p>
+<pre class="r"><code>emails %&gt;% filter(str_detect(as.character(my_time),  &quot;00:00:02|00:00:03&quot;)) %&gt;%
+  group_by(from) %&gt;%
+  count() %&gt;% ungroup() %&gt;% arrange(desc(n)) %&gt;%
+  mutate(from = str_extract(from, &quot;@.+&quot;)) %&gt;%
+  slice(1:10)</code></pre>
+<pre><code>## # A tibble: 10 x 2
+##    from          n
+##    &lt;chr&gt;     &lt;int&gt;
+##  1 @mit.edu&gt;    33
+##  2 @mit.edu&gt;    24
+##  3 @mit.edu&gt;    23
+##  4 @mit.edu&gt;    10
+##  5 @mit.edu&gt;     6
+##  6 @mit.edu&gt;     6
+##  7 @mit.edu&gt;     4
+##  8 @mit.edu&gt;     3
+##  9 @mit.edu&gt;     3
+## 10 @mit.edu&gt;     2</code></pre>
+<p>Looks like MIT people programmed news to be sent seconds after midnight.</p>
+</div>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>I have had <em>a lot</em> of fun doing this project. I also experienced an enormous amount of frustration with dates. Moreover, every time I thought this project was over, a new little idea for a <em>not so little</em> graph came into my mind. Of course, I went after it. I hope this info helps other people take a look at their own personal analytics and make some decisions. I am somewhat happy I have almost all notifications turned off (hence, no Facebook/Twitter/Slack/whatever appearing as top senders). In fact, turning email notifications off is the first thing I do when I sign up for a service/site, I encourage you to do the same.</p>
+<p>Batching is something I will start testing. I can’t control my input but, hopefully, the distributions of my sent email will start matching the times I designated. More importantly, people will not notice, even if the email input keeps increasing.</p>
+<hr />
+<p>Some people requested me to do the following scatter-plot. I went with the ggbeeswarm version on the text because I find it more appealing.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<hr />
+<p>I excluded parts of the code because it was too much. I am happy to share if requested!</p>
+<hr />
+<p><strong>Sources:</strong></p>
+<p><a href="https://jellis18.github.io/post/2018-01-17-mail-analysis/" class="uri">https://jellis18.github.io/post/2018-01-17-mail-analysis/</a><br />
+<a href="https://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/" class="uri">https://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/</a><br />
+<a href="https://uc-r.github.io/kmeans_clustering" class="uri">https://uc-r.github.io/kmeans_clustering</a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>You could actually stay in python (follow <a href="https://jellis18.github.io/post/2018-01-17-mail-analysis/" class="uri">https://jellis18.github.io/post/2018-01-17-mail-analysis/</a>). I’m way more comfortable with R for analysis and I only wanted python because I had the copy-paste version of getting my <code>.mbox</code> file to <code>.csv</code> fast.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>I had signed up for Mendeley <em>before</em> Elsevier bought it…I’m not quite happy about it now, but at least I still get paper recommendations.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>I know I could just <em>unsubscribe</em> to these kind of things, just the way I do with 99% of all other aggressive garbage. I just didn’t do it for these senders.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Do they look like an elephant inside a boa or a hat?<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>Please, if you know how to make the 0:00 or 24:00 appear on the center, reach out! I couldn’t figure it out.<a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p>If you have as much free time as me, you can run a <code>kmeans(...)</code>. My emails actually turned out to be around 2 clusters.<a href="#fnref6">↩</a></p></li>
+</ol>
+</div>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="/2019/01/r-pipeline-its-a-trap/" data-toggle="tooltip" data-placement="top" title="R pipeline -- It&#39;s a trap!">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:matiasandina@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/matiasandina" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/NeuroMLA" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/matias-andina-58a0a4b5" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="matiasandina.netlify.com">Matias Andina</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="/">Matias Andina</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.54.0</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

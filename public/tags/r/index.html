@@ -19,7 +19,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Matias Andina" />
 
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.54.0" />
   <link rel="canonical" href="/tags/r/" />
   <link rel="alternate" href="/tags/r/index.xml" type="application/rss+xml" title="Matias Andina">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -181,7 +181,37 @@
         <div class="posts-list">
           
             <article class="post-preview">
-              <a href="/2019/01/r-pipeline----its-a-trap/">
+              <a href="/2019/04/email-analysis/">
+                <h2 class="post-title">Email analysis</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on April 6, 2019
+              </p>
+              <div class="post-entry">
+                
+                  I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
+Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.
+                  <a href="/2019/04/email-analysis/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="//tags/r/">R</a>&nbsp;
+                  
+                    #<a href="//tags/learning/">learning</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="/2019/01/r-pipeline-its-a-trap/">
                 <h2 class="post-title">R pipeline -- It&#39;s a trap!</h2>
 
                 
@@ -192,9 +222,9 @@
               </p>
               <div class="post-entry">
                 
-                  Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!.This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
-Raw dataHaving data feels so good, that itching feeling in your fingers, the rush to know.
-                  <a href="/2019/01/r-pipeline----its-a-trap/" class="post-read-more">[Read More]</a>
+                  Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
+Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.
+                  <a href="/2019/01/r-pipeline-its-a-trap/" class="post-read-more">[Read More]</a>
                 
               </div>
 
@@ -224,7 +254,7 @@ Raw dataHaving data feels so good, that itching feeling in your fingers, the ru
                 
                   I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
-RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer MagnussonI went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.
+RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.
                   <a href="/2018/11/query-pubmed-in-r/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -253,7 +283,7 @@ RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer
               </p>
               <div class="post-entry">
                 
-                  I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments. I will explore different packages and doing comparisons of the results.
+                  I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments.
                   <a href="/2018/07/xy-density-maps/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -281,7 +311,7 @@ RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer
               <div class="post-entry">
                 
                   I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
-library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color palettelibrary(ggthemes) # theme tufteLet’s generate a data.
+library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.
                   <a href="/2018/05/github-style-calendar-heatmaps/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -313,8 +343,8 @@ library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color pale
               <div class="post-entry">
                 
                   For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
-Gimme all the files in…
-Will be easily accomplished in R
+ Gimme all the files in…
+ Will be easily accomplished in R
                   <a href="/2018/04/matlab-list_files/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -395,7 +425,7 @@ library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color pale
         <p class="credits copyright text-muted">
           
             
-              <a href="yourwebsite.com">Matias Andina</a>
+              <a href="matiasandina.netlify.com">Matias Andina</a>
             
           
 
@@ -409,7 +439,7 @@ library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color pale
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.54.0</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

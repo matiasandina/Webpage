@@ -19,7 +19,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Matias Andina" />
 
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.54.0" />
   <link rel="canonical" href="/post/" />
   <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Matias Andina">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -181,6 +181,38 @@
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="/2018/05/github-style-calendar-heatmaps/">
+                <h2 class="post-title">Github style calendar heatmaps</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on May 27, 2018
+              </p>
+              <div class="post-entry">
+                
+                  I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
+library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.
+                  <a href="/2018/05/github-style-calendar-heatmaps/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="//tags/research/">research</a>&nbsp;
+                  
+                    #<a href="//tags/design/">design</a>&nbsp;
+                  
+                    #<a href="//tags/r/">R</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="/2018/05/making-atlas-images/">
                 <h2 class="post-title">Making atlas images</h2>
 
@@ -223,8 +255,8 @@ Step 1 - The atlas itself Starting material should be as good quality as possibl
               <div class="post-entry">
                 
                   For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
-Gimme all the files in…
-Will be easily accomplished in R
+ Gimme all the files in…
+ Will be easily accomplished in R
                   <a href="/2018/04/matlab-list_files/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -258,9 +290,9 @@ Step 1 - The atlas itself Starting material should be as good quality as possibl
               <div class="post-entry">
                 
                   I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
-We used an independent sample t-test and found a significant correlations (t(df)=…).
-It also comes in the shape of non-significant data, maybe even more haunting than the first version.
-We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.
+ We used an independent sample t-test and found a significant correlations (t(df)=…).
+ It also comes in the shape of non-significant data, maybe even more haunting than the first version.
+ We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.
                   <a href="/2018/04/t-tests-for-correlation/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -317,7 +349,7 @@ Step 1 - The atlas itself Starting material should be as good quality as possibl
               </p>
               <div class="post-entry">
                 
-                  Grading on ProgressGrading on progress makes sense, equal effort equal remuneration. But the question we are trying to quantify with a grade is another one. We are trying to get a quantity in any scale that represents achievement. Particularly, we are interested in degree of achievement of the goals set at the beginning of the course by the professor.
+                  Grading on Progress Grading on progress makes sense, equal effort equal remuneration. But the question we are trying to quantify with a grade is another one. We are trying to get a quantity in any scale that represents achievement. Particularly, we are interested in degree of achievement of the goals set at the beginning of the course by the professor.
 Great, so…How much do students learn? That is a difficult question, let’s simplify by assuming some conditions:
                   <a href="/2018/01/teaching-for-mastery/" class="post-read-more">[Read More]</a>
                 
@@ -417,9 +449,9 @@ Choice Humans are into the free will thing. Access to choosing their own topic, 
               <div class="post-entry">
                 
                   I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-Calibrated instrumentsMcKeachie’s chapter 10 starts with a set of questions that attack the problem of grading from a philosophical angle.
-what are grades?
-First define the problem (What is the system? What are the governing rules?). Do we agree that grades are communication tools? That is an extremely challenging and insightful question.
+Calibrated instruments McKeachie’s chapter 10 starts with a set of questions that attack the problem of grading from a philosophical angle.
+ what are grades?
+ First define the problem (What is the system? What are the governing rules?). Do we agree that grades are communication tools? That is an extremely challenging and insightful question.
                   <a href="/2017/12/about-grades/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -453,38 +485,6 @@ Calibrated instrumentsMcKeachie’s chapter 10 starts with a set of questions t
                   I&rsquo;m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
 Assignments and Feedback Chapters 7 and 8 on McKeachie&rsquo;s Teaching tips are quite interesting and develop different lines of thought about assignments. One thing I can relate to is the idea of providing general examples of errors students normally do. This procedure comes handy when dealing with essay questions (the ones I like far more than any other).
                   <a href="/2017/12/list-of-common-errors/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="//tags/teaching/">teaching</a>&nbsp;
-                  
-                    #<a href="//tags/learning/">learning</a>&nbsp;
-                  
-                    #<a href="//tags/documentinglearning/">DocumentingLearning</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="/2017/12/any-questions/">
-                <h2 class="post-title">Any Questions?</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on December 17, 2017
-              </p>
-              <div class="post-entry">
-                
-                  I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best. This particular post has to do with engaging students to contribute with questions to class.
-Checking student understandingDuring class, there is a moment in which you feel that you’ve covered a couple of ideas in the way you wanted to and you decide to check if everything is alright. Other times, you feel as if you weren’t able to convey the points in the way you wanted to.
-                  <a href="/2017/12/any-questions/" class="post-read-more">[Read More]</a>
                 
               </div>
 
@@ -575,7 +575,7 @@ Checking student understandingDuring class, there is a moment in which you feel
         <p class="credits copyright text-muted">
           
             
-              <a href="yourwebsite.com">Matias Andina</a>
+              <a href="matiasandina.netlify.com">Matias Andina</a>
             
           
 
@@ -589,7 +589,7 @@ Checking student understandingDuring class, there is a moment in which you feel
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.30.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.54.0</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

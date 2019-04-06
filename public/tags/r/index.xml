@@ -7,19 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
     <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
-    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Email analysis</title>
+      <link>/2019/04/email-analysis/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2019/04/email-analysis/</guid>
+      <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
+Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.</description>
+    </item>
+    
+    <item>
       <title>R pipeline -- It&#39;s a trap!</title>
-      <link>/2019/01/r-pipeline----its-a-trap/</link>
+      <link>/2019/01/r-pipeline-its-a-trap/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/01/r-pipeline----its-a-trap/</guid>
-      <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!.This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
-Raw dataHaving data feels so good, that itching feeling in your fingers, the rush to know.</description>
+      <guid>/2019/01/r-pipeline-its-a-trap/</guid>
+      <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
+Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.</description>
     </item>
     
     <item>
@@ -30,7 +40,7 @@ Raw dataHaving data feels so good, that itching feeling in your fingers, the ru
       <guid>/2018/11/query-pubmed-in-r/</guid>
       <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
-RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer MagnussonI went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
+RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
     </item>
     
     <item>
@@ -39,7 +49,7 @@ RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/07/xy-density-maps/</guid>
-      <description>I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments. I will explore different packages and doing comparisons of the results.</description>
+      <description>I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments.</description>
     </item>
     
     <item>
@@ -49,7 +59,7 @@ RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/05/github-style-calendar-heatmaps/</guid>
       <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
-library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color palettelibrary(ggthemes) # theme tufteLet’s generate a data.</description>
+library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.</description>
     </item>
     
     <item>
@@ -59,8 +69,8 @@ library(ggplot2)library(dplyr)library(lubridate)library(viridis) # Color pale
       <author>matiasandina@gmail.com (Matias Andina)</author>
       <guid>/2018/04/matlab-list_files/</guid>
       <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
-Gimme all the files in…
-Will be easily accomplished in R</description>
+ Gimme all the files in…
+ Will be easily accomplished in R</description>
     </item>
     
   </channel>

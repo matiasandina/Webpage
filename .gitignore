@@ -2,5 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
-.mbox
-.zip
+
+# Ignoring emails
+*.mbox
+*_Sent.csv
+*_inbox.csv
+*gmail_mbox.csv

@@ -20,7 +20,7 @@
       <guid>/2018/11/query-pubmed-in-r/</guid>
       <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
-RISmed package, see CRAN or Dave Tang’s BlogA custom approach from Kristoffer MagnussonI went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
+RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
     </item>
     
     <item>

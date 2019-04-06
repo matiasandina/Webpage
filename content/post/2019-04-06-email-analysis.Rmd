@@ -146,9 +146,7 @@ emails <- df %>%
 
 To save you from reading a considerable amount of code, I will load the other accounts and modify them accordingly in the background. I will finally merge everything together. Just enjoy the kitten while the code is running on the background.
 
-```{r, echo=FALSE, fig.height=4, fig.align='center'}
-knitr::include_graphics('./img/001-kitty.jpg')
-```
+![](/img/001-kitty.jpg)
 
 
 ```{r, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
@@ -409,11 +407,7 @@ histogram <- emails %>% group_by(account, my_year) %>%
 
 ```
 
-```{r, echo=FALSE}
-knitr::include_graphics("./img/email-analysis-beeswarm.png")
-```
-
-
+![](/img/email-analysis-beeswarm.png)
 
 #### Daily news
 

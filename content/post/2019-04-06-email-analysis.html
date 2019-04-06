@@ -107,7 +107,10 @@ qp_decode</code></pre>
 <pre class="r"><code>emails &lt;- df %&gt;%
   filter(str_detect(label, &quot;Recibidos|Enviado&quot;))</code></pre>
 <p>To save you from reading a considerable amount of code, I will load the other accounts and modify them accordingly in the background. I will finally merge everything together. Just enjoy the kitten while the code is running on the background.</p>
-<p><img src="img/001-kitty.jpg" style="display: block; margin: auto;" /></p>
+<div class="figure">
+<img src="/img/001-kitty.jpg" />
+
+</div>
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
@@ -201,7 +204,7 @@ emails &lt;- emails %&gt;%
 <p>Let’s look at how the whole email movement looks like. In the last couple of years, I clearly felt the load rising and rising. The lack of data in the early years is mostly due to me not downloading everything from the Hotmail account (it’s too late, too far in the past to fix :P). Besides, the trend likely holds quite well.</p>
 <p><img src="/post/2019-04-06-email-analysis_files/figure-html/tile-plot-1.png" width="672" /></p>
 <p>If we split by input and output, we can easily see that the input-output ratio went nuts when I moved to the US.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>This is not really surprising, given the amount of unsolicited advertising I started getting since the move. Yes, I’m talking to you again Quora/Amazon/people trying to sell me stuff<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. Of course, University related chains likely take a big chunk of the pie.</p>
 <p>I don’t feel like parsing out each sender out of the sheer amount. I have had the Gmail and Hotmail accounts for more than 10 years, but the University email is something relatively recent. All in all, considering the time I’ve had each account, the input rate coming from universities worries me.</p>
 <pre class="r"><code>table(emails$account)</code></pre>
@@ -211,11 +214,14 @@ emails &lt;- emails %&gt;%
 <div id="when" class="section level3">
 <h3>When</h3>
 <p>Let’s add the time of the day to the equation. This plot was made using <code>ggbeeswarm</code> package, I highly recommend checking it, it’s pure power. I got help to put the labels in the <code>y</code> axis from ‘00:00’ to ‘24:00’. You can find a toy example in <a href="https://stackoverflow.com/questions/55463735/how-to-force-scale-y-datetime-scale-to-show-2400-instead-of-0000-in-r/55464995#55464995">this StackOverflow question</a>.</p>
-<p><img src="img/email-analysis-beeswarm.png" width="677" /></p>
+<div class="figure">
+<img src="/img/email-analysis-beeswarm.png" />
+
+</div>
 <div id="daily-news" class="section level4">
 <h4>Daily news</h4>
 <p>What’s the average number of emails per day? I’m including all the emails in from 2015 to 2019, including those that go directly to trash.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>For those looking for some tabulated info, here it is:</p>
 <table>
 <thead>
@@ -266,7 +272,7 @@ emails &lt;- emails %&gt;%
 </tbody>
 </table>
 <p>I am more inclined to graphics, the following figure shows not only an increasing mean, but, surprisingly, a widening range.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 </div>
 </div>
 <div id="all-days-were-not-created-equal" class="section level3">
@@ -287,12 +293,12 @@ ggplot(aes(wday, hour_num)) +
   theme(legend.position = &quot;none&quot;)+
   scale_y_continuous(breaks = 2*0:12,
                      labels = function(x) {paste0(floor(x),&quot;:00&quot;)})</code></pre>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 </div>
 <div id="everything-together" class="section level3">
 <h3>Everything together</h3>
 <p>If we pool all the data together, it seems that I receive/send emails at all times, although there is more movement in the accounts around 10:00 and 16:30. Overall, the distributions are quite similar<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <div id="just-for-fun" class="section level4">
 <h4>Just for fun</h4>
 <p>Just for the fun of data visualization. Here’s the same plot but adding <code>coord_polar</code> to it. I believe it creates a very weird but good looking thing. It’s not really a clock but there’s something about it I can’t stop looking at<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>.</p>
@@ -337,7 +343,7 @@ ggplot(emails,
   geom_histogram(bins=30)+
   scale_x_continuous(breaks=seq(0, 2200, 200))+
   xlab(&quot;Time to reply (min)&quot;) + theme_clock</code></pre>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <p>Additionally, checking emails only once might make me miss something somewhat fleeting. In general, I want to read things during the time they are relevant (did anybody say free pizza?). The primary goal, then, is to minimize the times I check/send emails without <strong>1)</strong> impacting my perceived response rate and <strong>2)</strong> missing out too much info during the day. Ideally, I would check emails <em>twice</em> a day and respond immediately, unless I need to harness some brain power to create an elaborate response<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>.</p>
 <p>Because I’m not smart enough to figure out the minimization problem (trust me, I tried), I just wrote a “cost function” and calculated the cost for several combinations of times.</p>
 <pre class="r"><code>values &lt;- emails %&gt;%
@@ -390,9 +396,9 @@ for (i in 1:nrow(val)){
   
 }</code></pre>
 <p>The function calculates the distance we want to minimize. The output looks like this.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 <p>Sounds like the combinations we care about are those below 2.5e+8.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 <p>This is to say that, from now on, I will be answering my emails in either one of these combinations.</p>
 <pre><code>  first_batch second_batch
 1   12H 0M 1S    18H 0M 1S
@@ -440,7 +446,7 @@ for (i in 1:nrow(val)){
 <p>Batching is something I will start testing. I can’t control my input but, hopefully, the distributions of my sent email will start matching the times I designated. More importantly, people will not notice, even if the email input keeps increasing.</p>
 <hr />
 <p>Some people requested me to do the following scatter-plot. I went with the ggbeeswarm version on the text because I find it more appealing.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <hr />
 <p>I excluded parts of the code because it was too much. I am happy to share if requested!</p>
 <hr />

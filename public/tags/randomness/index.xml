@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Randomness on Matias Andina</title>
+    <link>/tags/randomness/</link>
+    <description>Recent content in Randomness on Matias Andina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
+    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/randomness/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Birthday Meritocracy</title>
+      <link>/2019/05/birthday-meritocracy/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      <author>matiasandina@gmail.com (Matias Andina)</author>
+      <guid>/2019/05/birthday-meritocracy/</guid>
+      <description>We believe in meritocracy as one of the cornerstones of Western civilization. This idea is so embedded in our culture that we seldom question it. We praise those driven individuals who combine effort and talent to make it to the top. They smile in the cover of the magazines, the dreams of children and the nightmares of adults. Sports might be the activity where the blood, sweat and tears feel most real (maybe I should say relatable) and therefore are most notoriously broadcasted to the world.</description>
+    </item>
+    
+  </channel>
+</rss>

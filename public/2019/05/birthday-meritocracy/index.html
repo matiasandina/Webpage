@@ -290,15 +290,23 @@
 <h2>Logic behind</h2>
 <p>It turns out to be that scouts and coaches <em>think</em> they are selecting the best, but they are selecting the <em>oldest</em>. The January 1st cutoff is arbitrary and favors those born close to the date, who will be slightly stronger/faster/better only because they have had more time to play around in the world and, basically, <em>grow</em>. If you look closely, the only country that does not follow the pattern is the UK. But, yes, you guessed it, the cutoff date for the UK is <a href="https://www.bbc.com/news/business-32064842">August 31st</a>.</p>
 <p>Players that are selected as the best normally start and play more minutes each game [Experience based, Citation needed]. They get better training and more opportunities to play, either because they play more or because coaches pay more attention to them. Each extra minute reinforces the small initial difference, creating a real one. Of course, talent and effort play a role. But it consistently turns out to be that players born earlier on the calendar year end up being better than the other players. This phenomenon is known as relative age effect <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
+<p>Whenever we see skewed age distributions we should suspect it is likely due to arbitrary cuts. The magic ingredients go like this:</p>
+<ol style="list-style-type: decimal">
+<li>Make an arbitrary cut.</li>
+<li>Select those that are a tad ahead, those closest to the cut (older people relative to cut).</li>
+<li>Differentiate training experience by giving more opportunities to those already ahead.</li>
+<li>Harvest the best players (older people relative to cut).</li>
+</ol>
+<p>This is difficult to detect because it’s a self-fulfilled profecy for scouts (after all, they want their picks to end up being good). Basketball doesn’t have this kind of problems, mostly because its availability and the absence of cutoff dates. But in other sports, this is even more marked. In ice hockey, you are mostly constrained to the winter season and you need a rink to play<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
 </div>
 <div id="market-value" class="section level2">
 <h2>Market Value</h2>
-<p>I couldn’t scrape enough to make a case about market value. But a quick Google search lead me to a paper suggesting that, although month of birth has a big effect in the frequency of players, once the pros made it, their salaries are not related to such factor <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
+<p>I couldn’t scrape enough to make a case about market value. But a quick Google search lead me to a paper suggesting that, although month of birth has a big effect in the frequency of players, once the pros made it, their salaries are not related to such factor <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>.</p>
 </div>
 <div id="the-bad-news" class="section level2">
 <h2>The bad news</h2>
 <p>This effect transcends beyond sports. Turns out that arbitrary cutoffs during development affect academic performance. Kids born near the cutoff perform better at school and go to better universities. I cannot stop thinking that I was somewhat fortunate in this account. Overall, school never felt like too difficult. But maybe it’s because I had had enough days on earth and was mature enough to grasp concepts. Maybe it’s not only that “Math and Science came easy to me and I liked them”. Maybe I was born at the correct moment and I wouldn’t be pursuing academic endeavors if I hadn’t been born around the cutoff date in my country (July 1st).</p>
-<p>Dividing school kids by age is retrograde. I would like to see a continuous progress with no boundaries on dates. I would like to see no kid be made to wait because he isn’t old enough yet and, more importantly, I would like to see no hurrying kids through content because their age says so. I would like to see people moving through school at their own pace<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>. Maybe we should start looking at performance adjusted by age, it might be the antidote we are looking for.</p>
+<p>Dividing school kids by age is retrograde. I would like to see a continuous progress with no boundaries on dates. I would like to see no kid be made to wait because he isn’t old enough yet and, more importantly, I would like to see no hurrying kids through content because their age says so. I would like to see people moving through school at their own pace<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>. Maybe we should start looking at performance adjusted by age, it might be the antidote we are looking for.</p>
 </div>
 <div id="the-silverlining" class="section level2">
 <h2>The silverlining</h2>
@@ -505,8 +513,9 @@ ggplot(filter(df, !(year==2017 &amp; month == 12)),
 <ol>
 <li id="fn1"><p>It’s actually 1.32 % of life.<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>Great general info here <a href="https://en.wikipedia.org/wiki/Relative_age_effect" class="uri">https://en.wikipedia.org/wiki/Relative_age_effect</a><a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>You can find the paper <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805271/">here</a><a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>Salman Kahn expresses it way better than I could ever do in his <a href="https://www.ted.com/talks/sal_khan_let_s_teach_for_mastery_not_test_scores">TED talk</a>.<a href="#fnref4">↩</a></p></li>
+<li id="fn3"><p>I cannot help but relate this with Science. Limited resources, too many hands trying to pull a piece to themselves… add on some age effect, differential training/opportunities (quite often bought with money and good connections). We are probably loosing so many great minds.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>You can find the paper <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805271/">here</a><a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>Salman Kahn expresses it way better than I could ever do in his <a href="https://www.ted.com/talks/sal_khan_let_s_teach_for_mastery_not_test_scores">TED talk</a>.<a href="#fnref5">↩</a></p></li>
 </ol>
 </div>
 

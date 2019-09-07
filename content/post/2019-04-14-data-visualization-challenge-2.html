@@ -7,7 +7,7 @@ tags: ["R","learning"]
 
 
 
-<p>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge <a href="https://www.datavisualizationsociety.com/challenge">here</a>.</p>
+<p>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge <a href="https://www.datavisualizationsociety.com/challenge2">here</a>.</p>
 <p>I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called <code>ggdark</code>.</p>
 <pre class="r"><code>library(tidyverse)
 library(ggdark)
@@ -70,10 +70,7 @@ ggplot(aes(channel, log10(characters)))+
 # Save the plot
 #ggsave(&quot;box_wave.svg&quot;, width = 8, height = 4, units = &quot;in&quot;, dpi=&quot;retina&quot;)</code></pre>
 <p>I later modified this output a bit using Inkscape.</p>
-<div class="figure">
-<img src="/img/data-viz-challenge-2/box_wave.svg" />
-
-</div>
+<p><img src="/img/data-viz-challenge-2/box_wave.svg" /></p>
 </div>
 <div id="lengthy-channels" class="section level2">
 <h2>Lengthy channels</h2>
@@ -105,10 +102,7 @@ lengthy &lt;- ggplot(df, aes(log10(total_channel),
 
 # Save
 # ggsave(&quot;lengthy.svg&quot;, width = 8, height = 4, units = &quot;in&quot;,dpi=&quot;retina&quot;)</code></pre>
-<div class="figure">
-<img src="/img/data-viz-challenge-2/lengthy.svg" />
-
-</div>
+<p><img src="/img/data-viz-challenge-2/lengthy.svg" /></p>
 </div>
 <div id="share-of-flow" class="section level2">
 <h2>Share of flow</h2>
@@ -158,10 +152,7 @@ cowplot::plot_grid(share,intro_decay,
 <p><img src="/post/2019-04-14-data-visualization-challenge-2_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <pre class="r"><code># ggsave(filename = &quot;share_plot.svg&quot;, width = 12, height = 6, dpi=&quot;retina&quot;)</code></pre>
 <p>I later modified this plot using Inkscape. The final version is this one.</p>
-<div class="figure">
-<img src="/img/data-viz-challenge-2/share_plot.svg" />
-
-</div>
+<p><img src="/img/data-viz-challenge-2/share_plot.svg" /></p>
 </div>
 <div id="weekday-news" class="section level2">
 <h2>Weekday news</h2>
@@ -178,8 +169,5 @@ cowplot::plot_grid(share,intro_decay,
           given weekday.\nLines show full range.&quot;)
 
 # ggsave(filename= &quot;weekly_vars.svg&quot;, width = 8, height = 6 , dpi=&quot;retina&quot;)</code></pre>
-<div class="figure">
-<img src="/img/data-viz-challenge-2/weekly_vars.svg" />
-
-</div>
+<p><img src="/img/data-viz-challenge-2/weekly_vars.svg" /></p>
 </div>

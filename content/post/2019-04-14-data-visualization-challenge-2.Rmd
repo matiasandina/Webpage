@@ -5,7 +5,7 @@ author: "Matias Andina"
 tags: ["R","learning"]
 ---
 
-This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody's submissions for the challenge [here](https://www.datavisualizationsociety.com/challenge).
+This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody's submissions for the challenge [here](https://www.datavisualizationsociety.com/challenge2).
 
 I am also very motivated to explore the dark versions of the ggplot themes. The package I'm going to be using is called `ggdark`.
 

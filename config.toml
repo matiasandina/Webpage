@@ -1,7 +1,7 @@
 baseurl = "https://matiasandina.netlify.com"
 DefaultContentLanguage = "en"
 title = "Matias Andina"
-theme = "beautifulhugo"
+theme = hello-friend-ng"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
@@ -30,15 +30,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #  src = "img/hexagon.jpg"
 #  desc = "Hexagon"
 
-
-[staticman]
-    api= "https://api.staticman.net/v2/entry/matiasandina/Webpage/master/comments"
-    pulls= "https://github.com/matiasandina/Webpage/pulls"
-
-
-
 [permalinks]
   post = "/:year/:month/:title/"
+
+# Directory name of your blog content (default is `content/posts`)
+contentTypeName = "posts"
+# Default theme "light" or "dark"
+defaultTheme = "dark"
 
 
 [Author]
@@ -86,8 +84,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 4
 
 
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 5
+#[[menu.main]]
+#    name = "Tags"
+#    url = "tags"
+#    weight = 5
 

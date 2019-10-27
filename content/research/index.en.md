@@ -7,3 +7,5 @@ I have been lucky to be involved in diffrent research projects. For a brief desc
 [Maternal Behavior](/maternal-behavior)
 
 [Social Deficits](/social-deficits) 
+
+You can also find my publications in [Google Scholar](https://scholar.google.com/citations?user=PnTVdPAAAAAJ&hl=en).

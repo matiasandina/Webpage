@@ -1,7 +1,5 @@
 ---
 title: "Teaching"
-author: "Matias Andina"
-output: html_document
 ---
 
 I will add here ideas and projects from my teaching experiences. 

@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Information on Matias Andina</title>
+    <title>information on Matias Andina</title>
     <link>/tags/information/</link>
-    <description>Recent content in Information on Matias Andina</description>
+    <description>Recent content in information on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
-    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/information/index.xml" rel="self" type="application/rss+xml" />
@@ -14,10 +13,10 @@
     
     <item>
       <title>Segregation of Beliefs</title>
-      <link>/2017/12/segregation-of-beliefs/</link>
+      <link>/post/2017-12-01-segregation-of-beliefs/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/segregation-of-beliefs/</guid>
+      
+      <guid>/post/2017-12-01-segregation-of-beliefs/</guid>
       <description>Start with Why I am writing because I believe there is a powerful message in the ideas of Simon Sinek. I am also writing because I realized that we have already experienced mild and terrible consequences when certain people get this wrong. Simon Sinek is the author of interesting material such as Start with why and Leaders eat Last. I have had a great time reading his books and watching him talk.</description>
     </item>
     

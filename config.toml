@@ -1,91 +1,134 @@
-baseurl = "https://matiasandina.netlify.com"
-DefaultContentLanguage = "en"
-title = "Matias Andina"
-theme = hello-friend-ng"
-metaDataFormat = "yaml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
-#useHLJS = true
-#disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+baseURL = "https://matiasandina.netlify.com"
+title   = "Matias Andina"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-[Params]
-  subtitle = " "
-  logo = "img/m-gray.jpg"
-  favicon = "img/webpage_logo.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+DefaultContentLanguage = "en"
+theme = "hello-friend-ng"
+
+pygmentsCodefences = false
+pygmentsUseClasses = false
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+buildDrafts  = false
+buildFuture  = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+disableReadOtherPosts = false
+
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  posts = "/:year/:month/:title/"
 
-# Directory name of your blog content (default is `content/posts`)
-contentTypeName = "posts"
-# Default theme "light" or "dark"
-defaultTheme = "dark"
-
-
-[Author]
+[author]
   name = "Matias Andina"
-  website = "matiasandina.netlify.com"
-  email = "matiasandina@gmail.com"
-  github = "matiasandina"
-  twitter = "NeuroMLA"
-  linkedin = "matias-andina-58a0a4b5"
-  
-[[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 1
+
+[blackfriday]
+  hrefTargetBlank = true
+
+#[taxonomies]
+#   tag      = "tags"
+#   category = ""
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Matias Andina"
+  keywords = "homepage, blog, neuroscience, science, programming, freelancer"
+  images = ["img/m-gray.jpg"]
+
+  homeSubtitle = "Neuroscientist, writer"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/rhazdon/homepage/commit/"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  [params.logo]
+    logoText     = "Matias Andina"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/NeuroMLA/"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:matiasandina@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/matiasandina/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/matias-andina-58a0a4b5/"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/users/3215940/matias-andina"
+
+[languages]
+  [languages.en]
+    subtitle  = "Home & Blog"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+
+  [languages.es]
+    subtitle  = "Home & Blog"
+    weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Leer más"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+    weight     = 1
+  [[menu.main]]
+    identifier = "research"
+    name       = "Research"
+    url        = "research/"
+    weight     = 2
+
+  [[menu.main]]
+    identifier = "post"
+    name       = "Posts"
+    url        = "post/"
+    weight     = 3
+
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "contact/"
+    weight     = 4
 
 
-[[menu.main]]
-    identifier = "Research"
-    name = "Research"
-    weight = 2
-
-# We put the items below the parent "Research"
-
-[[menu.main]]
-    parent = "Research"
-    name = "Learning and Memory"
-    url = "page/Learning-and-Memory"
-    weight = 1
-
-[[menu.main]]
-    parent = "Research"
-    name = "Maternal Behavior"
-    url = "page/Maternal-Behavior"
-    weight = 2
-    
-
-[[menu.main]]
-    name = "Teaching"
-    url = "page/teaching/"
-    weight = 3
-
-[[menu.main]]
-    name = "Blog"
-    url = "post/"
-    weight = 4
 
 
-#[[menu.main]]
-#    name = "Tags"
-#    url = "tags"
-#    weight = 5
 

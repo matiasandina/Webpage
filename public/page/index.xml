@@ -1,61 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Matias Andina</title>
+    <title>Page on Matias Andina</title>
     <link>/page/</link>
-    <description>Recent content in Pages on Matias Andina</description>
+    <description>Recent content in Page on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
-    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
 	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About me</title>
-      <link>/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/page/about/</guid>
-      <description>I continuously find myself mesmerized by the complexity of life. I finished my Biology Degree at University of Buenos Aires in 2015 and moved to the United States in order to continue my studies at University of Massachusetts Amherst. You can find my CV here.
-My Questions I believe that multicellular systems, and especially the nervous system, are best understood as a combination of heterogeneous single-cell behaviors. We animals face a permanent stream of information, must process it and behave accordingly to survive and thrive.</description>
-    </item>
-    
-    <item>
-      <title>Learning and Memory</title>
-      <link>/page/learning-and-memory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/page/learning-and-memory/</guid>
-      <description>In Argentina, my research was focused in Contextual Pavlovian Conditioning of the crab Neohelice granulata. The original paradigm was thoroughly described by Fustiñana et al., 2013. We were able to expand this paradigm and unveil new unexpected long-term memories. Working in the Neurobiology of the Memory Lab has been a fulfilling experience. My research was materialized in my graduation thesis:
-“Study of different long-term memories and participation of synaptic ERK/MAPK in memory consolidation”</description>
-    </item>
-    
-    <item>
-      <title>Maternal Behavior</title>
-      <link>/page/maternal-behavior/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/page/maternal-behavior/</guid>
-      <description>During my time in the University of Massachusetts Amherst I studied maternal behavior in rats. I learned several new techniques and had my first experience working with rodents (actually switched from invertebrates to vertebrates!).
-  Rat pup of around 12 days old.
-    Here&amp;rsquo;s a nice picture of mPOA neurons with triple labelling: VTA-projecting (Fluorogold, yellow), Esr1 (red), c-Fos (white).
-  Immunohistochemistry in mPOA
-    This work materialized in my MSc.</description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>/page/teaching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/page/teaching/</guid>
-      <description>I will add here ideas and projects from my teaching experiences.
-Projects NATSCI191 - Final Project.
-I designed different experiments (using Google Forms and Matlab Psychtoolbox). Students participated as subjects, later analyzed the data, and presented their findings in class. Information about this project is available on GitHub.
-The learning objectives were:
- Familiarize students with graphical analysis of real data. Create a presentation-like experience for students going into Life Sciences.</description>
-    </item>
     
   </channel>
 </rss>

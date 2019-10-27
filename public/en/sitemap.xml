@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/outreach/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/research/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-09-13-skype-a-scientist-2/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/learning/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-09-10-los-mismos-de-siempre/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-05-09-birthday-meritocracy/</loc>
+    <lastmod>2019-04-28T20:27:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ideas/</loc>
+    <lastmod>2019-04-28T20:27:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/randomness/</loc>
+    <lastmod>2019-04-28T20:27:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-04-14-data-visualization-challenge-2/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-04-06-email-analysis/</loc>
+    <lastmod>2019-04-06T11:36:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-02-01-r-pipeline-its-a-trap/</loc>
+    <lastmod>2019-01-02T15:17:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/phd/</loc>
+    <lastmod>2018-11-23T19:39:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-11-23-query-pubmed-in-r/</loc>
+    <lastmod>2018-11-23T19:39:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-10-02-skype-a-scientist-1/</loc>
+    <lastmod>2018-10-02T19:52:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/documentinglearning/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/writing/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-09-27-writing-challenge-day-28/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-09-20-writing-challenge-day-21/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-09-13-writing-challenge-day-14/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-09-05-writing-challenge-day-7/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-08-30-writing-challenge-day-1/</loc>
+    <lastmod>2018-09-29T13:12:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-07-13-xy-density-maps/</loc>
+    <lastmod>2018-07-13T14:35:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/design/</loc>
+    <lastmod>2018-08-15T16:50:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-05-27-github-style-calendar-heatmap/</loc>
+    <lastmod>2018-08-15T16:50:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-05-18-making-atlas-images/</loc>
+    <lastmod>2018-07-13T14:20:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/matlab/</loc>
+    <lastmod>2018-04-24T20:23:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-04-24-matlab-list-files/</loc>
+    <lastmod>2018-04-24T20:23:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-04-20-t-test-correlation/</loc>
+    <lastmod>2018-04-16T20:08:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2018-08-15T17:59:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-01-07-instead-of-research/</loc>
+    <lastmod>2018-01-14T12:16:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2018-01-05-teaching-for-mastery/</loc>
+    <lastmod>2018-01-01T18:10:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-12-28-rules-composition/</loc>
+    <lastmod>2018-01-01T18:10:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-12-16-about-student-motivation/</loc>
+    <lastmod>2017-12-24T11:16:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-12-19-about-grades/</loc>
+    <lastmod>2017-12-25T00:00:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-12-17-list-common-errors/</loc>
+    <lastmod>2017-12-24T11:16:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-12-17-any-questions/</loc>
+    <lastmod>2017-12-17T15:54:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/beliefs/</loc>
+    <lastmod>2018-08-23T19:34:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/information/</loc>
+    <lastmod>2018-08-23T19:34:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/leadership/</loc>
+    <lastmod>2018-08-23T19:34:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-12-01-segregation-of-beliefs/</loc>
+    <lastmod>2018-08-23T19:34:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-11-30-about-good-discussions/</loc>
+    <lastmod>2018-08-15T17:59:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-11-16-about-teaching-nonsense/</loc>
+    <lastmod>2017-11-24T21:57:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-11-14-how-to-make-a-cake/</loc>
+    <lastmod>2017-11-28T11:40:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
+  </url>
+  
+</urlset>

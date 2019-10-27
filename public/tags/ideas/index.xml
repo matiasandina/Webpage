@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ideas on Matias Andina</title>
+    <title>ideas on Matias Andina</title>
     <link>/tags/ideas/</link>
-    <description>Recent content in Ideas on Matias Andina</description>
+    <description>Recent content in ideas on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
-    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ideas/index.xml" rel="self" type="application/rss+xml" />
@@ -14,19 +13,19 @@
     
     <item>
       <title>Birthday Meritocracy</title>
-      <link>/2019/05/birthday-meritocracy/</link>
+      <link>/post/2019-05-09-birthday-meritocracy/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/05/birthday-meritocracy/</guid>
+      
+      <guid>/post/2019-05-09-birthday-meritocracy/</guid>
       <description>We believe in meritocracy as one of the cornerstones of Western civilization. This idea is so embedded in our culture that we seldom question it. We praise those driven individuals who combine effort and talent to make it to the top. They smile in the cover of the magazines, the dreams of children and the nightmares of adults. Sports might be the activity where the blood, sweat and tears feel most real (maybe I should say relatable) and therefore are most notoriously broadcasted to the world.</description>
     </item>
     
     <item>
       <title>Matlab list_files</title>
-      <link>/2018/04/matlab-list_files/</link>
+      <link>/post/2018-04-24-matlab-list-files/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/04/matlab-list_files/</guid>
+      
+      <guid>/post/2018-04-24-matlab-list-files/</guid>
       <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
  Gimme all the files in…
  Will be easily accomplished in R</description>
@@ -34,30 +33,30 @@
     
     <item>
       <title>Instead of Research</title>
-      <link>/2018/01/instead-of-research/</link>
+      <link>/post/2018-01-07-instead-of-research/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/01/instead-of-research/</guid>
+      
+      <guid>/post/2018-01-07-instead-of-research/</guid>
       <description>Here&amp;rsquo;s to the list things you are doing instead of research. I wasted some time by organizing the categories into logical clusters of endless misery. I wasted some more time finding people who agree with my complains.
  Back up. Hard drive space is not enough. Free space in local or personal network is not enough. University sponsored sync program does not sync. New computer, sync between your own files. Re-install life, yes you are going to use custom preferences.</description>
     </item>
     
     <item>
       <title>Teaching for Mastery</title>
-      <link>/2018/01/teaching-for-mastery/</link>
+      <link>/post/2018-01-05-teaching-for-mastery/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/01/teaching-for-mastery/</guid>
+      
+      <guid>/post/2018-01-05-teaching-for-mastery/</guid>
       <description>Grading on Progress Grading on progress makes sense, equal effort equal remuneration. But the question we are trying to quantify with a grade is another one. We are trying to get a quantity in any scale that represents achievement. Particularly, we are interested in degree of achievement of the goals set at the beginning of the course by the professor.
 Great, so…How much do students learn? That is a difficult question, let’s simplify by assuming some conditions:</description>
     </item>
     
     <item>
       <title>About Good Discussions</title>
-      <link>/2017/11/about-good-discussions/</link>
+      <link>/post/2017-11-30-about-good-discussions/</link>
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/about-good-discussions/</guid>
+      
+      <guid>/post/2017-11-30-about-good-discussions/</guid>
       <description>Arguing may likely be an intrinsic feature of our species, maybe our competitive edge, or even a paramount example of our Human Nature1. Part of my decision to work in Science is because of the continuous exchange of ideas generated through formal argumentation. By formal argumentation I mean the translation of the basic principles that govern how the Universe functions into a language we can understand and share (hopefully agree upon?</description>
     </item>
     

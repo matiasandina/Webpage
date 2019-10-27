@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Matias Andina</title>
     <link>/tags/r/</link>
     <description>Recent content in R on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
-    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
@@ -14,20 +13,20 @@
     
     <item>
       <title>Los mismos de siempre</title>
-      <link>/2019/09/los-mismos-de-siempre/</link>
+      <link>/post/2019-09-10-los-mismos-de-siempre/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/09/los-mismos-de-siempre/</guid>
+      
+      <guid>/post/2019-09-10-los-mismos-de-siempre/</guid>
       <description>Hace rato que vengo viendo ciertas tendencias de gente que hace algo de análisis de datos con la actualidad Argentina. Por ejemplo, Daniel Schteingart comúnmente publica este tipo de análisis en diversos medios. Esto me llevó a buscar datos abiertos disponibles para jugar un rato.
 En general, a mí me interesa más debatir sobre la implementación de políticas y pienso que el Poder Legislativo merece mayor atención. Siento que sobrestimamos (para bien y para mal) el poder de un Ejecutivo que es, al final del día, mucho menos determinante que aquellos que escriben las leyes según las cuales se rige el Estado.</description>
     </item>
     
     <item>
       <title>Data Visualization Challenge 2</title>
-      <link>/2019/04/data-visualization-challenge-2/</link>
+      <link>/post/2019-04-14-data-visualization-challenge-2/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/04/data-visualization-challenge-2/</guid>
+      
+      <guid>/post/2019-04-14-data-visualization-challenge-2/</guid>
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
 library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository.</description>
@@ -35,30 +34,30 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
     
     <item>
       <title>Email analysis</title>
-      <link>/2019/04/email-analysis/</link>
+      <link>/post/2019-04-06-email-analysis/</link>
       <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/04/email-analysis/</guid>
+      
+      <guid>/post/2019-04-06-email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
 Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.</description>
     </item>
     
     <item>
       <title>R pipeline -- It&#39;s a trap!</title>
-      <link>/2019/01/r-pipeline-its-a-trap/</link>
+      <link>/post/2019-02-01-r-pipeline-its-a-trap/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/01/r-pipeline-its-a-trap/</guid>
+      
+      <guid>/post/2019-02-01-r-pipeline-its-a-trap/</guid>
       <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
 Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.</description>
     </item>
     
     <item>
       <title>Query Pubmed in R</title>
-      <link>/2018/11/query-pubmed-in-r/</link>
+      <link>/post/2018-11-23-query-pubmed-in-r/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/11/query-pubmed-in-r/</guid>
+      
+      <guid>/post/2018-11-23-query-pubmed-in-r/</guid>
       <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
 RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
@@ -66,29 +65,29 @@ RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer
     
     <item>
       <title>XY-density-maps</title>
-      <link>/2018/07/xy-density-maps/</link>
+      <link>/post/2018-07-13-xy-density-maps/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/07/xy-density-maps/</guid>
+      
+      <guid>/post/2018-07-13-xy-density-maps/</guid>
       <description>I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments.</description>
     </item>
     
     <item>
       <title>Github style calendar heatmaps</title>
-      <link>/2018/05/github-style-calendar-heatmaps/</link>
+      <link>/post/2018-05-27-github-style-calendar-heatmap/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/05/github-style-calendar-heatmaps/</guid>
+      
+      <guid>/post/2018-05-27-github-style-calendar-heatmap/</guid>
       <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
 library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.</description>
     </item>
     
     <item>
       <title>Matlab list_files</title>
-      <link>/2018/04/matlab-list_files/</link>
+      <link>/post/2018-04-24-matlab-list-files/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/04/matlab-list_files/</guid>
+      
+      <guid>/post/2018-04-24-matlab-list-files/</guid>
       <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
  Gimme all the files in…
  Will be easily accomplished in R</description>

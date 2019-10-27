@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Matias Andina</title>
     <link>/post/</link>
     <description>Recent content in Posts on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
-    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
@@ -14,39 +13,39 @@
     
     <item>
       <title>Skype a Scientist part 2</title>
-      <link>/2019/09/skype-a-scientist-part-2/</link>
+      <link>/post/2019-09-13-skype-a-scientist-2/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/09/skype-a-scientist-part-2/</guid>
+      
+      <guid>/post/2019-09-13-skype-a-scientist-2/</guid>
       <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. I recently did two more calls with 11th grade students who attend Dowal school in Honduras. This was the first time I did Skype a Scientist in Spanish!
 As usual, I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
     </item>
     
     <item>
       <title>Los mismos de siempre</title>
-      <link>/2019/09/los-mismos-de-siempre/</link>
+      <link>/post/2019-09-10-los-mismos-de-siempre/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/09/los-mismos-de-siempre/</guid>
+      
+      <guid>/post/2019-09-10-los-mismos-de-siempre/</guid>
       <description>Hace rato que vengo viendo ciertas tendencias de gente que hace algo de análisis de datos con la actualidad Argentina. Por ejemplo, Daniel Schteingart comúnmente publica este tipo de análisis en diversos medios. Esto me llevó a buscar datos abiertos disponibles para jugar un rato.
 En general, a mí me interesa más debatir sobre la implementación de políticas y pienso que el Poder Legislativo merece mayor atención. Siento que sobrestimamos (para bien y para mal) el poder de un Ejecutivo que es, al final del día, mucho menos determinante que aquellos que escriben las leyes según las cuales se rige el Estado.</description>
     </item>
     
     <item>
       <title>Birthday Meritocracy</title>
-      <link>/2019/05/birthday-meritocracy/</link>
+      <link>/post/2019-05-09-birthday-meritocracy/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/05/birthday-meritocracy/</guid>
+      
+      <guid>/post/2019-05-09-birthday-meritocracy/</guid>
       <description>We believe in meritocracy as one of the cornerstones of Western civilization. This idea is so embedded in our culture that we seldom question it. We praise those driven individuals who combine effort and talent to make it to the top. They smile in the cover of the magazines, the dreams of children and the nightmares of adults. Sports might be the activity where the blood, sweat and tears feel most real (maybe I should say relatable) and therefore are most notoriously broadcasted to the world.</description>
     </item>
     
     <item>
       <title>Data Visualization Challenge 2</title>
-      <link>/2019/04/data-visualization-challenge-2/</link>
+      <link>/post/2019-04-14-data-visualization-challenge-2/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/04/data-visualization-challenge-2/</guid>
+      
+      <guid>/post/2019-04-14-data-visualization-challenge-2/</guid>
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
 library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository.</description>
@@ -54,30 +53,30 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
     
     <item>
       <title>Email analysis</title>
-      <link>/2019/04/email-analysis/</link>
+      <link>/post/2019-04-06-email-analysis/</link>
       <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/04/email-analysis/</guid>
+      
+      <guid>/post/2019-04-06-email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
 Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.</description>
     </item>
     
     <item>
       <title>R pipeline -- It&#39;s a trap!</title>
-      <link>/2019/01/r-pipeline-its-a-trap/</link>
+      <link>/post/2019-02-01-r-pipeline-its-a-trap/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/01/r-pipeline-its-a-trap/</guid>
+      
+      <guid>/post/2019-02-01-r-pipeline-its-a-trap/</guid>
       <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
 Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.</description>
     </item>
     
     <item>
       <title>Query Pubmed in R</title>
-      <link>/2018/11/query-pubmed-in-r/</link>
+      <link>/post/2018-11-23-query-pubmed-in-r/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/11/query-pubmed-in-r/</guid>
+      
+      <guid>/post/2018-11-23-query-pubmed-in-r/</guid>
       <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
 RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
@@ -85,226 +84,33 @@ RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer
     
     <item>
       <title>Skype a Scientist part 1</title>
-      <link>/2018/10/skype-a-scientist-part-1/</link>
+      <link>/post/2018-10-02-skype-a-scientist-1/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/10/skype-a-scientist-part-1/</guid>
+      
+      <guid>/post/2018-10-02-skype-a-scientist-1/</guid>
       <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. So far, I have done calls with two grades:
  3rd Grade Johnston Elementary School, Irving, TX. 7th Grade Isbell Middle School, Santa Paula, CA.  I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
     </item>
     
     <item>
       <title>Writing challenge day 28</title>
-      <link>/2018/09/writing-challenge-day-28/</link>
+      <link>/post/2018-09-27-writing-challenge-day-28/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-28/</guid>
+      
+      <guid>/post/2018-09-27-writing-challenge-day-28/</guid>
       <description>This month has been fast. The writing has been really interesting, I was able to get some old stories written and had a lot of fun doing it. I would like to continue with the habit, it is already making it easier for me to put words into text. I’m not sure about the quality, but I experience the writing ease for both Spanish and English.
 The data I had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
     </item>
     
     <item>
       <title>Writing challenge Day 21</title>
-      <link>/2018/09/writing-challenge-day-21/</link>
+      <link>/post/2018-09-20-writing-challenge-day-21/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-21/</guid>
+      
+      <guid>/post/2018-09-20-writing-challenge-day-21/</guid>
       <description>Third week has had ups and downs. I finished another short story. But I keep losing the word count battle. Yes, again, work.
 The data The word count data is somewhat similar to what I’ve seen for last week. Definitely writing bouts are going down, just being able to write a few words before bedtime knocks me over.
 Looking at the aggregate, the downward slope of the third week is a little bit disappointing.</description>
-    </item>
-    
-    <item>
-      <title>Writing challenge Day 14</title>
-      <link>/2018/09/writing-challenge-day-14/</link>
-      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-14/</guid>
-      <description>During the second week of the challenge I had a lot of late working days. It has been certainly tiresome. As a consequence, I was less able to write, got home really tired.
-I still have that voice powering my desire to write. Actually, over the weekend I finished a short story that I had in my list for at least a year. That achievement feels really good and pumps the desire to keep writing and, most importantly, finishing more projects than those I start.</description>
-    </item>
-    
-    <item>
-      <title>Writing challenge Day 7</title>
-      <link>/2018/09/writing-challenge-day-7/</link>
-      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-7/</guid>
-      <description>This week I did a couple of new things.
- I moved to Boston. I started a new job. I started writing almost everyday.  Out of these three things, writing has proven to be the most challenging.
-However, it’s increasingly building into a good habit. I can feel somewhere in my brain a voice that tells me “we have to write today”. Even though I was not planning to write the article today, I ended up going for it anyways.</description>
-    </item>
-    
-    <item>
-      <title>Writing challenge Day 1</title>
-      <link>/2018/08/writing-challenge-day-1/</link>
-      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/08/writing-challenge-day-1/</guid>
-      <description>It’s been a while since I have several things to write in the back of my mind. I finally got the will to commit myself to one of those goal oriented challenges: Writing 2000 words a day.
-It might sound like a bit much, now that I think about it, but today is Day 1 so I might as well get to do it. I have not limited the type of content I will write, my aim is to get as fluent as possible and to have writing become habitual.</description>
-    </item>
-    
-    <item>
-      <title>XY-density-maps</title>
-      <link>/2018/07/xy-density-maps/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/07/xy-density-maps/</guid>
-      <description>I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments.</description>
-    </item>
-    
-    <item>
-      <title>Github style calendar heatmaps</title>
-      <link>/2018/05/github-style-calendar-heatmaps/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/05/github-style-calendar-heatmaps/</guid>
-      <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
-library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.</description>
-    </item>
-    
-    <item>
-      <title>Making atlas images</title>
-      <link>/2018/05/making-atlas-images/</link>
-      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/05/making-atlas-images/</guid>
-      <description>This post contains a quick description/recipe for making vectorial brain atlas images suitable for publication and presentations. This post is as much for communication as for personal records.
-Step 1 - The atlas itself Starting material should be as good quality as possible. I used .eps files from Paxinos Rat Brain Atlas for doing this. On the cheap side of life, a very nice online resource can be found here.</description>
-    </item>
-    
-    <item>
-      <title>Matlab list_files</title>
-      <link>/2018/04/matlab-list_files/</link>
-      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/04/matlab-list_files/</guid>
-      <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
- Gimme all the files in…
- Will be easily accomplished in R</description>
-    </item>
-    
-    <item>
-      <title>t-tests for correlation</title>
-      <link>/2018/04/t-tests-for-correlation/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/04/t-tests-for-correlation/</guid>
-      <description>I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
- We used an independent sample t-test and found a significant correlations (t(df)=…).
- It also comes in the shape of non-significant data, maybe even more haunting than the first version.
- We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.</description>
-    </item>
-    
-    <item>
-      <title>Instead of Research</title>
-      <link>/2018/01/instead-of-research/</link>
-      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/01/instead-of-research/</guid>
-      <description>Here&amp;rsquo;s to the list things you are doing instead of research. I wasted some time by organizing the categories into logical clusters of endless misery. I wasted some more time finding people who agree with my complains.
- Back up. Hard drive space is not enough. Free space in local or personal network is not enough. University sponsored sync program does not sync. New computer, sync between your own files. Re-install life, yes you are going to use custom preferences.</description>
-    </item>
-    
-    <item>
-      <title>Teaching for Mastery</title>
-      <link>/2018/01/teaching-for-mastery/</link>
-      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/01/teaching-for-mastery/</guid>
-      <description>Grading on Progress Grading on progress makes sense, equal effort equal remuneration. But the question we are trying to quantify with a grade is another one. We are trying to get a quantity in any scale that represents achievement. Particularly, we are interested in degree of achievement of the goals set at the beginning of the course by the professor.
-Great, so…How much do students learn? That is a difficult question, let’s simplify by assuming some conditions:</description>
-    </item>
-    
-    <item>
-      <title>Rules of Composition</title>
-      <link>/2017/12/rules-of-composition/</link>
-      <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/rules-of-composition/</guid>
-      <description>I came accross a book on the &amp;ldquo;Free Books&amp;rdquo; table a while ago. I found The Writing Teacher&amp;rsquo;s Sourcebook edited by Gary Tate and Edward P.J. Corbett. I glanced over it today and found these fantastic rules. They are called rules of composition, but I believe they are vastly generalizable. Any composition would benefit. I thought I should share. List has no numeric order, author&amp;rsquo;s touch there1.
-Eleventh law of composition: Some things precede other things.</description>
-    </item>
-    
-    <item>
-      <title>About student motivation</title>
-      <link>/2017/12/about-student-motivation/</link>
-      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/about-student-motivation/</guid>
-      <description>I&amp;rsquo;m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-I have found chapter 11 of McKeachie&amp;rsquo;s to be of great value, it contains lots of starting points for discussion and further analysis.
-Choice Humans are into the free will thing. Access to choosing their own topic, exam questions and due dates might facilitate the learning experience and boost motivation through a feeling of agency.</description>
-    </item>
-    
-    <item>
-      <title>About grades</title>
-      <link>/2017/12/about-grades/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/about-grades/</guid>
-      <description>I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-Calibrated instruments McKeachie’s chapter 10 starts with a set of questions that attack the problem of grading from a philosophical angle.
- what are grades?
- First define the problem (What is the system? What are the governing rules?). Do we agree that grades are communication tools? That is an extremely challenging and insightful question.</description>
-    </item>
-    
-    <item>
-      <title>List of Common Errors</title>
-      <link>/2017/12/list-of-common-errors/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/list-of-common-errors/</guid>
-      <description>I&amp;rsquo;m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-Assignments and Feedback Chapters 7 and 8 on McKeachie&amp;rsquo;s Teaching tips are quite interesting and develop different lines of thought about assignments. One thing I can relate to is the idea of providing general examples of errors students normally do. This procedure comes handy when dealing with essay questions (the ones I like far more than any other).</description>
-    </item>
-    
-    <item>
-      <title>Any Questions?</title>
-      <link>/2017/12/any-questions/</link>
-      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/any-questions/</guid>
-      <description>I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best. This particular post has to do with engaging students to contribute with questions to class.
-Checking student understanding During class, there is a moment in which you feel that you’ve covered a couple of ideas in the way you wanted to and you decide to check if everything is alright. Other times, you feel as if you weren’t able to convey the points in the way you wanted to.</description>
-    </item>
-    
-    <item>
-      <title>Segregation of Beliefs</title>
-      <link>/2017/12/segregation-of-beliefs/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/segregation-of-beliefs/</guid>
-      <description>Start with Why I am writing because I believe there is a powerful message in the ideas of Simon Sinek. I am also writing because I realized that we have already experienced mild and terrible consequences when certain people get this wrong. Simon Sinek is the author of interesting material such as Start with why and Leaders eat Last. I have had a great time reading his books and watching him talk.</description>
-    </item>
-    
-    <item>
-      <title>About Good Discussions</title>
-      <link>/2017/11/about-good-discussions/</link>
-      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/about-good-discussions/</guid>
-      <description>Arguing may likely be an intrinsic feature of our species, maybe our competitive edge, or even a paramount example of our Human Nature1. Part of my decision to work in Science is because of the continuous exchange of ideas generated through formal argumentation. By formal argumentation I mean the translation of the basic principles that govern how the Universe functions into a language we can understand and share (hopefully agree upon?</description>
-    </item>
-    
-    <item>
-      <title>About Teaching Nonsense</title>
-      <link>/2017/11/about-teaching-nonsense/</link>
-      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/about-teaching-nonsense/</guid>
-      <description>Life without purpose Living without a purpose is something I am unable to do. I am into the rules of the game, the idea that there’s a goal, and we are trying to achieve something, do something, create an object or service that was not there before and now fulfills a function. There are few games that I play for the sake of keep playing like the learning game. But, more often than not, I stand on the side of finite games.</description>
-    </item>
-    
-    <item>
-      <title>How do you make a cake?</title>
-      <link>/2017/11/how-do-you-make-a-cake/</link>
-      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/how-do-you-make-a-cake/</guid>
-      <description>This post is inspired by my brief experience with the education system in the United States (US) and the way some students approach learning. I do not know what it is. Maybe it has to do with the tsunami of multiple-choice exams they have to go through, or the endless preparation for another standardized test on the horizon, or the glorification of the take-home message culture.
-I wrote a question for an assignment that was pointing towards mechanisms at the level of the synapse that could result in drug tolerance.</description>
     </item>
     
   </channel>

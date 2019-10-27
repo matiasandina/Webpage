@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Learning on Matias Andina</title>
+    <title>learning on Matias Andina</title>
     <link>/tags/learning/</link>
-    <description>Recent content in Learning on Matias Andina</description>
+    <description>Recent content in learning on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>matiasandina@gmail.com (Matias Andina)</managingEditor>
-    <webMaster>matiasandina@gmail.com (Matias Andina)</webMaster>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
@@ -14,20 +13,20 @@
     
     <item>
       <title>Los mismos de siempre</title>
-      <link>/2019/09/los-mismos-de-siempre/</link>
+      <link>/post/2019-09-10-los-mismos-de-siempre/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/09/los-mismos-de-siempre/</guid>
+      
+      <guid>/post/2019-09-10-los-mismos-de-siempre/</guid>
       <description>Hace rato que vengo viendo ciertas tendencias de gente que hace algo de análisis de datos con la actualidad Argentina. Por ejemplo, Daniel Schteingart comúnmente publica este tipo de análisis en diversos medios. Esto me llevó a buscar datos abiertos disponibles para jugar un rato.
 En general, a mí me interesa más debatir sobre la implementación de políticas y pienso que el Poder Legislativo merece mayor atención. Siento que sobrestimamos (para bien y para mal) el poder de un Ejecutivo que es, al final del día, mucho menos determinante que aquellos que escriben las leyes según las cuales se rige el Estado.</description>
     </item>
     
     <item>
       <title>Data Visualization Challenge 2</title>
-      <link>/2019/04/data-visualization-challenge-2/</link>
+      <link>/post/2019-04-14-data-visualization-challenge-2/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/04/data-visualization-challenge-2/</guid>
+      
+      <guid>/post/2019-04-14-data-visualization-challenge-2/</guid>
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
 library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository.</description>
@@ -35,40 +34,40 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
     
     <item>
       <title>Email analysis</title>
-      <link>/2019/04/email-analysis/</link>
+      <link>/post/2019-04-06-email-analysis/</link>
       <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/04/email-analysis/</guid>
+      
+      <guid>/post/2019-04-06-email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
 Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.</description>
     </item>
     
     <item>
       <title>R pipeline -- It&#39;s a trap!</title>
-      <link>/2019/01/r-pipeline-its-a-trap/</link>
+      <link>/post/2019-02-01-r-pipeline-its-a-trap/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2019/01/r-pipeline-its-a-trap/</guid>
+      
+      <guid>/post/2019-02-01-r-pipeline-its-a-trap/</guid>
       <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
 Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.</description>
     </item>
     
     <item>
       <title>Writing challenge day 28</title>
-      <link>/2018/09/writing-challenge-day-28/</link>
+      <link>/post/2018-09-27-writing-challenge-day-28/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-28/</guid>
+      
+      <guid>/post/2018-09-27-writing-challenge-day-28/</guid>
       <description>This month has been fast. The writing has been really interesting, I was able to get some old stories written and had a lot of fun doing it. I would like to continue with the habit, it is already making it easier for me to put words into text. I’m not sure about the quality, but I experience the writing ease for both Spanish and English.
 The data I had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
     </item>
     
     <item>
       <title>Writing challenge Day 21</title>
-      <link>/2018/09/writing-challenge-day-21/</link>
+      <link>/post/2018-09-20-writing-challenge-day-21/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-21/</guid>
+      
+      <guid>/post/2018-09-20-writing-challenge-day-21/</guid>
       <description>Third week has had ups and downs. I finished another short story. But I keep losing the word count battle. Yes, again, work.
 The data The word count data is somewhat similar to what I’ve seen for last week. Definitely writing bouts are going down, just being able to write a few words before bedtime knocks me over.
 Looking at the aggregate, the downward slope of the third week is a little bit disappointing.</description>
@@ -76,30 +75,30 @@ Looking at the aggregate, the downward slope of the third week is a little bit d
     
     <item>
       <title>Writing challenge Day 14</title>
-      <link>/2018/09/writing-challenge-day-14/</link>
+      <link>/post/2018-09-13-writing-challenge-day-14/</link>
       <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/09/writing-challenge-day-14/</guid>
+      
+      <guid>/post/2018-09-13-writing-challenge-day-14/</guid>
       <description>During the second week of the challenge I had a lot of late working days. It has been certainly tiresome. As a consequence, I was less able to write, got home really tired.
 I still have that voice powering my desire to write. Actually, over the weekend I finished a short story that I had in my list for at least a year. That achievement feels really good and pumps the desire to keep writing and, most importantly, finishing more projects than those I start.</description>
     </item>
     
     <item>
       <title>Writing challenge Day 1</title>
-      <link>/2018/08/writing-challenge-day-1/</link>
+      <link>/post/2018-08-30-writing-challenge-day-1/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/08/writing-challenge-day-1/</guid>
+      
+      <guid>/post/2018-08-30-writing-challenge-day-1/</guid>
       <description>It’s been a while since I have several things to write in the back of my mind. I finally got the will to commit myself to one of those goal oriented challenges: Writing 2000 words a day.
 It might sound like a bit much, now that I think about it, but today is Day 1 so I might as well get to do it. I have not limited the type of content I will write, my aim is to get as fluent as possible and to have writing become habitual.</description>
     </item>
     
     <item>
       <title>Matlab list_files</title>
-      <link>/2018/04/matlab-list_files/</link>
+      <link>/post/2018-04-24-matlab-list-files/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/04/matlab-list_files/</guid>
+      
+      <guid>/post/2018-04-24-matlab-list-files/</guid>
       <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
  Gimme all the files in…
  Will be easily accomplished in R</description>
@@ -107,103 +106,12 @@ It might sound like a bit much, now that I think about it, but today is Day 1 so
     
     <item>
       <title>Teaching for Mastery</title>
-      <link>/2018/01/teaching-for-mastery/</link>
+      <link>/post/2018-01-05-teaching-for-mastery/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2018/01/teaching-for-mastery/</guid>
+      
+      <guid>/post/2018-01-05-teaching-for-mastery/</guid>
       <description>Grading on Progress Grading on progress makes sense, equal effort equal remuneration. But the question we are trying to quantify with a grade is another one. We are trying to get a quantity in any scale that represents achievement. Particularly, we are interested in degree of achievement of the goals set at the beginning of the course by the professor.
 Great, so…How much do students learn? That is a difficult question, let’s simplify by assuming some conditions:</description>
-    </item>
-    
-    <item>
-      <title>Rules of Composition</title>
-      <link>/2017/12/rules-of-composition/</link>
-      <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/rules-of-composition/</guid>
-      <description>I came accross a book on the &amp;ldquo;Free Books&amp;rdquo; table a while ago. I found The Writing Teacher&amp;rsquo;s Sourcebook edited by Gary Tate and Edward P.J. Corbett. I glanced over it today and found these fantastic rules. They are called rules of composition, but I believe they are vastly generalizable. Any composition would benefit. I thought I should share. List has no numeric order, author&amp;rsquo;s touch there1.
-Eleventh law of composition: Some things precede other things.</description>
-    </item>
-    
-    <item>
-      <title>About student motivation</title>
-      <link>/2017/12/about-student-motivation/</link>
-      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/about-student-motivation/</guid>
-      <description>I&amp;rsquo;m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-I have found chapter 11 of McKeachie&amp;rsquo;s to be of great value, it contains lots of starting points for discussion and further analysis.
-Choice Humans are into the free will thing. Access to choosing their own topic, exam questions and due dates might facilitate the learning experience and boost motivation through a feeling of agency.</description>
-    </item>
-    
-    <item>
-      <title>About grades</title>
-      <link>/2017/12/about-grades/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/about-grades/</guid>
-      <description>I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-Calibrated instruments McKeachie’s chapter 10 starts with a set of questions that attack the problem of grading from a philosophical angle.
- what are grades?
- First define the problem (What is the system? What are the governing rules?). Do we agree that grades are communication tools? That is an extremely challenging and insightful question.</description>
-    </item>
-    
-    <item>
-      <title>List of Common Errors</title>
-      <link>/2017/12/list-of-common-errors/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/list-of-common-errors/</guid>
-      <description>I&amp;rsquo;m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
-Assignments and Feedback Chapters 7 and 8 on McKeachie&amp;rsquo;s Teaching tips are quite interesting and develop different lines of thought about assignments. One thing I can relate to is the idea of providing general examples of errors students normally do. This procedure comes handy when dealing with essay questions (the ones I like far more than any other).</description>
-    </item>
-    
-    <item>
-      <title>Any Questions?</title>
-      <link>/2017/12/any-questions/</link>
-      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/12/any-questions/</guid>
-      <description>I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best. This particular post has to do with engaging students to contribute with questions to class.
-Checking student understanding During class, there is a moment in which you feel that you’ve covered a couple of ideas in the way you wanted to and you decide to check if everything is alright. Other times, you feel as if you weren’t able to convey the points in the way you wanted to.</description>
-    </item>
-    
-    <item>
-      <title>About Good Discussions</title>
-      <link>/2017/11/about-good-discussions/</link>
-      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/about-good-discussions/</guid>
-      <description>Arguing may likely be an intrinsic feature of our species, maybe our competitive edge, or even a paramount example of our Human Nature1. Part of my decision to work in Science is because of the continuous exchange of ideas generated through formal argumentation. By formal argumentation I mean the translation of the basic principles that govern how the Universe functions into a language we can understand and share (hopefully agree upon?</description>
-    </item>
-    
-    <item>
-      <title>About Teaching Nonsense</title>
-      <link>/2017/11/about-teaching-nonsense/</link>
-      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/about-teaching-nonsense/</guid>
-      <description>Life without purpose Living without a purpose is something I am unable to do. I am into the rules of the game, the idea that there’s a goal, and we are trying to achieve something, do something, create an object or service that was not there before and now fulfills a function. There are few games that I play for the sake of keep playing like the learning game. But, more often than not, I stand on the side of finite games.</description>
-    </item>
-    
-    <item>
-      <title>How do you make a cake?</title>
-      <link>/2017/11/how-do-you-make-a-cake/</link>
-      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/2017/11/how-do-you-make-a-cake/</guid>
-      <description>This post is inspired by my brief experience with the education system in the United States (US) and the way some students approach learning. I do not know what it is. Maybe it has to do with the tsunami of multiple-choice exams they have to go through, or the endless preparation for another standardized test on the horizon, or the glorification of the take-home message culture.
-I wrote a question for an assignment that was pointing towards mechanisms at the level of the synapse that could result in drug tolerance.</description>
-    </item>
-    
-    <item>
-      <title>Learning and Memory</title>
-      <link>/page/learning-and-memory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>matiasandina@gmail.com (Matias Andina)</author>
-      <guid>/page/learning-and-memory/</guid>
-      <description>In Argentina, my research was focused in Contextual Pavlovian Conditioning of the crab Neohelice granulata. The original paradigm was thoroughly described by Fustiñana et al., 2013. We were able to expand this paradigm and unveil new unexpected long-term memories. Working in the Neurobiology of the Memory Lab has been a fulfilling experience. My research was materialized in my graduation thesis:
-“Study of different long-term memories and participation of synaptic ERK/MAPK in memory consolidation”</description>
     </item>
     
   </channel>

@@ -1,0 +1,52 @@
+---
+title: On pipelines
+date: 2019-11-14
+author: "Matias Andina"
+tags: ["R"]
+---
+
+I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
+
+***
+
+```{r, results='asis', echo=FALSE}
+htmltools::includeMarkdown("data_for_posts/support_me.md")
+htmltools::includeHTML("data_for_posts/support_me.html")
+```
+
+***
+
+## Problems in mind
+
+### Where do you live?
+
+Code files usually live in one folder, which is also a GitHub folder that you and your team commit/push to. So far, so good. But what do you do with the data to feed that monter pipeline of yours?
+
+I will assume that your concerns with data privacy are minor or you handled them accordingly (only private parties have access to the data).   
+
+Now, you still have the problem of *where* to put this other folder, which is basically a size problem.
+
+> Small files can live with your data 
+
+This is the case for small and few text files of some thousand rows. Easy enough, you just go with your `/repo-name/data/` and live hapily ever after.
+
+> Medium size files
+
+These files are big enough to be a problem for hosting on GitHub. File formats start to be an issue here, images and video will not be easily accessible anywhere you take it. 
+
+**Options:**  
+
+* Good old-fashioned external hard drive. 
+
+**Pros:** This is a good one if your data is in the Gb and you don't really need. 
+
+**Cons:** Hard drives fail. Are you ready to lose your data? It starts to get really annoying when you have to do back-ups of your data and your data is big enough that you can't use your computer's hard drive (that's why you chose an external hard drive in the first place). Should you have an external hard drive for the external hard drive? 
+
+{{< image src="/img/spiderman_pointing_meme.jpg" alt="" position="center" style="border-radius: 8px;" >}}
+
+, and you don't have a  which could be a hard drive or a local server ? 
+2) Because of this, paths need to be absolute all the time
+3) Processes are identified by the files, you have to do many things to an experimental unit and you have many many experimental units composing one pipeline. But you would also like to have the possibility to run or re-run just one (or just a few).
+4) People do stuff like moving folders around...that's BAD REALLY BAD
+5) File renaming might be needed when file size prevents copying too much, that messes up the pipeline because you are relying on file names!
+6) FUCKING OPERATING SYSTEMS

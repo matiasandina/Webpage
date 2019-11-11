@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-10-27T14:10:05-04:00</lastmod>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -19,28 +19,23 @@
   </url>
   
   <url>
-    <loc>/tags/outreach/</loc>
-    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+    <loc>/post/2019-11-14-on-pipelines/</loc>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-10-27T14:10:05-04:00</lastmod>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/research/</loc>
-    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2019-09-13-skype-a-scientist-2/</loc>
-    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-10-27T14:10:05-04:00</lastmod>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -54,17 +49,27 @@
   </url>
   
   <url>
+    <loc>/tags/outreach/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/research/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-09-13-skype-a-scientist-2/</loc>
+    <lastmod>2019-09-07T11:01:31-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/learning/</loc>
     <lastmod>2019-10-27T14:10:05-04:00</lastmod>
   </url>
   
   <url>
     <loc>/post/2019-09-10-los-mismos-de-siempre/</loc>
-    <lastmod>2019-10-27T14:10:05-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
     <lastmod>2019-10-27T14:10:05-04:00</lastmod>
   </url>
   
@@ -276,6 +281,36 @@
   <url>
     <loc>/contact/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/data_for_posts/support_me/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/data_for_posts/support_me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/data_for_posts/support_me/"
+                />
+  </url>
+  
+  <url>
+    <loc>/post/data_for_posts/support_me/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/data_for_posts/support_me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/data_for_posts/support_me/"
+                />
   </url>
   
   <url>

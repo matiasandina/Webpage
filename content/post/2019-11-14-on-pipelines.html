@@ -1,0 +1,75 @@
+---
+title: On pipelines
+date: 2019-11-14
+author: "Matias Andina"
+tags: ["R"]
+---
+
+
+
+<p>I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.</p>
+<hr />
+<p><blockquote>
+<p>I write fiction and non-fiction.<br/>
+I write open-source software.<br/>
+I create generative art.  </p>
+
+<p>All of these are available for free in different media.
+If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
+</blockquote>
+<table style="width:100%">
+  <tr>
+  <th>Patreon</th>
+  <td>
+  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+  </td>
+  <tr>
+    <td>
+    </td>
+  </tr>
+  <tr>
+  <th>Paypal</th>
+  <td>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+  </td>
+  </tr>
+</table>
+</p>
+<hr />
+<div id="problems-in-mind" class="section level2">
+<h2>Problems in mind</h2>
+<div id="where-do-you-live" class="section level3">
+<h3>Where do you live?</h3>
+<p>Code files usually live in one folder, which is also a GitHub folder that you and your team commit/push to. So far, so good. But what do you do with the data to feed that monter pipeline of yours?</p>
+<p>I will assume that your concerns with data privacy are minor or you handled them accordingly (only private parties have access to the data).</p>
+<p>Now, you still have the problem of <em>where</em> to put this other folder, which is basically a size problem.</p>
+<blockquote>
+<p>Small files can live with your data</p>
+</blockquote>
+<p>This is the case for small and few text files of some thousand rows. Easy enough, you just go with your <code>/repo-name/data/</code> and live hapily ever after.</p>
+<blockquote>
+<p>Medium size files</p>
+</blockquote>
+<p>These files are big enough to be a problem for hosting on GitHub. File formats start to be an issue here, images and video will not be easily accessible anywhere you take it.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>Good old-fashioned external hard drive.</li>
+</ul>
+<p><strong>Pros:</strong> This is a good one if your data is in the Gb and you don’t really need.</p>
+<p><strong>Cons:</strong> Hard drives fail. Are you ready to lose your data? It starts to get really annoying when you have to do back-ups of your data and your data is big enough that you can’t use your computer’s hard drive (that’s why you chose an external hard drive in the first place). Should you have an external hard drive for the external hard drive?</p>
+<p>{{&lt; image src=“/img/spiderman_pointing_meme.jpg” alt=&quot;&quot; position=“center” style=“border-radius: 8px;” &gt;}}</p>
+<p>, and you don’t have a which could be a hard drive or a local server ?
+2) Because of this, paths need to be absolute all the time
+3) Processes are identified by the files, you have to do many things to an experimental unit and you have many many experimental units composing one pipeline. But you would also like to have the possibility to run or re-run just one (or just a few).
+4) People do stuff like moving folders around…that’s BAD REALLY BAD
+5) File renaming might be needed when file size prevents copying too much, that messes up the pipeline because you are relying on file names!
+6) FUCKING OPERATING SYSTEMS</p>
+</div>
+</div>

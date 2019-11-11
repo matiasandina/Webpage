@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On pipelines</title>
+      <link>/post/2019-11-14-on-pipelines/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-14-on-pipelines/</guid>
+      <description>I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
+ I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
+    </item>
     
     <item>
       <title>Skype a Scientist part 2</title>
@@ -100,17 +110,6 @@ RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer
       <guid>/post/2018-09-27-writing-challenge-day-28/</guid>
       <description>This month has been fast. The writing has been really interesting, I was able to get some old stories written and had a lot of fun doing it. I would like to continue with the habit, it is already making it easier for me to put words into text. I’m not sure about the quality, but I experience the writing ease for both Spanish and English.
 The data I had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
-    </item>
-    
-    <item>
-      <title>Writing challenge Day 21</title>
-      <link>/post/2018-09-20-writing-challenge-day-21/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-09-20-writing-challenge-day-21/</guid>
-      <description>Third week has had ups and downs. I finished another short story. But I keep losing the word count battle. Yes, again, work.
-The data The word count data is somewhat similar to what I’ve seen for last week. Definitely writing bouts are going down, just being able to write a few words before bedtime knocks me over.
-Looking at the aggregate, the downward slope of the third week is a little bit disappointing.</description>
     </item>
     
   </channel>

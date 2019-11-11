@@ -31,7 +31,7 @@ disableReadOtherPosts = false
 
 
 [permalinks]
-  posts = "/:year/:month/:title/"
+  posts = "post/:year/:month/:title/"
 
 [author]
   name = "Matias Andina"

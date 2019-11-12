@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>today</title>
+      <link>/post/2019-11-11-today/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-11-today/</guid>
+      <description>Today</description>
+    </item>
+    
+    <item>
       <title>Skype a Scientist part 2</title>
       <link>/post/2019-09-13-skype-a-scientist-2/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
@@ -100,16 +109,6 @@ RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer
       <guid>/post/2018-10-02-skype-a-scientist-1/</guid>
       <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. So far, I have done calls with two grades:
  3rd Grade Johnston Elementary School, Irving, TX. 7th Grade Isbell Middle School, Santa Paula, CA.  I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
-    </item>
-    
-    <item>
-      <title>Writing challenge day 28</title>
-      <link>/post/2018-09-27-writing-challenge-day-28/</link>
-      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-09-27-writing-challenge-day-28/</guid>
-      <description>This month has been fast. The writing has been really interesting, I was able to get some old stories written and had a lot of fun doing it. I would like to continue with the habit, it is already making it easier for me to put words into text. I’m not sure about the quality, but I experience the writing ease for both Spanish and English.
-The data I had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
     </item>
     
   </channel>

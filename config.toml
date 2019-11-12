@@ -43,6 +43,10 @@ disableReadOtherPosts = false
 #   tag      = "tags"
 #   category = ""
 
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"

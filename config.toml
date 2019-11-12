@@ -1,6 +1,7 @@
 baseURL = "https://matiasandina.netlify.com"
 title   = "Matias Andina"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", 
+"\\support_me.md$"]
 
 
 DefaultContentLanguage = "en"
@@ -28,7 +29,6 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 disableReadOtherPosts = false
-
 
 [permalinks]
   posts = "/post/:year/:month/:title/"

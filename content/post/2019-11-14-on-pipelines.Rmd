@@ -10,8 +10,8 @@ I have been thinking about different problems I have when writing code and the t
 ***
 
 ```{r, results='asis', echo=FALSE}
-htmltools::includeMarkdown("data_for_posts/support_me.md")
-htmltools::includeHTML("data_for_posts/support_me.html")
+htmltools::includeMarkdown("data_for_posts/UNPUBLISHED_support_me.md")
+htmltools::includeHTML("data_for_posts/UNPUBLISHED_support_me.html")
 ```
 
 ***

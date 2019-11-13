@@ -284,36 +284,6 @@
   </url>
   
   <url>
-    <loc>/post/data_for_posts/support_me/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/data_for_posts/support_me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/data_for_posts/support_me/"
-                />
-  </url>
-  
-  <url>
-    <loc>/post/data_for_posts/support_me/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/data_for_posts/support_me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/data_for_posts/support_me/"
-                />
-  </url>
-  
-  <url>
     <loc>/projects/</loc>
     <priority>0</priority>
   </url>

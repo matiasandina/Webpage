@@ -1,8 +1,6 @@
 baseURL = "https://matiasandina.netlify.com"
 title   = "Matias Andina"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", 
-"\\support_me.md$"]
-
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "UNPUBLISHED"]
 
 DefaultContentLanguage = "en"
 theme = "hello-friend-ng"

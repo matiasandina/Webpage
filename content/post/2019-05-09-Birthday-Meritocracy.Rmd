@@ -10,6 +10,16 @@ We believe in meritocracy as one of the cornerstones of Western civilization. Th
 
 The *beautiful game* is no exception. But what if we were wrong about the meritocracy assumption? What if there were random events that sneak in the player selection process? What if such events were not negligible, but heavily influenced what players that make it to the top?
 
+
+***
+
+```{r, results='asis', echo=FALSE}
+htmltools::includeMarkdown("data_for_posts/UNPUBLISHED_support_me.md")
+htmltools::includeHTML("data_for_posts/UNPUBLISHED_support_me.html")
+```
+
+***
+
 ## One trimester
 
 Three or four months of difference at 25 year old is nothing[^actually]. Moreover, for most purposes in adult life, such a small difference in age is considered zero. But elite athletes are not ordinary adults and we don't care about most of their purposes in life. We want them to do one thing extraordinarily well. 

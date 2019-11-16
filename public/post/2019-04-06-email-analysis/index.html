@@ -8,7 +8,7 @@
     content="Matias Andina">
 <meta name="description"
     content="I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
-Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout." />
+ I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media." />
 <meta name="keywords" content="homepage, blog, neuroscience, science, programming, freelancer" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/post/2019-04-06-email-analysis/" />
@@ -39,12 +39,12 @@ Emails from Gmail Reading emails in python is quite simple, we need to import th
 <link rel="shortcut icon" href="/favicon.ico">
 <meta name="theme-color" content="#252627"><meta itemprop="name" content="Email analysis">
 <meta itemprop="description" content="I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
-Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.">
+ I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.">
 
 
 <meta itemprop="datePublished" content="2019-04-06T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-04-06T11:36:14-04:00" />
-<meta itemprop="wordCount" content="2836">
+<meta itemprop="wordCount" content="2883">
 
 
 
@@ -54,7 +54,7 @@ Emails from Gmail Reading emails in python is quite simple, we need to import th
 
 <meta name="twitter:title" content="Email analysis"/>
 <meta name="twitter:description" content="I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
-Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout."/>
+ I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media."/>
 
 
 
@@ -129,12 +129,49 @@ Emails from Gmail Reading emails in python is quite simple, we need to import th
 
 
 <p>I am keen on tracking things. Some people call this <em>personal analytics</em>, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.</p>
+<hr />
+<p><blockquote>
+<p>I write fiction and non-fiction.<br/>
+I write open-source software.<br/>
+I create generative art.  </p>
+
+<p>All of these are available for free in different media.
+If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
+</blockquote>
+<table style="width:100%">
+  <tr>
+  <th>Patreon</th>
+  <td>
+  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+  </td>
+  <tr>
+    <td>
+    </td>
+  </tr>
+  <tr>
+  <th>Paypal</th>
+  <td>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+  </td>
+  </tr>
+</table>
+</p>
+<hr />
 <div id="emails-from-gmail" class="section level2">
 <h2>Emails from Gmail</h2>
 <p>Reading emails in python is quite simple, we need to import the mailbox library. My file is called <code>correo</code> and comes from downloading my Gmail stuff out of <a href="https://takeout.google.com/settings/takeout" class="uri">https://takeout.google.com/settings/takeout</a>. It can take a while so be patient.</p>
 <pre class="python"><code>import mailbox
+
 # read in mbox
 mbox = mailbox.mbox(&#39;correo&#39;)
+
 # Show what we have here
 for key in mbox[0].keys():
     print(key)</code></pre>
@@ -171,7 +208,7 @@ with open(&quot;gmail_mbox.csv&quot;, &quot;w&quot;) as outfile:
 </div>
 <div id="data-cleaning" class="section level2">
 <h2>Data cleaning</h2>
-<p>Let’s switch from python to R<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<p>Let’s switch from python to R<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <pre class="r"><code>df &lt;- read.csv(&quot;data_for_posts/gmail_mbox.csv&quot;,
                header=FALSE, encoding=&quot;UTF-8&quot;)
 
@@ -228,10 +265,7 @@ qp_decode</code></pre>
 <pre class="r"><code>emails &lt;- df %&gt;%
   filter(str_detect(label, &quot;Recibidos|Enviado&quot;))</code></pre>
 <p>To save you from reading a considerable amount of code, I will load the other accounts and modify them accordingly in the background. I will finally merge everything together. Just enjoy the kitten while the code is running on the background.</p>
-<div class="figure">
-<img src="/img/001-kitty.jpg" />
-
-</div>
+<p><img src="/img/001-kitty.jpg" /></p>
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
@@ -242,7 +276,8 @@ qp_decode</code></pre>
 <li>When should I do something about it (aka, reply)?</li>
 </ol>
 <blockquote>
-<p><strong>Warning:</strong> We have to dance with parsing dates and times. I highly recommend being familiar with <code>lubridate</code> (for example, see <a href="https://rdrr.io/cran/lubridate/man/parse_date_time.html" class="uri">https://rdrr.io/cran/lubridate/man/parse_date_time.html</a>).</p>
+<p><strong>Warning:</strong> We have to dance with parsing dates and times.
+I highly recommend being familiar with <code>lubridate</code> (for example, see <a href="https://rdrr.io/cran/lubridate/man/parse_date_time.html" class="uri">https://rdrr.io/cran/lubridate/man/parse_date_time.html</a>).</p>
 </blockquote>
 <div id="most-frequent-senders" class="section level3">
 <h3>Most frequent senders</h3>
@@ -260,7 +295,7 @@ qp_decode</code></pre>
 ##  8 Mariana                 138
 ##  9 pubchase@zappylab.com   131
 ## 10 &quot;\&quot;Mendeley\&quot;&quot;          126</code></pre>
-<p>It’s cool to know that my lingering feeling (“wow…<code>Quora</code> just spams the hell out of me”) is supported by data. Other big spammers are, of course, the Bank and Amazon. People I work with and friends come high up too. Funny to see Mendeley and Pubchase on the top ten, it’s been a long journey of them sending me papers, thank you for that<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
+<p>It’s cool to know that my lingering feeling (“wow…<code>Quora</code> just spams the hell out of me”) is supported by data. Other big spammers are, of course, the Bank and Amazon. People I work with and friends come high up too. Funny to see Mendeley and Pubchase on the top ten, it’s been a long journey of them sending me papers, thank you for that<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 </div>
 <div id="from-me-to-you" class="section level3">
 <h3>From me to you</h3>
@@ -325,8 +360,8 @@ emails &lt;- emails %&gt;%
 <p>Let’s look at how the whole email movement looks like. In the last couple of years, I clearly felt the load rising and rising. The lack of data in the early years is mostly due to me not downloading everything from the Hotmail account (it’s too late, too far in the past to fix :P). Besides, the trend likely holds quite well.</p>
 <p><img src="/post/2019-04-06-email-analysis_files/figure-html/tile-plot-1.png" width="672" /></p>
 <p>If we split by input and output, we can easily see that the input-output ratio went nuts when I moved to the US.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
-<p>This is not really surprising, given the amount of unsolicited advertising I started getting since the move. Yes, I’m talking to you again Quora/Amazon/people trying to sell me stuff<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. Of course, University related chains likely take a big chunk of the pie.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>This is not really surprising, given the amount of unsolicited advertising I started getting since the move. Yes, I’m talking to you again Quora/Amazon/people trying to sell me stuff<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Of course, University related chains likely take a big chunk of the pie.</p>
 <p>I don’t feel like parsing out each sender out of the sheer amount. I have had the Gmail and Hotmail accounts for more than 10 years, but the University email is something relatively recent. All in all, considering the time I’ve had each account, the input rate coming from universities worries me.</p>
 <pre class="r"><code>table(emails$account)</code></pre>
 <pre><code>
@@ -335,14 +370,11 @@ emails &lt;- emails %&gt;%
 <div id="when" class="section level3">
 <h3>When</h3>
 <p>Let’s add the time of the day to the equation. This plot was made using <code>ggbeeswarm</code> package, I highly recommend checking it, it’s pure power. I got help to put the labels in the <code>y</code> axis from ‘00:00’ to ‘24:00’. You can find a toy example in <a href="https://stackoverflow.com/questions/55463735/how-to-force-scale-y-datetime-scale-to-show-2400-instead-of-0000-in-r/55464995#55464995">this StackOverflow question</a>.</p>
-<div class="figure">
-<img src="/img/email-analysis-beeswarm.png" />
-
-</div>
+<p><img src="/img/email-analysis-beeswarm.png" /></p>
 <div id="daily-news" class="section level4">
 <h4>Daily news</h4>
 <p>What’s the average number of emails per day? I’m including all the emails in from 2015 to 2019, including those that go directly to trash.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>For those looking for some tabulated info, here it is:</p>
 <table>
 <thead>
@@ -393,7 +425,7 @@ emails &lt;- emails %&gt;%
 </tbody>
 </table>
 <p>I am more inclined to graphics, the following figure shows not only an increasing mean, but, surprisingly, a widening range.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 </div>
 </div>
 <div id="all-days-were-not-created-equal" class="section level3">
@@ -414,15 +446,15 @@ ggplot(aes(wday, hour_num)) +
   theme(legend.position = &quot;none&quot;)+
   scale_y_continuous(breaks = 2*0:12,
                      labels = function(x) {paste0(floor(x),&quot;:00&quot;)})</code></pre>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 </div>
 <div id="everything-together" class="section level3">
 <h3>Everything together</h3>
-<p>If we pool all the data together, it seems that I receive/send emails at all times, although there is more movement in the accounts around 10:00 and 16:30. Overall, the distributions are quite similar<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>If we pool all the data together, it seems that I receive/send emails at all times, although there is more movement in the accounts around 10:00 and 16:30. Overall, the distributions are quite similar<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <div id="just-for-fun" class="section level4">
 <h4>Just for fun</h4>
-<p>Just for the fun of data visualization. Here’s the same plot but adding <code>coord_polar</code> to it. I believe it creates a very weird but good looking thing. It’s not really a clock but there’s something about it I can’t stop looking at<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>.</p>
+<p>Just for the fun of data visualization. Here’s the same plot but adding <code>coord_polar</code> to it. I believe it creates a very weird but good looking thing. It’s not really a clock but there’s something about it I can’t stop looking at<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p>
 <pre class="r"><code>theme_clock &lt;- theme(axis.ticks.y = element_blank(),
           axis.ticks.x = element_line(color=&quot;black&quot;),
           axis.text.x = element_text(size=12, face=&quot;bold&quot;),
@@ -464,8 +496,8 @@ ggplot(emails,
   geom_histogram(bins=30)+
   scale_x_continuous(breaks=seq(0, 2200, 200))+
   xlab(&quot;Time to reply (min)&quot;) + theme_clock</code></pre>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
-<p>Additionally, checking emails only once might make me miss something somewhat fleeting. In general, I want to read things during the time they are relevant (did anybody say free pizza?). The primary goal, then, is to minimize the times I check/send emails without <strong>1)</strong> impacting my perceived response rate and <strong>2)</strong> missing out too much info during the day. Ideally, I would check emails <em>twice</em> a day and respond immediately, unless I need to harness some brain power to create an elaborate response<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p>Additionally, checking emails only once might make me miss something somewhat fleeting. In general, I want to read things during the time they are relevant (did anybody say free pizza?). The primary goal, then, is to minimize the times I check/send emails without <strong>1)</strong> impacting my perceived response rate and <strong>2)</strong> missing out too much info during the day. Ideally, I would check emails <em>twice</em> a day and respond immediately, unless I need to harness some brain power to create an elaborate response<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>.</p>
 <p>Because I’m not smart enough to figure out the minimization problem (trust me, I tried), I just wrote a “cost function” and calculated the cost for several combinations of times.</p>
 <pre class="r"><code>values &lt;- emails %&gt;%
   filter(simple_label==&quot;Received&quot;) %&gt;%
@@ -517,9 +549,9 @@ for (i in 1:nrow(val)){
   
 }</code></pre>
 <p>The function calculates the distance we want to minimize. The output looks like this.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
-<p>Sounds like the combinations we care about are those below 2.5e+8.</p>
 <p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p>Sounds like the combinations we care about are those below 2.5e+8.</p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 <p>This is to say that, from now on, I will be answering my emails in either one of these combinations.</p>
 <pre><code>  first_batch second_batch
 1   12H 0M 1S    18H 0M 1S
@@ -567,7 +599,7 @@ for (i in 1:nrow(val)){
 <p>Batching is something I will start testing. I can’t control my input but, hopefully, the distributions of my sent email will start matching the times I designated. More importantly, people will not notice, even if the email input keeps increasing.</p>
 <hr />
 <p>Some people requested me to do the following scatter-plot. I went with the ggbeeswarm version on the text because I find it more appealing.</p>
-<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="/post/2019-04-06-email-analysis_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 <hr />
 <p>I excluded parts of the code because it was too much. I am happy to share if requested!</p>
 <hr />
@@ -579,12 +611,12 @@ for (i in 1:nrow(val)){
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>You could actually stay in python (follow <a href="https://jellis18.github.io/post/2018-01-17-mail-analysis/" class="uri">https://jellis18.github.io/post/2018-01-17-mail-analysis/</a>). I’m way more comfortable with R for analysis and I only wanted python because I had the copy-paste version of getting my <code>.mbox</code> file to <code>.csv</code> fast.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>I had signed up for Mendeley <em>before</em> Elsevier bought it…I’m not quite happy about it now, but at least I still get paper recommendations.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>I know I could just <em>unsubscribe</em> to these kind of things, just the way I do with 99% of all other aggressive garbage. I just didn’t do it for these senders.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>Do they look like an elephant inside a boa or a hat?<a href="#fnref4">↩</a></p></li>
-<li id="fn5"><p>Please, if you know how to make the 0:00 or 24:00 appear on the center, reach out! I couldn’t figure it out.<a href="#fnref5">↩</a></p></li>
-<li id="fn6"><p>If you have as much free time as me, you can run a <code>kmeans(...)</code>. My emails actually turned out to be around 2 clusters.<a href="#fnref6">↩</a></p></li>
+<li id="fn1"><p>You could actually stay in python (follow <a href="https://jellis18.github.io/post/2018-01-17-mail-analysis/" class="uri">https://jellis18.github.io/post/2018-01-17-mail-analysis/</a>). I’m way more comfortable with R for analysis and I only wanted python because I had the copy-paste version of getting my <code>.mbox</code> file to <code>.csv</code> fast.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>I had signed up for Mendeley <em>before</em> Elsevier bought it…I’m not quite happy about it now, but at least I still get paper recommendations.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>I know I could just <em>unsubscribe</em> to these kind of things, just the way I do with 99% of all other aggressive garbage. I just didn’t do it for these senders.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Do they look like an elephant inside a boa or a hat?<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Please, if you know how to make the 0:00 or 24:00 appear on the center, reach out! I couldn’t figure it out.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>If you have as much free time as me, you can run a <code>kmeans(...)</code>. My emails actually turned out to be around 2 clusters.<a href="#fnref6" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

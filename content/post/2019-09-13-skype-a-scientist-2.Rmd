@@ -13,6 +13,17 @@ As usual, I should say it was great to be able to talk with students, tell them 
 
 I compiled the Q&A session below.
 
+***
+
+```{r, results='asis', echo=FALSE}
+htmltools::includeMarkdown("data_for_posts/UNPUBLISHED_support_me.md")
+htmltools::includeHTML("data_for_posts/UNPUBLISHED_support_me.html")
+```
+
+***
+
+
+
 ## Personal questions
 
 The "how did you choose to be a neuroscientist" question was quite popular. It came in all these forms:

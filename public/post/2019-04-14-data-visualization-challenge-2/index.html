@@ -9,7 +9,7 @@
 <meta name="description"
     content="This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
-library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository." />
+ I write fiction and non-fiction." />
 <meta name="keywords" content="homepage, blog, neuroscience, science, programming, freelancer" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/post/2019-04-14-data-visualization-challenge-2/" />
@@ -41,12 +41,12 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
 <meta name="theme-color" content="#252627"><meta itemprop="name" content="Data Visualization Challenge 2">
 <meta itemprop="description" content="This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
-library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository.">
+ I write fiction and non-fiction.">
 
 
 <meta itemprop="datePublished" content="2019-04-14T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-09-07T11:01:31-04:00" />
-<meta itemprop="wordCount" content="713">
+<meta itemprop="wordCount" content="768">
 
 
 
@@ -57,7 +57,7 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
 <meta name="twitter:title" content="Data Visualization Challenge 2"/>
 <meta name="twitter:description" content="This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
-library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository."/>
+ I write fiction and non-fiction."/>
 
 
 
@@ -133,6 +133,44 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
 
 <p>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge <a href="https://www.datavisualizationsociety.com/challenge2">here</a>.</p>
 <p>I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called <code>ggdark</code>.</p>
+<hr />
+<p><blockquote>
+<p>I write fiction and non-fiction.<br/>
+I write open-source software.<br/>
+I create generative art.  </p>
+
+<p>All of these are available for free in different media.
+If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
+</blockquote>
+<table style="width:100%">
+  <tr>
+  <th>Patreon</th>
+  <td>
+  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+  </td>
+  <tr>
+    <td>
+    </td>
+  </tr>
+  <tr>
+  <th>Paypal</th>
+  <td>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+  </td>
+  </tr>
+</table>
+</p>
+<hr />
+<div id="dive-in" class="section level2">
+<h2>Dive in</h2>
+<p>These are the libraries we’ll need:</p>
 <pre class="r"><code>library(tidyverse)
 library(ggdark)
 library(lubridate)</code></pre>
@@ -143,7 +181,7 @@ library(lubridate)</code></pre>
   geom_smooth(method = &quot;lm&quot;, se=FALSE, lty=2)+
   geom_point(alpha=0.4)+
   dark_theme_bw()</code></pre>
-<p><img src="/post/2019-04-14-data-visualization-challenge-2_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="/post/2019-04-14-data-visualization-challenge-2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>Summary.</p>
 <pre class="r"><code>sum_df &lt;- df %&gt;% group_by(channel) %&gt;%
   summarise(total_channel = sum(characters),
@@ -160,6 +198,7 @@ library(lubridate)</code></pre>
   mutate(daily_flow = sum(characters),
          daily_posts = sum(posts+responses))%&gt;%
   ungroup()</code></pre>
+</div>
 <div id="first-pair" class="section level2">
 <h2>First pair</h2>
 <p>The idea behind the first pair of plots is to see the sheer amount of volume on certain channels.</p>
@@ -273,7 +312,7 @@ share &lt;- df %&gt;% group_by(date) %&gt;%
 <pre class="r"><code># We put everything together with cowplot
 cowplot::plot_grid(share,intro_decay,
                    nrow = 2, rel_heights = c(2,1))</code></pre>
-<p><img src="/post/2019-04-14-data-visualization-challenge-2_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="/post/2019-04-14-data-visualization-challenge-2_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <pre class="r"><code># ggsave(filename = &quot;share_plot.svg&quot;, width = 12, height = 6, dpi=&quot;retina&quot;)</code></pre>
 <p>I later modified this plot using Inkscape. The final version is this one.</p>
 <p><img src="/img/data-viz-challenge-2/share_plot.svg" /></p>

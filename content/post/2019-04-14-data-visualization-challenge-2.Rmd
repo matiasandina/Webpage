@@ -9,6 +9,19 @@ This post is made as a backup for the data visualization challenge number 2. Dat
 
 I am also very motivated to explore the dark versions of the ggplot themes. The package I'm going to be using is called `ggdark`.
 
+***
+
+```{r, results='asis', echo=FALSE}
+htmltools::includeMarkdown("data_for_posts/UNPUBLISHED_support_me.md")
+htmltools::includeHTML("data_for_posts/UNPUBLISHED_support_me.html")
+```
+
+***
+
+## Dive in
+
+These are the libraries we'll need:
+
 ```{r, results='hide', message=FALSE, warning=FALSE}
 library(tidyverse)
 library(ggdark)

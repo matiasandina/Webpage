@@ -8,6 +8,16 @@ tags: ["R","learning"]
 Here's how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: *What a lovely day for some data analysis!*.
 This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.  
 
+***
+
+```{r, results='asis', echo=FALSE}
+htmltools::includeMarkdown("data_for_posts/UNPUBLISHED_support_me.md")
+htmltools::includeHTML("data_for_posts/UNPUBLISHED_support_me.html")
+```
+
+***
+
+
 ## Raw data
 
 Having data feels so good, that itching feeling in your fingers, the rush to know. How does it look like? You *need* to know. But let's be honest, data doesn't come clean. You have to fight your way to the squeaky clean machine readable `data.frame`.

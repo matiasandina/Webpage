@@ -39,7 +39,7 @@ En general, a mí me interesa más debatir sobre la implementación de política
       <guid>/post/2019-04-14-data-visualization-challenge-2/</guid>
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
-library(tidyverse) library(ggdark) library(lubridate) We read the data from the repository.</description>
+ I write fiction and non-fiction.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ library(tidyverse) library(ggdark) library(lubridate) We read the data from the 
       
       <guid>/post/2019-04-06-email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
-Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library. My file is called correo and comes from downloading my Gmail stuff out of https://takeout.</description>
+ I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ Emails from Gmail Reading emails in python is quite simple, we need to import th
       
       <guid>/post/2019-02-01-r-pipeline-its-a-trap/</guid>
       <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
-Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.</description>
+ I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
     </item>
     
     <item>

@@ -17,7 +17,10 @@ En general, a mí me interesa más debatir sobre la implementación de política
 
 [Wikipedia](https://es.wikipedia.org/wiki/Senado_de_la_Naci%C3%B3n_Argentina) dice: "El Senado es el órgano federal por excelencia del país, donde cada senador representa los intereses de su provincia.". Basta con leer la introducción del artículo para recordarse a uno mismo por qué es tan importante tener un Senado que funcione. Entre otras tareas sin mundanas, aparentemente el Senado tiene la potestad de "autorizar al presidente de la Nación para que declare el estado de sitio" y de asegurar una correcta distribución de los recursos federales. Quizás cuesta entender por qué los requisitos para ser Senador son tan bajos[^requisitos-senador].
 
+<center>
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Logo_del_Senado_de_Argentina.svg/368px-Logo_del_Senado_de_Argentina.svg.png)
+</center>
 
 
 Pues bien, entonces comencemos por el Senado, que tiene, además, la base de datos más completa. Pero, antes, un pequeño repaso sobre cómo se eligen los representantes y la duración de sus mandatos. 
@@ -125,9 +128,46 @@ senadores %>%
 ```
 
 
+## ¿Cuánto dura un período?
+ 
+La longitud de los mandatos ha cambiado a lo largo de la historia. Además, existieron períodos en los cuales intentar ser senador no parecía una carrera a largo término (cortesía de la inestabilidad de las instituciones argentinas durante gran parte del siglo XX). 
+
+Un gran número de senadores no cumplen su mandato completo, ya sea por muerte, renuncia (a veces para ocupar otro cargo) o por destitución. Afortunadamente, en las últimas décadas, la tendencia parece estabilizarse hacia la longitud de mandato designada en la ley. 
+
+
+
+
+```{r}
+
+senadores %>%
+  mutate(duracion = ymd(cese_periodo_real) - ymd(inicio_periodo_real),
+         year = year(inicio_periodo_real)) %>%
+   mutate(cese_periodo_real = ifelse(cese_periodo_real=="Sin Datos",
+                                    as.character(today()),
+                                    cese_periodo_real)) %>% 
+  group_by(year) %>%
+#  summarise(media = mean(duracion),
+#            minimo = min(duracion),
+#            maximo = max(duracion)) %>%
+  ggplot(aes(year, duracion))+
+  geom_hline(yintercept = c(6, 9) * 365, lty=2)+
+  geom_point(color="black", alpha=0.2)+
+  geom_smooth(color="darkorange")+
+  xlab("") + ylab("Duración (días)")+
+  labs(title="Duración del mandato",
+       subtitle = paste0("Cada punto es la duracion de un mandato.\nLa linea de tendencia muestra un ajuste no lineal. Las líneas punteadas muestran 6 y 9 años.\n",
+                         my_twitter),
+       caption = my_caption
+       )
+
+```
+
+  
+
+
 ## ¿Quién quiere repetir?
 
-La permanencia de un senador -- o cualquier otro político -- en el cargo es un tema de debate interesante. En primer lugar, uno esperaría que cualquier trabajador con experienca y conocimiento sobre su área sea más eficiente y productivo. En criollo, si me tengo que operar de apendicitis mañana, prefiero un médico que haya realizado 1350 cirugías de apéndice que uno que haya realizado 12[^nihablar]. Luego, si trasladamos este razonamiento a nuestras instituciones deberíamos querer que el Senado esté compuesto de políticos con muchos años de experiencia en la cámara alta. 
+La permanencia de un senador -- o de cualquier otro político -- en el cargo es un tema de debate interesante. En primer lugar, uno esperaría que cualquier trabajador con experienca y conocimiento sobre su área sea más eficiente y productivo. En criollo, si me tengo que operar de apendicitis mañana, prefiero un médico que haya realizado 1350 cirugías de apéndice que uno que haya realizado 12[^nihablar]. Luego, si trasladamos este razonamiento a nuestras instituciones deberíamos querer que el Senado esté compuesto de políticos con muchos años de experiencia en la cámara alta. 
 
 El problema radica en identificar cuáles son los puestos que se parecen al del médico haciendo la misma cirugía y aquellos que no. Tomemos el ejemplo de los burócratas del Estado de carrera, los estadístas, los responsables de mantenimiento de infraestructura. Esta es la gente que hace funcionar el aparato, sin ellos, no hay implementación, no hay político que pueda hacer nada. Una cosa podría que identificarlos es que todos ellos deberían ser apolíticos y, como tales, deberían poder cumplir su labor siendo independientes del gobierno de turno[^apoliticos]. Los investigadores del CONICET y los maestros también son buenos ejemplos de este tipo de empleados de Estado[^aun-asi].   
 
@@ -396,7 +436,7 @@ ggplot(segment_plot_df,
 
 
 
-```{r}
+```{r, echo=FALSE, eval= FALSE}
 repetidores <- count_by_sen %>% filter(n>1) %>% pull(senador)
 
 repetidores_ordenado <- senadores %>%
@@ -448,7 +488,9 @@ cowplot::plot_grid(p1, p2, p3, p4, nrow = 2, ncol =2)
 
 
 
+## El color de la camiseta {#color}
 
+Tradicionalmente, la UCR y el partido Justicialista son los grupos más convocantes. El siguiente gráfico muestra la evolución de las bancas para cada partido.
 
 ```{r}
 # Evolucion de partidos tradicionales
@@ -492,12 +534,7 @@ justicia_ucr <- justicia_ucr %>%
 ```
 
 
-
-
-
-## El color de la camiseta {#color}
-
-Los senadores son representantes según su provincia. Uno esperaría que tengan fuerte arraigo y sean portavoces de las necesidades particulares de aquellos a los que representan. Esto, en gran medida, es cierto. Los  
+Además de demostrar lealtad a su partido, los senadores son representantes según su provincia. Uno esperaría que tengan fuerte arraigo y sean portavoces de las necesidades particulares de aquellos a los que representan. Esto, en gran medida, se ve reflejado en que la mayoría de senadores únicamente se presenta por una provincia. Sin embargo, hay senadores fueron electos en más de una provincia:
 
 ```{r}
 # Estos senadores fueron senadores por mas de una provincia
@@ -513,6 +550,9 @@ group_by(senadores, senador) %>%
 
 ```
 
+Un hecho más interesante es el cambio de partido. No me queda claro si esto habla de la inestabilidad en el tiempo de los partidos o de que algunos senadores se orientan con la corriente (por ponerlo de manera políticamente correcta).
+
+Los siguientes senadores ejercieron cargo representando a más de un partido:
 
 ```{r}
 group_by(senadores, senador) %>%
@@ -524,12 +564,6 @@ group_by(senadores, senador) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
                   full_width = FALSE)
 ```
-
-
-
-
-
-
 
 ## Y luego, 2001
 
@@ -591,15 +625,16 @@ senadores %>%
     year = year(inicio_periodo_legal),
     etapa = ifelse(year > 2001, "post-2001", "pre-2001")) %>%
   group_by(etapa) %>%
-  summarise(partidos_unicos = length(unique(partido_politico)))
+  summarise(partidos_unicos = length(unique(partido_politico)))%>%
+  knitr::kable(col.names = c("Etapa", "Número de partidos")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+                  full_width = FALSE)
 
 ```
 
+Esta era también ve la desaparición de los partidos tradicionales y la aparición de otros[^simplificar].
 
 
-
-
-  
 ```{r post-2001-df}
   post_2001 <- senadores %>%
     mutate(year = year(inicio_periodo_legal)) %>%
@@ -621,7 +656,7 @@ senadores %>%
 
 
 ```{r}
-  ggplot(filter(post_2001, n>3),
+  ggplot(filter(post_2001, n>3) %>% mutate(partido_politico = factor(partido_politico, levels = c("JUSTICIALISTA", "UNIÓN CÍVICA RADICAL", "FRENTE PARA LA VICTORIA", "PRO -- CAMBIEMOS"))),
          aes(year, n, fill=partido_politico, color=partido_politico))+
     geom_area(alpha=0.8) +
     geom_point()+
@@ -643,38 +678,9 @@ senadores %>%
   
   
 
+## Partidos por su nombre
 
-## ¿Cuánto dura un período?
-  
-```{r}
-
-senadores %>%
-  mutate(duracion = ymd(cese_periodo_real) - ymd(inicio_periodo_real),
-         year = year(inicio_periodo_real)) %>%
-   mutate(cese_periodo_real = ifelse(cese_periodo_real=="Sin Datos",
-                                    as.character(today()),
-                                    cese_periodo_real)) %>% 
-  group_by(year) %>%
-#  summarise(media = mean(duracion),
-#            minimo = min(duracion),
-#            maximo = max(duracion)) %>%
-  ggplot(aes(year, duracion))+
-  geom_hline(yintercept = c(6, 9) * 365, lty=2)+
-  geom_point(color="black", alpha=0.2)+
-  geom_smooth(color="darkorange")+
-  xlab("") + ylab("Duración (días)")+
-  labs(title="Duración del mandato",
-       subtitle = paste0("Cada punto es la duracion de un mandato.\nLa linea de tendencia muestra un ajuste no lineal. Las líneas punteadas muestran 6 y 9 años.\n",
-                         my_twitter),
-       caption = my_caption
-       )
-
-```
-
-  
-## analisis de partidos politicos
-
-Cuales son las palabras más comunes de los partidos politicos
+Por pura diversión, imaginemos que queremos crear un partido político en argentina. Pero no queremos un partido cualquiera, queremos un partido que logre poner bancas en el senado. Si nos olvidamos de la política y las promesas de campaña, ¿cuáles son las palabras que deberían aparecer en el nombre para lograr nuestro cometido? 
 
 ```{r tidy-text-process}
 
@@ -723,9 +729,9 @@ tokens %>%
 
 ![](/img/senadores_wordcloud.png)
 
+## La red de partidos
 
-
-## Analizar de que partido a que partido fueron
+El siguiente gráfico muestra cómo están conectados los senadores con los distintos partidos. Es interesante ver la corriente ideológica del justicialismo, desde el Peronismo hasta el Frente para la Victoria. También es bastante claro el bunker de la UCR.
 
 ```{r}
 repetidores <- senadores %>% count(senador) %>% filter(n > 1) %>% pull(senador)
@@ -786,12 +792,13 @@ ggraph(graph, layout = 'auto') +
 
 # Diputados 
 
+<center>
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/C%C3%A1mara_de_diputados_de_Argentina.svg/300px-C%C3%A1mara_de_diputados_de_Argentina.svg.png)
-
+</center>
 
 La base de diputados comienza en `r as.character(min(diputados$mandato_inicio))`. Por esto no realice análisis como el de los senadores.
 
-Algunas cosas 
+Algunas cosas que esta base sí tiene son datos de género.
 
 ```{r}
 diputados %>%
@@ -803,6 +810,8 @@ diputados %>%
 
 ```
 
+
+Si bien la ley exige presencia de mujeres en las listas, aún estamos lejos de alcanzar un 50% de representación femenina.  
 
 ```{r}
 
@@ -845,7 +854,7 @@ plot_grid(p1,p2, nrow=2, align = "v")
 ```
 
 
-
+Un dato interesante es la fuerte presencia de partidos mayoritarios, y una cámara llena de minorías, con partidos que sólo consiguieron un representante.
 
 ```{r}
   
@@ -891,6 +900,8 @@ dip_partidos <- diputados %>%
 
 ## Código
   
+Para aquellos que estén interesados en reproducir este análisis, dejo el código utilizado. 
+
 
 ```{r show-code, ref.label=all_labels(!exists('engine')), echo = TRUE, eval=FALSE}
 
@@ -902,3 +913,4 @@ dip_partidos <- diputados %>%
 [^apoliticos]: Cuando digo *apolíticos* no me refiero a sus conviciones personales e inclinaciones políticas. Al menos en mi mente, el funcionamiento interno de ciertas dependencias del Estado debe ser autónomo. Un dato es un dato (sea la masa de un átomo o el desempleo), un docente o un estadísta del INDEC no deberían estar afectados en su labor por el partido de turno.
 [^requisitos-senador]: Desde Wikipedia a su pantalla: "Los requisitos para ser elegidos senador son: tener la edad de treinta años, haber sido seis años ciudadano de la Nación, y ser natural de la provincia que lo elija, o con dos años de residencia inmediata en ella."
 [^aun-asi]: Incluso en estas circunstancias, no considero que los investigadores o los maestros deban estar haciendo siempre la misma tarea. Al contrario, sendos gremios deberían funcionar con una estructura que permita aprovechar la experiencia para el mejor funcionamiento en vez de promover una jerarquía absurda por la jerarquía misma. Una científica jóven quizás esté mejor capacitada para hacer experimentos con sus propias manos. Un maestro jóven para interactuar con alumnos sin que haya un salto generacional muy pronunciado. Aquellos que tengan mayor experiencia, quizás pueda impulsar cambios estructurales para mejorar aspectos que no estén funcionando.   
+[^simplificar]: Para simplificar, elegí partidos que lograron obtener más de 3 bancas.

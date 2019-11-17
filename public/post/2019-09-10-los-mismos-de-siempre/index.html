@@ -44,7 +44,7 @@ En general, a mí me interesa más debatir sobre la implementación de política
 
 <meta itemprop="datePublished" content="2019-09-10T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-10-27T14:10:05-04:00" />
-<meta itemprop="wordCount" content="4026">
+<meta itemprop="wordCount" content="4413">
 
 
 
@@ -134,7 +134,9 @@ En general, a mí me interesa más debatir sobre la implementación de política
 <div id="senadores" class="section level1">
 <h1>Senadores</h1>
 <p><a href="https://es.wikipedia.org/wiki/Senado_de_la_Naci%C3%B3n_Argentina">Wikipedia</a> dice: “El Senado es el órgano federal por excelencia del país, donde cada senador representa los intereses de su provincia.”. Basta con leer la introducción del artículo para recordarse a uno mismo por qué es tan importante tener un Senado que funcione. Entre otras tareas sin mundanas, aparentemente el Senado tiene la potestad de “autorizar al presidente de la Nación para que declare el estado de sitio” y de asegurar una correcta distribución de los recursos federales. Quizás cuesta entender por qué los requisitos para ser Senador son tan bajos<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Logo_del_Senado_de_Argentina.svg/368px-Logo_del_Senado_de_Argentina.svg.png" /></p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Logo_del_Senado_de_Argentina.svg/368px-Logo_del_Senado_de_Argentina.svg.png" />
+</center>
 <p>Pues bien, entonces comencemos por el Senado, que tiene, además, la base de datos más completa. Pero, antes, un pequeño repaso sobre cómo se eligen los representantes y la duración de sus mandatos.</p>
 <blockquote>
 <p>Elecciones. La cámara de Senadores se renueva por tercios cada dos años. Los senadores son electos directamente por el pueblo. Los mandatos de los senadores son por seis años y pueden ser reelegidos en sus funciones indefinidamente.</p>
@@ -145,9 +147,15 @@ En general, a mí me interesa más debatir sobre la implementación de política
 <p>Empecemos mirando cómo evolucionaron las bancas a lo largo de nuestra historia. Vemos un comienzo con algo de recambio, seguido de un período con bajo recambio. A partir de 1930, empezamos a ver los vaivenes de un país pendular que recae en dictaduras con disolución del Poder Legislativo. Las últimas dos dictaduras están marcadas en rojo, seguidas de un alto recambio en el número de bancas (asignación de nuevos Senadores cuando se restituye el Poder Legislativo). El otro pico que llama la atención es el 2001, máximo evento de recambio en nuestra historia. Hoy por hoy, podría decirse que gozamos de unas dos décadas de estabilidad en las instituciones, en donde vemos un recambio de entre 20 y 30 bancas regularmente.</p>
 <p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/evolucion-bancas-1.png" width="672" /></p>
 </div>
+<div id="cuanto-dura-un-periodo" class="section level2">
+<h2>¿Cuánto dura un período?</h2>
+<p>La longitud de los mandatos ha cambiado a lo largo de la historia. Además, existieron períodos en los cuales intentar ser senador no parecía una carrera a largo término (cortesía de la inestabilidad de las instituciones argentinas durante gran parte del siglo XX).</p>
+<p>Un gran número de senadores no cumplen su mandato completo, ya sea por muerte, renuncia (a veces para ocupar otro cargo) o por destitución. Afortunadamente, en las últimas décadas, la tendencia parece estabilizarse hacia la longitud de mandato designada en la ley.</p>
+<p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
 <div id="quien-quiere-repetir" class="section level2">
 <h2>¿Quién quiere repetir?</h2>
-<p>La permanencia de un senador – o cualquier otro político – en el cargo es un tema de debate interesante. En primer lugar, uno esperaría que cualquier trabajador con experienca y conocimiento sobre su área sea más eficiente y productivo. En criollo, si me tengo que operar de apendicitis mañana, prefiero un médico que haya realizado 1350 cirugías de apéndice que uno que haya realizado 12<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. Luego, si trasladamos este razonamiento a nuestras instituciones deberíamos querer que el Senado esté compuesto de políticos con muchos años de experiencia en la cámara alta.</p>
+<p>La permanencia de un senador – o de cualquier otro político – en el cargo es un tema de debate interesante. En primer lugar, uno esperaría que cualquier trabajador con experienca y conocimiento sobre su área sea más eficiente y productivo. En criollo, si me tengo que operar de apendicitis mañana, prefiero un médico que haya realizado 1350 cirugías de apéndice que uno que haya realizado 12<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. Luego, si trasladamos este razonamiento a nuestras instituciones deberíamos querer que el Senado esté compuesto de políticos con muchos años de experiencia en la cámara alta.</p>
 <p>El problema radica en identificar cuáles son los puestos que se parecen al del médico haciendo la misma cirugía y aquellos que no. Tomemos el ejemplo de los burócratas del Estado de carrera, los estadístas, los responsables de mantenimiento de infraestructura. Esta es la gente que hace funcionar el aparato, sin ellos, no hay implementación, no hay político que pueda hacer nada. Una cosa podría que identificarlos es que todos ellos deberían ser apolíticos y, como tales, deberían poder cumplir su labor siendo independientes del gobierno de turno<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Los investigadores del CONICET y los maestros también son buenos ejemplos de este tipo de empleados de Estado<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</p>
 <p>En cambio, el rol de los integrantes del Poder Legislativo está contaminado por el hecho de que, entre otras cosas:</p>
 <ol style="list-style-type: decimal">
@@ -280,13 +288,13 @@ VERNA, CARLOS ALBERTO
 <p>A pesar que los ejemplos con el récord de días tienen más de un siglo, la realidad es que, desde el retorno a la democracia, el cierto grado de estabilidad institucional ha permitido que estas prácticas se exacerben.</p>
 <p>En el siguiente gráfico muestra los períodos de los 60 legisladores con mayor cantidad de días en el poder. Vale recalcar que dos mandatos de 9 años te colocan muy arriba en el el ránking, mientras que necesitarías 3 mandatos completos con la nueva longitud de 6 años para llegar a la misma cantidad. Es fácil ver que, entre 1850 y 1930, existieron períodos con ciertos senadores ocupando las bancas de manera prolongada. Sin embargo, estamos hablando de un período político en donde ni siquiera se había legislado la <a href="https://es.wikipedia.org/wiki/Ley_S%C3%A1enz_Pe%C3%B1a">Ley Saenz Peña</a> o recién se había implementado. Ver tanto abuso no es sorprendente si el proceso es fundamentalmente anti-democrático y los períodos son tan largos.</p>
 <p>Desde el último retorno a la democracia, un número importante de senadores se han perpetuado de manera impresionante, incluso integrando más de un partido político (ver también <a href="#color">el color de la camiseta</a>).</p>
-<p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 <div id="color" class="section level2">
 <h2>El color de la camiseta</h2>
-<p>Los senadores son representantes según su provincia. Uno esperaría que tengan fuerte arraigo y sean portavoces de las necesidades particulares de aquellos a los que representan. Esto, en gran medida, es cierto. Los</p>
+<p>Tradicionalmente, la UCR y el partido Justicialista son los grupos más convocantes. El siguiente gráfico muestra la evolución de las bancas para cada partido.</p>
+<p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Además de demostrar lealtad a su partido, los senadores son representantes según su provincia. Uno esperaría que tengan fuerte arraigo y sean portavoces de las necesidades particulares de aquellos a los que representan. Esto, en gran medida, se ve reflejado en que la mayoría de senadores únicamente se presenta por una provincia. Sin embargo, hay senadores fueron electos en más de una provincia:</p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -373,6 +381,8 @@ SAGUIER, FERNANDO
 </tr>
 </tbody>
 </table>
+<p>Un hecho más interesante es el cambio de partido. No me queda claro si esto habla de la inestabilidad en el tiempo de los partidos o de que algunos senadores se orientan con la corriente (por ponerlo de manera políticamente correcta).</p>
+<p>Los siguientes senadores ejercieron cargo representando a más de un partido:</p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -774,34 +784,59 @@ post-2001
 <div id="ajuste-por-alianzas" class="section level4">
 <h4>Ajuste por alianzas</h4>
 <p>Aún cuando ajustamos por las múltiples alianzas (los justicialistas, la UCR y las distintas formas de Kirchnerismo y PRO). Las diferencias entre antes y después del 2001 son impresionantes.</p>
-<pre><code># A tibble: 2 x 2
-  etapa     partidos_unicos
-  &lt;chr&gt;               &lt;int&gt;
-1 post-2001              48
-2 pre-2001               41</code></pre>
-<p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-</div>
-</div>
-</div>
-<div id="cuanto-dura-un-periodo" class="section level2">
-<h2>¿Cuánto dura un período?</h2>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Etapa
+</th>
+<th style="text-align:right;">
+Número de partidos
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+post-2001
+</td>
+<td style="text-align:right;">
+48
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pre-2001
+</td>
+<td style="text-align:right;">
+41
+</td>
+</tr>
+</tbody>
+</table>
+<p>Esta era también ve la desaparición de los partidos tradicionales y la aparición de otros<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p>
 <p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
-<div id="analisis-de-partidos-politicos" class="section level2">
-<h2>analisis de partidos politicos</h2>
-<p>Cuales son las palabras más comunes de los partidos politicos</p>
+</div>
+</div>
+<div id="partidos-por-su-nombre" class="section level2">
+<h2>Partidos por su nombre</h2>
+<p>Por pura diversión, imaginemos que queremos crear un partido político en argentina. Pero no queremos un partido cualquiera, queremos un partido que logre poner bancas en el senado. Si nos olvidamos de la política y las promesas de campaña, ¿cuáles son las palabras que deberían aparecer en el nombre para lograr nuestro cometido?</p>
 <p><img src="/img/senadores_wordcloud.png" /></p>
 </div>
-<div id="analizar-de-que-partido-a-que-partido-fueron" class="section level2">
-<h2>Analizar de que partido a que partido fueron</h2>
+<div id="la-red-de-partidos" class="section level2">
+<h2>La red de partidos</h2>
+<p>El siguiente gráfico muestra cómo están conectados los senadores con los distintos partidos. Es interesante ver la corriente ideológica del justicialismo, desde el Peronismo hasta el Frente para la Victoria. También es bastante claro el bunker de la UCR.</p>
 <p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
 </div>
 <div id="diputados" class="section level1">
 <h1>Diputados</h1>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/C%C3%A1mara_de_diputados_de_Argentina.svg/300px-C%C3%A1mara_de_diputados_de_Argentina.svg.png" /></p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/C%C3%A1mara_de_diputados_de_Argentina.svg/300px-C%C3%A1mara_de_diputados_de_Argentina.svg.png" />
+</center>
 <p>La base de diputados comienza en 2007-12-10. Por esto no realice análisis como el de los senadores.</p>
-<p>Algunas cosas</p>
+<p>Algunas cosas que esta base sí tiene son datos de género.</p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -832,10 +867,13 @@ M
 </tr>
 </tbody>
 </table>
+<p>Si bien la ley exige presencia de mujeres en las listas, aún estamos lejos de alcanzar un 50% de representación femenina.</p>
 <p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Un dato interesante es la fuerte presencia de partidos mayoritarios, y una cámara llena de minorías, con partidos que sólo consiguieron un representante.</p>
 <p><img src="/post/2019-09-10-los-mismos-de-siempre_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <div id="codigo" class="section level2">
 <h2>Código</h2>
+<p>Para aquellos que estén interesados en reproducir este análisis, dejo el código utilizado.</p>
 <pre class="r"><code>knitr::opts_chunk$set(comment=NA, message = FALSE, warning = FALSE)
 knitr::opts_chunk$set(echo = FALSE)
 
@@ -915,6 +953,28 @@ senadores %&gt;%
        caption= &quot;Fuente: www.congreso.gob.ar&quot;)+
   NULL
 
+
+
+senadores %&gt;%
+  mutate(duracion = ymd(cese_periodo_real) - ymd(inicio_periodo_real),
+         year = year(inicio_periodo_real)) %&gt;%
+   mutate(cese_periodo_real = ifelse(cese_periodo_real==&quot;Sin Datos&quot;,
+                                    as.character(today()),
+                                    cese_periodo_real)) %&gt;% 
+  group_by(year) %&gt;%
+#  summarise(media = mean(duracion),
+#            minimo = min(duracion),
+#            maximo = max(duracion)) %&gt;%
+  ggplot(aes(year, duracion))+
+  geom_hline(yintercept = c(6, 9) * 365, lty=2)+
+  geom_point(color=&quot;black&quot;, alpha=0.2)+
+  geom_smooth(color=&quot;darkorange&quot;)+
+  xlab(&quot;&quot;) + ylab(&quot;Duración (días)&quot;)+
+  labs(title=&quot;Duración del mandato&quot;,
+       subtitle = paste0(&quot;Cada punto es la duracion de un mandato.\nLa linea de tendencia muestra un ajuste no lineal. Las líneas punteadas muestran 6 y 9 años.\n&quot;,
+                         my_twitter),
+       caption = my_caption
+       )
 
 count_by_sen &lt;- senadores %&gt;%
   group_by(senador) %&gt;%
@@ -1251,7 +1311,10 @@ senadores %&gt;%
     year = year(inicio_periodo_legal),
     etapa = ifelse(year &gt; 2001, &quot;post-2001&quot;, &quot;pre-2001&quot;)) %&gt;%
   group_by(etapa) %&gt;%
-  summarise(partidos_unicos = length(unique(partido_politico)))
+  summarise(partidos_unicos = length(unique(partido_politico)))%&gt;%
+  knitr::kable(col.names = c(&quot;Etapa&quot;, &quot;Número de partidos&quot;)) %&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;, &quot;responsive&quot;),
+                  full_width = FALSE)
 
   post_2001 &lt;- senadores %&gt;%
     mutate(year = year(inicio_periodo_legal)) %&gt;%
@@ -1269,7 +1332,7 @@ senadores %&gt;%
     count(partido_politico) %&gt;%
     mutate(total_year = sum(n), 
            proportion = n/total_year)
-  ggplot(filter(post_2001, n&gt;3),
+  ggplot(filter(post_2001, n&gt;3) %&gt;% mutate(partido_politico = factor(partido_politico, levels = c(&quot;JUSTICIALISTA&quot;, &quot;UNIÓN CÍVICA RADICAL&quot;, &quot;FRENTE PARA LA VICTORIA&quot;, &quot;PRO -- CAMBIEMOS&quot;))),
          aes(year, n, fill=partido_politico, color=partido_politico))+
     geom_area(alpha=0.8) +
     geom_point()+
@@ -1286,28 +1349,6 @@ senadores %&gt;%
          subtitle = paste0(&quot;Partidos politicos agrupados en categorías según uso de terminos en el nombre oficial.\n&quot;, my_twitter),
          caption= my_caption)  +
   NULL
-
-
-senadores %&gt;%
-  mutate(duracion = ymd(cese_periodo_real) - ymd(inicio_periodo_real),
-         year = year(inicio_periodo_real)) %&gt;%
-   mutate(cese_periodo_real = ifelse(cese_periodo_real==&quot;Sin Datos&quot;,
-                                    as.character(today()),
-                                    cese_periodo_real)) %&gt;% 
-  group_by(year) %&gt;%
-#  summarise(media = mean(duracion),
-#            minimo = min(duracion),
-#            maximo = max(duracion)) %&gt;%
-  ggplot(aes(year, duracion))+
-  geom_hline(yintercept = c(6, 9) * 365, lty=2)+
-  geom_point(color=&quot;black&quot;, alpha=0.2)+
-  geom_smooth(color=&quot;darkorange&quot;)+
-  xlab(&quot;&quot;) + ylab(&quot;Duración (días)&quot;)+
-  labs(title=&quot;Duración del mandato&quot;,
-       subtitle = paste0(&quot;Cada punto es la duracion de un mandato.\nLa linea de tendencia muestra un ajuste no lineal. Las líneas punteadas muestran 6 y 9 años.\n&quot;,
-                         my_twitter),
-       caption = my_caption
-       )
 
 
 partidos &lt;- senadores %&gt;%
@@ -1489,6 +1530,7 @@ dip_partidos &lt;- diputados %&gt;%
 <li id="fn2"><p>Ni hablar de una coronaria a corazón abierto, no?<a href="#fnref2" class="footnote-back">↩</a></p></li>
 <li id="fn3"><p>Cuando digo <em>apolíticos</em> no me refiero a sus conviciones personales e inclinaciones políticas. Al menos en mi mente, el funcionamiento interno de ciertas dependencias del Estado debe ser autónomo. Un dato es un dato (sea la masa de un átomo o el desempleo), un docente o un estadísta del INDEC no deberían estar afectados en su labor por el partido de turno.<a href="#fnref3" class="footnote-back">↩</a></p></li>
 <li id="fn4"><p>Incluso en estas circunstancias, no considero que los investigadores o los maestros deban estar haciendo siempre la misma tarea. Al contrario, sendos gremios deberían funcionar con una estructura que permita aprovechar la experiencia para el mejor funcionamiento en vez de promover una jerarquía absurda por la jerarquía misma. Una científica jóven quizás esté mejor capacitada para hacer experimentos con sus propias manos. Un maestro jóven para interactuar con alumnos sin que haya un salto generacional muy pronunciado. Aquellos que tengan mayor experiencia, quizás pueda impulsar cambios estructurales para mejorar aspectos que no estén funcionando.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Para simplificar, elegí partidos que lograron obtener más de 3 bancas.<a href="#fnref5" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

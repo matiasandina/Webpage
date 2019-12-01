@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-11-16T18:30:14-05:00</lastmod>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -19,23 +19,28 @@
   </url>
   
   <url>
-    <loc>/post/2019-11-14-on-pipelines/</loc>
-    <lastmod>2019-11-11T20:29:22-05:00</lastmod>
+    <loc>/post/2019-11-22-fitbit-analysis/</loc>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/learning/</loc>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-11-16T18:30:14-05:00</lastmod>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2019-11-16T18:30:14-05:00</lastmod>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-11-16T18:30:14-05:00</lastmod>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -46,6 +51,16 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/tracking/</loc>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-11-14-on-pipelines/</loc>
+    <lastmod>2019-11-11T20:29:22-05:00</lastmod>
   </url>
   
   <url>
@@ -64,13 +79,8 @@
   </url>
   
   <url>
-    <loc>/tags/learning/</loc>
-    <lastmod>2019-11-16T18:30:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/2019-09-10-los-mismos-de-siempre/</loc>
-    <lastmod>2019-10-27T14:10:05-04:00</lastmod>
+    <lastmod>2019-11-17T17:46:13-05:00</lastmod>
   </url>
   
   <url>

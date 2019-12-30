@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Matias Andina">
+<meta name="description"
+    content="I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
+ We used an independent sample t-test and found a significant correlations (t(df)=…).
+ It also comes in the shape of non-significant data, maybe even more haunting than the first version.
+ We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable." />
+<meta name="keywords" content="homepage, blog, neuroscience, science, programming, freelancer" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/2018/04/20/t-tests-for-correlation/" />
+
+
+<title>
+    
+    t-tests for correlation :: Matias Andina  — Home &amp; Blog
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="t-tests for correlation">
+<meta itemprop="description" content="I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
+ We used an independent sample t-test and found a significant correlations (t(df)=…).
+ It also comes in the shape of non-significant data, maybe even more haunting than the first version.
+ We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.">
+
+
+<meta itemprop="datePublished" content="2018-04-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-04-16T20:08:40-04:00" />
+<meta itemprop="wordCount" content="523">
+
+
+
+<meta itemprop="keywords" content="teaching," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/img/m-gray.jpg"/>
+
+<meta name="twitter:title" content="t-tests for correlation"/>
+<meta name="twitter:description" content="I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:
+ We used an independent sample t-test and found a significant correlations (t(df)=…).
+ It also comes in the shape of non-significant data, maybe even more haunting than the first version.
+ We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable."/>
+
+
+
+
+<meta property="article:published_time" content="2018-04-20 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">Matias Andina</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/research/">Research</a></li><li><a href="/post/">Posts</a></li><li><a href="/projects/">Projects</a></li><li><a href="/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/2018/04/20/t-tests-for-correlation/">t-tests for correlation</a></h2>
+
+            
+
+            <div class="post-content">
+                
+
+
+<p>I have been having a recurrent nightmare in the Statistics class I’m teaching. The nightmare goes like:</p>
+<blockquote>
+<p>We used an independent sample t-test and found a significant correlations (t(df)=…).</p>
+</blockquote>
+<p>It also comes in the shape of non-significant data, maybe even more haunting than the first version.</p>
+<blockquote>
+<p>We found a non-significant difference between Factor level A (M= …, SD= … ) and Factor level B (M= …, SD= …), meaning there is a negative correlation between Factor and response variable.</p>
+</blockquote>
+<p>These phrases are not actual statements made by my students on paper <strong>but</strong> they come quite close. I have been trying to wrap my head around their confusion between correlation and t-test, which persists even though I remove points on papers and make announcements in class. It persists whether I repeat the material from a different angle, draw stuff on the board, and have face to face interaction with firm believers of the <em>t-correlation</em> theory. I have made frustrated comments during TA meetings only to find that other TAs experience the same issue. One of the TAs was adamant about it, she even makes them sing! But the confusion is still intact.</p>
+<div id="how-to" class="section level2">
+<h2>How to</h2>
+<p>It’s not my full intention to preach about what a <em>t-test</em> or a correlation analysis are (although see below). I’m trying to figure out what makes students be so confused about these two. More thoughts on this topic will come in the near future.</p>
+</div>
+<div id="two-different-worlds" class="section level2">
+<h2>Two different worlds</h2>
+<p>Correlation and factor analysis are essentially different. Continuous vs discrete. A car’s transmission can be automatic <em>or</em> manual. There is no scale, no range of values. We can study how a continuous variable (such as miles per gallon) is affected by the type of transmission.</p>
+<p><img src="/post/2018-04-20-t-test-correlation_files/figure-html/factor-t-1.png" width="672" /></p>
+<p>Moreover, we are trying to collapse the groups into a comparison of their means, standard deviations, and N. But let’s focus on the means, let’s reduce the previous scatterplot to two dots.</p>
+<p><img src="/post/2018-04-20-t-test-correlation_files/figure-html/mean-comp-1.png" width="672" /></p>
+<p>The underlying question is: Are these 2 values <em>statistically</em> different? We can test for it, using a t-test!</p>
+<p>Using a <em>t-test</em> we can find that there is a 7.245 difference between groups, which is unlikely to be found by chance. How unlikely? Well, assumptions being made, p=0.001.</p>
+<p>On the other hand, we could be interested in studying the relationship between two continuous variables. The nature of these variables is fairly different from discrete ones. Both variables are unconstrained regarding the values they can take (Big, small and fractions allowed!). In this case, we can take a look at how the weight of cars is related to the miles per gallon.</p>
+<p><img src="/post/2018-04-20-t-test-correlation_files/figure-html/wt-mpg-1.png" width="672" /></p>
+<p>We would see that, overall, heavier cars tend to be able to drive less miles per gallon of gas. In principle, with a correlation analysis we wouldn’t be able to establish causal relationships. Is it the weight causing the mileage per gallon to go down? We can’t address that question with this type of analysis. But we can test whether there is a <em>significant</em> association using a linear correlation test.</p>
+<p>The correlation analysis shows a significant negative correlation (r = -0.868), which is different from zero, unlikely to be found by chance (p = <span class="math inline">\(1.2939587\times 10^{-10}\)</span>).</p>
+</div>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/teaching">teaching</a></span>
+  				</p>
+  				    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="5ff63282e3a4bcd4a84c81c618050ce654c33425" target="_blank" rel="noopener">5ff6328</a> @ 2018-04-16</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="/">Matias Andina</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.4c3fb12a087ceed4a52cb5d57068a9795c7069617a01ca70f788052ad66e1791779e6c72686e1dc0ca13dc03b0203204b6566bb0dd1ee80de2b7ff4d8fe53db2.js" integrity="sha512-TD&#43;xKgh87tSlLLXVcGipeVxwaWF6Acpw94gFKtZuF5F3nmxyaG4dwMoT3AOwIDIEtlZrsN0e6A3it/9Nj&#43;U9sg=="></script>
+
+
+
+    </body>
+</html>

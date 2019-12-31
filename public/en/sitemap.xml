@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-12-30T18:54:14-05:00</lastmod>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -19,17 +19,22 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/01/the-power-of-compounding/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2019/11/fitbit-analysis/</loc>
     <lastmod>2019-12-30T18:54:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/learning/</loc>
-    <lastmod>2019-12-30T18:54:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2019-12-30T18:54:14-05:00</lastmod>
   </url>
   
@@ -294,17 +299,17 @@
   </url>
   
   <url>
-    <loc>/1/01/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/projects/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/research/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/social-deficits/</loc>
     <priority>0</priority>
   </url>
   
@@ -320,6 +325,22 @@
                 hreflang="en"
                 href="/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>/learning-and-memory/</loc>
+  </url>
+  
+  <url>
+    <loc>/maternal-behavior/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/memory/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
   </url>
   
 </urlset>

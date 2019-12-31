@@ -6,10 +6,20 @@
     <description>Recent content on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The power of compounding</title>
+      <link>/2020/01/the-power-of-compounding/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/01/the-power-of-compounding/</guid>
+      <description>Paying attention to the small details sounds trivial. Talking about a 1% increase in performance sounds trivial. Unexciting. A rounding error.
+Setting systems up sounds boring. You have to troubleshoot them, you have to stress test them. After all the effort required for their creation, the systems you&amp;rsquo;ve created usually still haven&amp;rsquo;t solved the problem that first got you to think about setting the system up in the first place.</description>
+    </item>
     
     <item>
       <title>Fitbit Analysis</title>
@@ -100,16 +110,6 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
       <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
 RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
-    </item>
-    
-    <item>
-      <title>Skype a Scientist part 1</title>
-      <link>/2018/10/skype-a-scientist-part-1/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/skype-a-scientist-part-1/</guid>
-      <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. So far, I have done calls with two grades:
- 3rd Grade Johnston Elementary School, Irving, TX. 7th Grade Isbell Middle School, Santa Paula, CA.  I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
     </item>
     
   </channel>

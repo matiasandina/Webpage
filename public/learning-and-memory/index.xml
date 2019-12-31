@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning-and-memories on Matias Andina</title>
+    <link>/learning-and-memory/</link>
+    <description>Recent content in Learning-and-memories on Matias Andina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    
+	<atom:link href="/learning-and-memory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning and Memory</title>
+      <link>/learning-and-memory/learning-and-memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/learning-and-memory/learning-and-memory/</guid>
+      <description>Learning in Crabs In Argentina, my research was focused in Contextual Pavlovian Conditioning of the crab Neohelice granulata. The original paradigm was thoroughly described by Fustiñana et al., 2013. We were able to expand this paradigm and unveil new unexpected long-term memories. Working in the Neurobiology of the Memory Lab has been a fulfilling experience. My research was materialized in my graduation thesis:
+“Study of different long-term memories and participation of synaptic ERK/MAPK in memory consolidation”</description>
+    </item>
+    
+  </channel>
+</rss>

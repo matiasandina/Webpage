@@ -13,30 +13,30 @@
     
     <item>
       <title>Fitbit Analysis</title>
-      <link>/2019/11/22/fitbit-analysis/</link>
+      <link>/2019/11/fitbit-analysis/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/11/22/fitbit-analysis/</guid>
+      <guid>/2019/11/fitbit-analysis/</guid>
       <description>It’s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I’m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
  I write fiction and non-fiction. I write open-source software.</description>
     </item>
     
     <item>
       <title>Los mismos de siempre</title>
-      <link>/2019/09/10/los-mismos-de-siempre/</link>
+      <link>/2019/09/los-mismos-de-siempre/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/09/10/los-mismos-de-siempre/</guid>
+      <guid>/2019/09/los-mismos-de-siempre/</guid>
       <description>Hace rato que vengo viendo ciertas tendencias de gente que hace algo de análisis de datos con la actualidad Argentina. Por ejemplo, Daniel Schteingart comúnmente publica este tipo de análisis en diversos medios. Esto me llevó a buscar datos abiertos disponibles para jugar un rato.
 En general, a mí me interesa más debatir sobre la implementación de políticas y pienso que el Poder Legislativo merece mayor atención. Siento que sobrestimamos (para bien y para mal) el poder de un Ejecutivo que es, al final del día, mucho menos determinante que aquellos que escriben las leyes según las cuales se rige el Estado.</description>
     </item>
     
     <item>
       <title>Data Visualization Challenge 2</title>
-      <link>/2019/04/14/data-visualization-challenge-2/</link>
+      <link>/2019/04/data-visualization-challenge-2/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/04/14/data-visualization-challenge-2/</guid>
+      <guid>/2019/04/data-visualization-challenge-2/</guid>
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
  I write fiction and non-fiction.</description>
@@ -44,40 +44,40 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
     
     <item>
       <title>Email analysis</title>
-      <link>/2019/04/06/email-analysis/</link>
+      <link>/2019/04/email-analysis/</link>
       <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/04/06/email-analysis/</guid>
+      <guid>/2019/04/email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
  I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
     </item>
     
     <item>
       <title>R pipeline -- It&#39;s a trap!</title>
-      <link>/2019/01/02/r-pipeline-its-a-trap/</link>
+      <link>/2019/01/r-pipeline-its-a-trap/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/01/02/r-pipeline-its-a-trap/</guid>
+      <guid>/2019/01/r-pipeline-its-a-trap/</guid>
       <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
  I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
     </item>
     
     <item>
       <title>Writing challenge day 28</title>
-      <link>/2018/09/27/writing-challenge-day-28/</link>
+      <link>/2018/09/writing-challenge-day-28/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/27/writing-challenge-day-28/</guid>
+      <guid>/2018/09/writing-challenge-day-28/</guid>
       <description>This month has been fast. The writing has been really interesting, I was able to get some old stories written and had a lot of fun doing it. I would like to continue with the habit, it is already making it easier for me to put words into text. I’m not sure about the quality, but I experience the writing ease for both Spanish and English.
 The data I had some pretty long bouts on Saturday and Sunday, writing close to 3000 words in aggregate.</description>
     </item>
     
     <item>
       <title>Writing challenge Day 21</title>
-      <link>/2018/09/20/writing-challenge-day-21/</link>
+      <link>/2018/09/writing-challenge-day-21/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/20/writing-challenge-day-21/</guid>
+      <guid>/2018/09/writing-challenge-day-21/</guid>
       <description>Third week has had ups and downs. I finished another short story. But I keep losing the word count battle. Yes, again, work.
 The data The word count data is somewhat similar to what I’ve seen for last week. Definitely writing bouts are going down, just being able to write a few words before bedtime knocks me over.
 Looking at the aggregate, the downward slope of the third week is a little bit disappointing.</description>
@@ -85,30 +85,30 @@ Looking at the aggregate, the downward slope of the third week is a little bit d
     
     <item>
       <title>Writing challenge Day 14</title>
-      <link>/2018/09/13/writing-challenge-day-14/</link>
+      <link>/2018/09/writing-challenge-day-14/</link>
       <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/13/writing-challenge-day-14/</guid>
+      <guid>/2018/09/writing-challenge-day-14/</guid>
       <description>During the second week of the challenge I had a lot of late working days. It has been certainly tiresome. As a consequence, I was less able to write, got home really tired.
 I still have that voice powering my desire to write. Actually, over the weekend I finished a short story that I had in my list for at least a year. That achievement feels really good and pumps the desire to keep writing and, most importantly, finishing more projects than those I start.</description>
     </item>
     
     <item>
       <title>Writing challenge Day 1</title>
-      <link>/2018/08/30/writing-challenge-day-1/</link>
+      <link>/2018/08/writing-challenge-day-1/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/08/30/writing-challenge-day-1/</guid>
+      <guid>/2018/08/writing-challenge-day-1/</guid>
       <description>It’s been a while since I have several things to write in the back of my mind. I finally got the will to commit myself to one of those goal oriented challenges: Writing 2000 words a day.
 It might sound like a bit much, now that I think about it, but today is Day 1 so I might as well get to do it. I have not limited the type of content I will write, my aim is to get as fluent as possible and to have writing become habitual.</description>
     </item>
     
     <item>
       <title>Matlab list_files</title>
-      <link>/2018/04/24/matlab-list_files/</link>
+      <link>/2018/04/matlab-list_files/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/04/24/matlab-list_files/</guid>
+      <guid>/2018/04/matlab-list_files/</guid>
       <description>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let’s be honest, Matlab can do powerful things, it’s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
  Gimme all the files in…
  Will be easily accomplished in R</description>

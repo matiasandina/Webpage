@@ -29,7 +29,7 @@ disableHugoGeneratorInject = false
 disableReadOtherPosts = false
 
 [permalinks]
-    post = "/:year/:month/:day/:title/"
+    post = "/:year/:month/:title/"
 
 [author]
   name = "Matias Andina"

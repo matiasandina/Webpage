@@ -6,10 +6,19 @@
     <description>Recent content in DocumentingLearning on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/documentinglearning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing Checklist</title>
+      <link>/2020/01/writing-checklist/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/01/writing-checklist/</guid>
+      <description>I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham’s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by ;, I thought it would be cool to convert the prose into a checklist).</description>
+    </item>
     
     <item>
       <title>Writing challenge day 28</title>
@@ -104,16 +113,6 @@ Calibrated instruments McKeachie’s chapter 10 starts with a set of questions t
       <guid>/2017/12/list-of-common-errors/</guid>
       <description>I&amp;rsquo;m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best.
 Assignments and Feedback Chapters 7 and 8 on McKeachie&amp;rsquo;s Teaching tips are quite interesting and develop different lines of thought about assignments. One thing I can relate to is the idea of providing general examples of errors students normally do. This procedure comes handy when dealing with essay questions (the ones I like far more than any other).</description>
-    </item>
-    
-    <item>
-      <title>Any Questions?</title>
-      <link>/2017/12/any-questions/</link>
-      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/12/any-questions/</guid>
-      <description>I’m writing this post to document my own learning on reading from Teaching Tips and Teaching at its Best. This particular post has to do with engaging students to contribute with questions to class.
-Checking student understanding During class, there is a moment in which you feel that you’ve covered a couple of ideas in the way you wanted to and you decide to check if everything is alright. Other times, you feel as if you weren’t able to convey the points in the way you wanted to.</description>
     </item>
     
   </channel>

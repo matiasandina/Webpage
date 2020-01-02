@@ -22,6 +22,26 @@ Setting systems up sounds boring. You have to troubleshoot them, you have to str
     </item>
     
     <item>
+      <title>Escribiendo en pocas palabras</title>
+      <link>/2020/01/escribiendo-en-pocas-palabras/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/01/escribiendo-en-pocas-palabras/</guid>
+      <description>La siguiente es una traduccion del ensayo “Writing, Briefly” escrito por Paul Graham1.
+(En el proceso de responder un email, accidentalmente escribí un pequeño ensayo sobre cómo escribir. Normalmente dedico semanas a cada ensayo. Este tardó 67 minutos – 23 para escribirlo y 44 para reescribirlo.)
+Creo que escribir bien es mucho más importante que lo que la gente se imagina. Escribir no sólo comunica ideas, las genera. Si eres malo escribiendo y no te gusta hacerlo, perderás la oportunidad de generar la mayoría de las ideas que la escritura te hubiera regalado.</description>
+    </item>
+    
+    <item>
+      <title>Writing Checklist</title>
+      <link>/2020/01/writing-checklist/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/01/writing-checklist/</guid>
+      <description>I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham’s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by ;, I thought it would be cool to convert the prose into a checklist).</description>
+    </item>
+    
+    <item>
       <title>Fitbit Analysis</title>
       <link>/2019/11/fitbit-analysis/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
@@ -89,27 +109,6 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
       <guid>/2019/04/email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
  I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
-    </item>
-    
-    <item>
-      <title>R pipeline -- It&#39;s a trap!</title>
-      <link>/2019/01/r-pipeline-its-a-trap/</link>
-      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/01/r-pipeline-its-a-trap/</guid>
-      <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
-    </item>
-    
-    <item>
-      <title>Query Pubmed in R</title>
-      <link>/2018/11/query-pubmed-in-r/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/11/query-pubmed-in-r/</guid>
-      <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
-A couple of google searches lead me into two nice options to do this in R.
-RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
     </item>
     
   </channel>

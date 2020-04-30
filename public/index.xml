@@ -6,10 +6,20 @@
     <description>Recent content on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Complex Fun</title>
+      <link>/2020/04/complex-fun/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/04/complex-fun/</guid>
+      <description>People say that if you have to explain a joke, it loses value. Probably true. I guess I just wanted to partially comment on how different disciplines analyze different levels of complexity.
+As molecular biologist, I think we were trained to seldom think about the whole system, we were trained to just give up complexity and focus on a couple of fancy names (yes, YFG fits pretty well as the center of this Universe).</description>
+    </item>
     
     <item>
       <title>The power of compounding</title>
@@ -100,16 +110,6 @@ En general, a mí me interesa más debatir sobre la implementación de política
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
  I write fiction and non-fiction.</description>
-    </item>
-    
-    <item>
-      <title>Email analysis</title>
-      <link>/2019/04/email-analysis/</link>
-      <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/04/email-analysis/</guid>
-      <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
     </item>
     
   </channel>

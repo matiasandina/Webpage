@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fun on Matias Andina</title>
-    <link>/tags/fun/</link>
-    <description>Recent content in fun on Matias Andina</description>
+    <title>python on Matias Andina</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/fun/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -30,16 +30,6 @@
       <guid>/2020/06/python-keylogger/</guid>
       <description>I have been struggling a lot with pain in my fingers and wrists. I have tried setting up timers for using the keyboard. But the only thing that seems to work is reducing the typing (aka get away from the computer and stop using the keyboard!).
 Tracking hours didn’t work well, so I guess a last resort to force me is counting the actual number of keys per day and trying to keep that to a minimum.</description>
-    </item>
-    
-    <item>
-      <title>Complex Fun</title>
-      <link>/2020/04/complex-fun/</link>
-      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/04/complex-fun/</guid>
-      <description>People say that if you have to explain a joke, it loses value. Probably true. I guess I just wanted to partially comment on how different disciplines analyze different levels of complexity.
-As molecular biologist, I think we were trained to seldom think about the whole system, we were trained to just give up complexity and focus on a couple of fancy names (yes, YFG fits pretty well as the center of this Universe).</description>
     </item>
     
   </channel>

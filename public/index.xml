@@ -6,10 +6,31 @@
     <description>Recent content on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Birthday Problem</title>
+      <link>/2020/06/birthday-problem/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/birthday-problem/</guid>
+      <description>We have all been there, classic math riddle:
+ How many people need to be in one room so that the probability of two of them having the same birthday is more than 0.5?
+ In a recent bootcamp exercise we tackled this in python and I wanted to share, just because it’s fun. I did it for a range of probabilities. My solution is probably not the fastest/shortest/most pythonic, but it’s a little thing I put out there so, if you want to use/improve it, please do!</description>
+    </item>
+    
+    <item>
+      <title>Python Keylogger</title>
+      <link>/2020/06/python-keylogger/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/python-keylogger/</guid>
+      <description>I have been struggling a lot with pain in my fingers and wrists. I have tried setting up timers for using the keyboard. But the only thing that seems to work is reducing the typing (aka get away from the computer and stop using the keyboard!).
+Tracking hours didn’t work well, so I guess a last resort to force me is counting the actual number of keys per day and trying to keep that to a minimum.</description>
+    </item>
     
     <item>
       <title>Complex Fun</title>
@@ -90,26 +111,6 @@ As usual, I should say it was great to be able to talk with students, tell them 
       <guid>/2019/09/los-mismos-de-siempre/</guid>
       <description>Hace rato que vengo viendo ciertas tendencias de gente que hace algo de análisis de datos con la actualidad Argentina. Por ejemplo, Daniel Schteingart comúnmente publica este tipo de análisis en diversos medios. Esto me llevó a buscar datos abiertos disponibles para jugar un rato.
 En general, a mí me interesa más debatir sobre la implementación de políticas y pienso que el Poder Legislativo merece mayor atención. Siento que sobrestimamos (para bien y para mal) el poder de un Ejecutivo que es, al final del día, mucho menos determinante que aquellos que escriben las leyes según las cuales se rige el Estado.</description>
-    </item>
-    
-    <item>
-      <title>Birthday Meritocracy</title>
-      <link>/2019/05/birthday-meritocracy/</link>
-      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/05/birthday-meritocracy/</guid>
-      <description>We believe in meritocracy as one of the cornerstones of Western civilization. This idea is so embedded in our culture that we seldom question it. We praise those driven individuals who combine effort and talent to make it to the top. They smile in the cover of the magazines, the dreams of children and the nightmares of adults. Sports might be the activity where the blood, sweat and tears feel most real (maybe I should say relatable) and therefore are most notoriously broadcasted to the world.</description>
-    </item>
-    
-    <item>
-      <title>Data Visualization Challenge 2</title>
-      <link>/2019/04/data-visualization-challenge-2/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/04/data-visualization-challenge-2/</guid>
-      <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody’s submissions for the challenge here.
-I am also very motivated to explore the dark versions of the ggplot themes. The package I’m going to be using is called ggdark.
- I write fiction and non-fiction.</description>
     </item>
     
   </channel>

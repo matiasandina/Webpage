@@ -6,10 +6,20 @@
     <description>Recent content on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unique</title>
+      <link>/2020/07/unique/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/unique/</guid>
+      <description>I have experienced a few explosions here and there. Yes, it’s me not reading the docs. But it’s also me, assuming that verbs mean one thing and not another. Let’s do some unique operations in different languages.
+The MATLAB way &amp;gt;&amp;gt; unique([3, 3, 3, 90, 10]) ans = 3 10 90  The Python way &amp;gt;&amp;gt;&amp;gt; import numpy as np &amp;gt;&amp;gt;&amp;gt; np.unique([3, 3, 3, 90, 10]) array([ 3, 10, 90])  The R way unique(c(3,3,3, 90, 10)) ## [1] 3 90 10 This is what I would expect.</description>
+    </item>
     
     <item>
       <title>Birthday Problem</title>
@@ -101,16 +111,6 @@ Escribir, en pocas palabras (En el proceso de responder un email, accidentalment
       <guid>/2019/09/skype-a-scientist-part-2/</guid>
       <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. I recently did two more calls with 11th grade students who attend Dowal school in Honduras. This was the first time I did Skype a Scientist in Spanish!
 As usual, I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
-    </item>
-    
-    <item>
-      <title>Los mismos de siempre</title>
-      <link>/2019/09/los-mismos-de-siempre/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/09/los-mismos-de-siempre/</guid>
-      <description>Hace rato que vengo viendo ciertas tendencias de gente que hace algo de análisis de datos con la actualidad Argentina. Por ejemplo, Daniel Schteingart comúnmente publica este tipo de análisis en diversos medios. Esto me llevó a buscar datos abiertos disponibles para jugar un rato.
-En general, a mí me interesa más debatir sobre la implementación de políticas y pienso que el Poder Legislativo merece mayor atención. Siento que sobrestimamos (para bien y para mal) el poder de un Ejecutivo que es, al final del día, mucho menos determinante que aquellos que escriben las leyes según las cuales se rige el Estado.</description>
     </item>
     
   </channel>

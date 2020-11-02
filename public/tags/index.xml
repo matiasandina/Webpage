@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>investing</title>
+      <link>/tags/investing/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/investing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>random</title>
+      <link>/tags/random/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/random/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>fun</title>
@@ -80,24 +98,6 @@
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/tracking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>outreach</title>
-      <link>/tags/outreach/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/outreach/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>research</title>
-      <link>/tags/research/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research/</guid>
       <description></description>
     </item>
     

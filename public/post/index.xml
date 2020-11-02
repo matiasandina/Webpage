@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Russian roulette</title>
+      <link>/2020/11/russian-roulette/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/11/russian-roulette/</guid>
+      <description>There are many traders and most of them blow up at some point in their careers1. Maybe that’s why we worship those who don’t. We find rational explanations for their success, which basically boil down to saying they are smarter/faster/bolder/better than everyone else. We may even go as far as justifying success at all costs.
+I’m sure there’s a lot of skill involved in playing dice with such great results over such a long period of time.</description>
+    </item>
     
     <item>
       <title>Unique</title>
@@ -101,16 +111,6 @@ Escribir, en pocas palabras (En el proceso de responder un email, accidentalment
       <guid>/2019/11/on-pipelines/</guid>
       <description>I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
  I write fiction and non-fiction. I write open-source software. I create generative art.</description>
-    </item>
-    
-    <item>
-      <title>Skype a Scientist part 2</title>
-      <link>/2019/09/skype-a-scientist-part-2/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/09/skype-a-scientist-part-2/</guid>
-      <description>I have been lucky to participate in the project lead by Sarah McAnulty called Skype a scientist. I recently did two more calls with 11th grade students who attend Dowal school in Honduras. This was the first time I did Skype a Scientist in Spanish!
-As usual, I should say it was great to be able to talk with students, tell them about science in general and my research. It was really fun to answer their questions.</description>
     </item>
     
   </channel>

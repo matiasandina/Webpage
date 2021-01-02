@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generative-art on Matias Andina</title>
+    <link>/tags/generative-art/</link>
+    <description>Recent content in generative-art on Matias Andina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/generative-art/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art in a New Year</title>
+      <link>/2021/01/art-in-a-new-year/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/01/art-in-a-new-year/</guid>
+      <description>I have not made resolutions for this year1. I have instead spent that time playing with patterns on a canvas. It’s been a while since I wanted to have some time to do generative art using geometric figures and I finally got down to it on the very first day of this year. I found a fountain of joy after just a few hours of tinkering, something inside tells me this could be a new New Year’s tradition for me.</description>
+    </item>
+    
+  </channel>
+</rss>

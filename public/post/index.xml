@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Art in a New Year</title>
+      <link>/2021/01/art-in-a-new-year/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/01/art-in-a-new-year/</guid>
+      <description>I have not made resolutions for this year1. I have instead spent that time playing with patterns on a canvas. It’s been a while since I wanted to have some time to do generative art using geometric figures and I finally got down to it on the very first day of this year. I found a fountain of joy after just a few hours of tinkering, something inside tells me this could be a new New Year’s tradition for me.</description>
+    </item>
     
     <item>
       <title>Russian roulette</title>
@@ -101,16 +110,6 @@ Escribir, en pocas palabras (En el proceso de responder un email, accidentalment
       <guid>/2019/11/fitbit-analysis/</guid>
       <description>It’s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I’m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
  I write fiction and non-fiction. I write open-source software.</description>
-    </item>
-    
-    <item>
-      <title>On pipelines</title>
-      <link>/2019/11/on-pipelines/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/11/on-pipelines/</guid>
-      <description>I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
- I write fiction and non-fiction. I write open-source software. I create generative art.</description>
     </item>
     
   </channel>

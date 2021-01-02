@@ -6,10 +6,19 @@
     <description>Recent content in R on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Art in a New Year</title>
+      <link>/2021/01/art-in-a-new-year/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/01/art-in-a-new-year/</guid>
+      <description>I have not made resolutions for this year1. I have instead spent that time playing with patterns on a canvas. It’s been a while since I wanted to have some time to do generative art using geometric figures and I finally got down to it on the very first day of this year. I found a fountain of joy after just a few hours of tinkering, something inside tells me this could be a new New Year’s tradition for me.</description>
+    </item>
     
     <item>
       <title>Unique</title>
@@ -102,15 +111,6 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
       <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
 RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
-    </item>
-    
-    <item>
-      <title>XY-density-maps</title>
-      <link>/2018/07/xy-density-maps/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/07/xy-density-maps/</guid>
-      <description>I have been playing around with tracking software and the ways to visualize the position of an animal in an arena over time. Even with normal cameras (30 Hz) and relatively small periods of time (~5 min) we get massive datasets and the only way to make sense of them is to aggregate data over time. I have been interested in neat visualizations (using R), thus here are some ways/comments.</description>
     </item>
     
   </channel>

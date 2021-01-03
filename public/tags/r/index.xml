@@ -6,10 +6,20 @@
     <description>Recent content in R on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rotating perspectives</title>
+      <link>/2021/01/rotating-perspectives/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/01/rotating-perspectives/</guid>
+      <description>I have been asked to unveil a bit of what’s under the hood on this post. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.
+Something interesting about all of this is how well it plays into common sense. Looking at things from a different perspective, in this case adding just a rotation, can yield outstanding results.</description>
+    </item>
     
     <item>
       <title>Art in a New Year</title>
@@ -100,17 +110,6 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
       <guid>/2019/01/r-pipeline-its-a-trap/</guid>
       <description>Here’s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
  I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
-    </item>
-    
-    <item>
-      <title>Query Pubmed in R</title>
-      <link>/2018/11/query-pubmed-in-r/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/11/query-pubmed-in-r/</guid>
-      <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
-A couple of google searches lead me into two nice options to do this in R.
-RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
     </item>
     
   </channel>

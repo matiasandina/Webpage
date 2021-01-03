@@ -6,10 +6,20 @@
     <description>Recent content on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rotating perspectives</title>
+      <link>/2021/01/rotating-perspectives/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/01/rotating-perspectives/</guid>
+      <description>I have been asked to unveil a bit of what’s under the hood on this post. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.
+Something interesting about all of this is how well it plays into common sense. Looking at things from a different perspective, in this case adding just a rotation, can yield outstanding results.</description>
+    </item>
     
     <item>
       <title>Art in a New Year</title>
@@ -100,16 +110,6 @@ Escribir, en pocas palabras (En el proceso de responder un email, accidentalment
       
       <guid>/2020/01/writing-checklist/</guid>
       <description>I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham’s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by ;, I thought it would be cool to convert the prose into a checklist).</description>
-    </item>
-    
-    <item>
-      <title>Fitbit Analysis</title>
-      <link>/2019/11/fitbit-analysis/</link>
-      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/11/fitbit-analysis/</guid>
-      <description>It’s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I’m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
- I write fiction and non-fiction. I write open-source software.</description>
     </item>
     
   </channel>

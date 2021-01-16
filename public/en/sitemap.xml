@@ -4,7 +4,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -19,28 +19,28 @@
   </url>
   
   <url>
-    <loc>/tags/generative-art/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <loc>/tags/art/</loc>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/01/lifeviz/</loc>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2021/01/rotating-perspectives/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -51,6 +51,16 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/generative-art/</loc>
+    <lastmod>2021-01-03T11:10:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/01/rotating-perspectives/</loc>
+    <lastmod>2021-01-03T11:10:05-05:00</lastmod>
   </url>
   
   <url>
@@ -96,11 +106,6 @@
   <url>
     <loc>/2020/06/python-keylogger/</loc>
     <lastmod>2020-06-13T14:53:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/art/</loc>
-    <lastmod>2020-04-30T17:51:21-04:00</lastmod>
   </url>
   
   <url>

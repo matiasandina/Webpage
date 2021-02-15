@@ -6,10 +6,20 @@
     <description>Recent content on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 16 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Queen&#39;s Gambit</title>
+      <link>/2021/02/queens-gambit/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/02/queens-gambit/</guid>
+      <description>I love games. I enjoy the fun in many formats: cards, boards, consoles. Yet, over the years, chess has consolidated as the game I play most often, and it is likely the only game I both really like and can limit the amount I play1.
+It&amp;rsquo;s been a couple of months since I noticed something weird going on, a sort of disturbance in the force. I felt I was playing a type of position called Queen&amp;rsquo;s Gambit way more often than normal.</description>
+    </item>
     
     <item>
       <title>Lifeviz</title>
@@ -27,7 +37,7 @@ The goal of lifeviz is to visualize life events. This has been inspired by the p
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/01/rotating-perspectives/</guid>
-      <description>I have been asked to unveil a bit of what’s under the hood on this post. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.
+      <description>I have been asked to unveil a bit of what&amp;rsquo;s under the hood on this post. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.
 Something interesting about all of this is how well it plays into common sense. Looking at things from a different perspective, in this case adding just a rotation, can yield outstanding results.</description>
     </item>
     
@@ -37,7 +47,7 @@ Something interesting about all of this is how well it plays into common sense. 
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/01/art-in-a-new-year/</guid>
-      <description>I have not made resolutions for this year1. I have instead spent that time playing with patterns on a canvas. It’s been a while since I wanted to have some time to do generative art using geometric figures and I finally got down to it on the very first day of this year. I found a fountain of joy after just a few hours of tinkering, something inside tells me this could be a new New Year’s tradition for me.</description>
+      <description>I have not made resolutions for this year1. I have instead spent that time playing with patterns on a canvas. It&amp;rsquo;s been a while since I wanted to have some time to do generative art using geometric figures and I finally got down to it on the very first day of this year. I found a fountain of joy after just a few hours of tinkering, something inside tells me this could be a new New Year&amp;rsquo;s tradition for me.</description>
     </item>
     
     <item>
@@ -46,8 +56,8 @@ Something interesting about all of this is how well it plays into common sense. 
       <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/11/russian-roulette/</guid>
-      <description>There are many traders and most of them blow up at some point in their careers1. Maybe that’s why we worship those who don’t. We find rational explanations for their success, which basically boil down to saying they are smarter/faster/bolder/better than everyone else. We may even go as far as justifying success at all costs.
-I’m sure there’s a lot of skill involved in playing dice with such great results over such a long period of time.</description>
+      <description>There are many traders and most of them blow up at some point in their careers1. Maybe that&amp;rsquo;s why we worship those who don&amp;rsquo;t. We find rational explanations for their success, which basically boil down to saying they are smarter/faster/bolder/better than everyone else. We may even go as far as justifying success at all costs.
+I&amp;rsquo;m sure there&amp;rsquo;s a lot of skill involved in playing dice with such great results over such a long period of time.</description>
     </item>
     
     <item>
@@ -56,8 +66,8 @@ I’m sure there’s a lot of skill involved in playing dice with such great res
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/07/unique/</guid>
-      <description>I have experienced a few explosions here and there. Yes, it’s me not reading the docs. But it’s also me, assuming that verbs mean one thing and not another. Let’s do some unique operations in different languages.
-The MATLAB way &amp;gt;&amp;gt; unique([3, 3, 3, 90, 10]) ans = 3 10 90  The Python way &amp;gt;&amp;gt;&amp;gt; import numpy as np &amp;gt;&amp;gt;&amp;gt; np.unique([3, 3, 3, 90, 10]) array([ 3, 10, 90])  The R way unique(c(3,3,3, 90, 10)) ## [1] 3 90 10 This is what I would expect.</description>
+      <description>I have experienced a few explosions here and there. Yes, it&amp;rsquo;s me not reading the docs. But it&amp;rsquo;s also me, assuming that verbs mean one thing and not another. Let&amp;rsquo;s do some unique operations in different languages.
+The MATLAB way &amp;gt;&amp;gt; unique([3, 3, 3, 90, 10]) ans = 3 10 90  The Python way &amp;gt;&amp;gt;&amp;gt; import numpy as np &amp;gt;&amp;gt;&amp;gt; np.unique([3, 3, 3, 90, 10]) array([ 3, 10, 90])  The R way unique(c(3,3,3, 90, 10))  ## [1] 3 90 10  This is what I would expect.</description>
     </item>
     
     <item>
@@ -68,7 +78,7 @@ The MATLAB way &amp;gt;&amp;gt; unique([3, 3, 3, 90, 10]) ans = 3 10 90  The Pyt
       <guid>/2020/06/birthday-problem/</guid>
       <description>We have all been there, classic math riddle:
  How many people need to be in one room so that the probability of two of them having the same birthday is more than 0.5?
- In a recent bootcamp exercise we tackled this in python and I wanted to share, just because it’s fun. I did it for a range of probabilities. My solution is probably not the fastest/shortest/most pythonic, but it’s a little thing I put out there so, if you want to use/improve it, please do!</description>
+ In a recent bootcamp exercise we tackled this in python and I wanted to share, just because it&amp;rsquo;s fun. I did it for a range of probabilities. My solution is probably not the fastest/shortest/most pythonic, but it&amp;rsquo;s a little thing I put out there so, if you want to use/improve it, please do!</description>
     </item>
     
     <item>
@@ -78,7 +88,7 @@ The MATLAB way &amp;gt;&amp;gt; unique([3, 3, 3, 90, 10]) ans = 3 10 90  The Pyt
       
       <guid>/2020/06/python-keylogger/</guid>
       <description>I have been struggling a lot with pain in my fingers and wrists. I have tried setting up timers for using the keyboard. But the only thing that seems to work is reducing the typing (aka get away from the computer and stop using the keyboard!).
-Tracking hours didn’t work well, so I guess a last resort to force me is counting the actual number of keys per day and trying to keep that to a minimum.</description>
+Tracking hours didn&amp;rsquo;t work well, so I guess a last resort to force me is counting the actual number of keys per day and trying to keep that to a minimum.</description>
     </item>
     
     <item>
@@ -99,18 +109,6 @@ As molecular biologist, I think we were trained to seldom think about the whole 
       <guid>/2020/01/the-power-of-compounding/</guid>
       <description>Paying attention to the small details sounds like a waste of time. Where&amp;rsquo;s that 80&amp;frasl;20 rule when I need it? Well, yes, talking about a small increment sounds boring and useless. A 1% increase in performance might seem trivial. Unexciting. A rounding error.
 But it is often neglected because we don&amp;rsquo;t have a good dimension of scales (e.g., A small percent of a lot of money it&amp;rsquo;s a lot of money) or even when we do, we fail to grasp what exponential phenomena look like.</description>
-    </item>
-    
-    <item>
-      <title>Escribiendo en pocas palabras</title>
-      <link>/2020/01/escribiendo-en-pocas-palabras/</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/01/escribiendo-en-pocas-palabras/</guid>
-      <description>Lo bueno, si breve, dos veces bueno.
- Me tomo la libertad de este juego literario1 para introducir un ensayo con algunas pautas interesantes para escribir. En pocas palabras, Paul Graham nos regala una lista de acciones que es conveniente tomar para producir escritos de calidad.
-La siguiente es una traduccion del ensayo “Writing, Briefly” escrito por Paul Graham2.
-Escribir, en pocas palabras (En el proceso de responder un email, accidentalmente escribí un pequeño ensayo sobre cómo escribir.</description>
     </item>
     
   </channel>

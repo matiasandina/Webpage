@@ -6,10 +6,20 @@
     <description>Recent content in design on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 27 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Queen&#39;s Gambit</title>
+      <link>/2021/02/queens-gambit/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/02/queens-gambit/</guid>
+      <description>I love games. I enjoy the fun in many formats: cards, boards, consoles. Yet, over the years, chess has consolidated as the game I play most often, and it is likely the only game I both really like and can limit the amount I play1.
+It&amp;rsquo;s been a couple of months since I noticed something weird going on, a sort of disturbance in the force. I felt I was playing a type of position called Queen&amp;rsquo;s Gambit way more often than normal.</description>
+    </item>
     
     <item>
       <title>Github style calendar heatmaps</title>
@@ -17,8 +27,8 @@
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/05/github-style-calendar-heatmaps/</guid>
-      <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I’ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I’m borrowing heavily from them1.
-library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte Let’s generate a data.</description>
+      <description>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I&amp;rsquo;ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I&amp;rsquo;m borrowing heavily from them1.
+library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte  Let&amp;rsquo;s generate a data.</description>
     </item>
     
     <item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PhD on Matias Andina</title>
+    <title>phd on Matias Andina</title>
     <link>/tags/phd/</link>
-    <description>Recent content in PhD on Matias Andina</description>
+    <description>Recent content in phd on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,9 @@
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/11/query-pubmed-in-r/</guid>
-      <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it’s really cool, so I wanted to play with something that could provide the data.
+      <description>I have seen a couple of presentations that use plots of PubMed query results. I have even seen some of them in papers. I just think it&amp;rsquo;s really cool, so I wanted to play with something that could provide the data.
 A couple of google searches lead me into two nice options to do this in R.
-RISmed package, see CRAN or Dave Tang’s Blog A custom approach from Kristoffer Magnusson  I went with the custom approach, decided to borrow heavily from Kristoffer’s repo, and did a few modifications here and there.</description>
+1) RISmed package, see CRAN or Dave Tang&amp;rsquo;s Blog 1) A custom approach from Kristoffer Magnusson</description>
     </item>
     
     <item>

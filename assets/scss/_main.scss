@@ -175,8 +175,8 @@ figure {
 em, i, strong {
   color: white;
 
-  @media (prefers-color-scheme: light) {
-    color: black;
+  @media (prefers-color-scheme: dark) {
+    color: white;
   }
 }
 

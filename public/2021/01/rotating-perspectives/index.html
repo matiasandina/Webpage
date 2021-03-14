@@ -40,7 +40,7 @@ Something interesting about all of this is how well it plays into common sense. 
 
 <meta itemprop="datePublished" content="2021-01-03T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-15T08:03:58-05:00" />
-<meta itemprop="wordCount" content="406">
+<meta itemprop="wordCount" content="417">
 
 
 
@@ -187,7 +187,8 @@ df &lt;- data.frame(
 )
 
 ggplot(df)+
-  geom_regon(aes(x0=x0,y0=y0,r=r, sides=x0, angle=0),
+  geom_regon(aes(x0 = x0, y0 = y0,
+                 r = r, sides= x0, angle = 0),
              fill=&quot;gray50&quot;, color=&quot;black&quot;)+
   coord_equal()+
   labs(title=&quot;Regular polygons using ggforce&quot;, 

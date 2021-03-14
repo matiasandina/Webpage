@@ -64,7 +64,8 @@ df <- data.frame(
 )
 
 ggplot(df)+
-  geom_regon(aes(x0=x0,y0=y0,r=r, sides=x0, angle=0),
+  geom_regon(aes(x0 = x0, y0 = y0,
+                 r = r, sides= x0, angle = 0),
              fill="gray50", color="black")+
   coord_equal()+
   labs(title="Regular polygons using ggforce", 

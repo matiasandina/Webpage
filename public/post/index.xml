@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Icebreaker</title>
+      <link>/2021/04/icebreaker/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/04/icebreaker/</guid>
+      <description>There are many managers I admire, some of whom I was lucky personally meet, others I &amp;ldquo;know&amp;rdquo; through reading their books/blogs.
+I have have borrowed different questions and suggestions I liked from these managers to create an Icebreaker, a set of questions that can quickly provide me information about a new person I&amp;rsquo;m working with. At the same time, I wrote this post to provide new people in our team with basic knowledge about me, the new person they are working with.</description>
+    </item>
     
     <item>
       <title>Queen&#39;s Gambit</title>
@@ -99,16 +109,6 @@ Tracking hours didn&amp;rsquo;t work well, so I guess a last resort to force me 
       <guid>/2020/04/complex-fun/</guid>
       <description>People say that if you have to explain a joke, it loses value. Probably true. I guess I just wanted to partially comment on how different disciplines analyze different levels of complexity.
 As molecular biologist, I think we were trained to seldom think about the whole system, we were trained to just give up complexity and focus on a couple of fancy names (yes, YFG fits pretty well as the center of this Universe).</description>
-    </item>
-    
-    <item>
-      <title>The power of compounding</title>
-      <link>/2020/01/the-power-of-compounding/</link>
-      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/01/the-power-of-compounding/</guid>
-      <description>Paying attention to the small details sounds like a waste of time. Where&amp;rsquo;s that 80&amp;frasl;20 rule when I need it? Well, yes, talking about a small increment sounds boring and useless. A 1% increase in performance might seem trivial. Unexciting. A rounding error.
-But it is often neglected because we don&amp;rsquo;t have a good dimension of scales (e.g., A small percent of a lot of money it&amp;rsquo;s a lot of money) or even when we do, we fail to grasp what exponential phenomena look like.</description>
     </item>
     
   </channel>

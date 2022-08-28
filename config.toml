@@ -96,7 +96,7 @@ disableReadOtherPosts = false
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/in/matias-andina-58a0a4b5/"
+    url  = "https://www.linkedin.com/in/matiasandina/"
 
   [[params.social]]
     name = "stackoverflow"

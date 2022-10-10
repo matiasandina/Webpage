@@ -25,7 +25,7 @@
 
 
 
-<link rel="stylesheet" href="/main.9dd6e34900c7146ef761cb3cc94cf93488cd14f263324c6c86dc875864b46698.css">
+<link rel="stylesheet" href="/main.2ad92dc1899f3589710c8dec68a643400183a43d0b7bf38ed3e21bb2dfd96b3d.css">
 
 
 
@@ -33,17 +33,10 @@
 
 
 <meta itemprop="name" content="Writing Checklist">
-<meta itemprop="description" content="I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham&rsquo;s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by ;, I thought it would be cool to convert the prose into a checklist).">
-
-
-<meta itemprop="datePublished" content="2020-01-02T00:00:00&#43;00:00" />
+<meta itemprop="description" content="I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham&rsquo;s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by ;, I thought it would be cool to convert the prose into a checklist)."><meta itemprop="datePublished" content="2020-01-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-15T08:03:58-05:00" />
-<meta itemprop="wordCount" content="909">
-
-
-
+<meta itemprop="wordCount" content="862"><meta itemprop="image" content="/img/m-gray.jpg"/>
 <meta itemprop="keywords" content="writing,learning,documentinglearning," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/img/m-gray.jpg"/>
 
@@ -126,50 +119,14 @@
             
 
             <div class="post-content">
-                
-
-<p>I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham&rsquo;s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by <code>;</code>, I thought it would be cool to convert the prose into a checklist).</p>
-
-<p><!--html_preserve--><blockquote>
-<p>I write fiction and non-fiction.<br/>
-I write open-source software.<br/>
-I create generative art.  </p></p>
-
-<p><p>All of these are available for free in different media.
-If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
-</blockquote>
-<!--/html_preserve--><!--html_preserve--><table style="width:100%">
-  <tr>
-  <th>Patreon</th>
-  <td>
-  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-  </td>
-  <tr>
-    <td>
-    </td>
-  </tr>
-  <tr>
-  <th>Paypal</th>
-  <td>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form></p>
-
-<p></td>
-  </tr>
-</table>
-<!--/html_preserve--></p>
-
+                <p>I spent a good portion of the end of 2019 and the beginning of 2020 reading Paul Graham&rsquo;s essays. Many caught my attention (and my fingers to take notes). I want to comment on an essay about advice for good writing. Because it was written in a way that allowed for easy reformatting (ideas separated by <code>;</code>, I thought it would be cool to convert the prose into a checklist).</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="creating-the-checklist">Creating the checklist</h2>
-
-<p>The main text comes from <a href="http://www.paulgraham.com/writing44.html" target="_blank">here</a>. For simplicity, I have only used the main paragraph (aka, copy and paste the second paragraph). I omitted it here because it would be long and you can read it in the native format from the source.</p>
-
+<p>The main text comes from <a href="http://www.paulgraham.com/writing44.html">here</a>. For simplicity, I have only used the main paragraph (aka, copy and paste the second paragraph). I omitted it here because it would be long and you can read it in the native format from the source.</p>
 <p>In the code chunk below I comment the steps I took.</p>
-
 <pre><code class="language-r"># text is copy-paste of the second paragraph
 # text &lt;- c(&quot;...&quot;) ... == copy-paste
 
@@ -185,9 +142,7 @@ sp &lt;- c(&quot;# Paul Graham's Writing Checklist&quot;, sp)
 # Capitalize first letter of every sentence
 sp &lt;- stringr::str_to_sentence(sp)
 </code></pre>
-
 <p>If you want to write it to file, you can use <code>writeLines()</code></p>
-
 <pre><code class="language-r"># write
 fileConn &lt;- file(&quot;paul_graham_writing_checklist.md&quot;)
 writeLines(sp, fileConn)
@@ -196,13 +151,10 @@ close(fileConn)
 # If you want to knit to html you can do this
 # knitr::knit2html(&quot;paul_graham_writing_checklist.md&quot;)
 </code></pre>
-
 <p>Let&rsquo;s take a look at the product:</p>
-
 <pre><code class="language-r"># printing for web post
 cat(sp, sep = &quot;\n&quot;)
 </code></pre>
-
 <pre><code># Paul graham's writing checklist
 - [ ]  Write a bad version 1 as fast as you can
 - [ ]  Rewrite it over and over
@@ -241,15 +193,10 @@ cat(sp, sep = &quot;\n&quot;)
 - [ ]  Learn to distinguish surprises from digressions
 - [ ]  Learn to recognize the approach of an ending, and when one appears, grab it.
 </code></pre>
-
 <p>The checklist is not in strict chronological order, so I might try to reshape it later into something that would make more sense as a timeline. It will render as a checklist in something that is GitHub flavored (e.g., on GitHub). However, I will probably just use it as text file or print it as is.</p>
-
 <p>I also noticed that the link for the Spanish translation is broken/outdated, so I tried my best to translate it. <a href="/2020/01/escribiendo-en-pocas-palabras/">Here it is</a></p>
-
 <h2 id="summary">Summary</h2>
-
 <p>I think this checklist is an awesome learning opportunity and a clear path to improving one&rsquo;s writing. Quite happy to have found it, looking forward to improving my skills.</p>
-
 <p>I got to learn a few cool R things like, 1) I can use <code>writeLines()</code> to write a <code>.md</code> file and 2) <code>stringr::str_to_sentence()</code> is an <strong>awesome</strong> function.</p>
 
             </div>
@@ -279,7 +226,7 @@ cat(sp, sep = &quot;\n&quot;)
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
+            <span>&copy; 2022</span>
             <span><a href="/">Matias Andina</a></span>
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
@@ -300,7 +247,7 @@ cat(sp, sep = &quot;\n&quot;)
 
 
 
- <script type="text/javascript" src="/bundle.min.af435e44374f1e99a669ea8cd5bb9a2fceed80588941a451bfddb66b86a67c9f40b0f417e9543a763f809aa7e9300d7b1d69bf99615810ba02ac70396d50fad5.js"></script>
+ <script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js"></script>
 
 
 

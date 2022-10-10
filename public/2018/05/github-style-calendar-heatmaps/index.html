@@ -26,7 +26,7 @@ library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color pale
 
 
 
-<link rel="stylesheet" href="/main.9dd6e34900c7146ef761cb3cc94cf93488cd14f263324c6c86dc875864b46698.css">
+<link rel="stylesheet" href="/main.2ad92dc1899f3589710c8dec68a643400183a43d0b7bf38ed3e21bb2dfd96b3d.css">
 
 
 
@@ -35,17 +35,10 @@ library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color pale
 
 <meta itemprop="name" content="Github style calendar heatmaps">
 <meta itemprop="description" content="I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I&rsquo;ve seen some beautiful things done in d3 and javascript. But, of course, I wanted to make it in R. Turns out a bunch of other people have great ideas for how to go about it. Thus, I&rsquo;m borrowing heavily from them1.
-library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte  Let&rsquo;s generate a data.">
-
-
-<meta itemprop="datePublished" content="2018-05-27T00:00:00&#43;00:00" />
+library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color palette library(ggthemes) # theme tufte  Let&rsquo;s generate a data."><meta itemprop="datePublished" content="2018-05-27T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-15T08:03:58-05:00" />
-<meta itemprop="wordCount" content="731">
-
-
-
+<meta itemprop="wordCount" content="730"><meta itemprop="image" content="/img/m-gray.jpg"/>
 <meta itemprop="keywords" content="research,design,R," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/img/m-gray.jpg"/>
 
@@ -129,19 +122,14 @@ library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color pale
             
 
             <div class="post-content">
-                
-
-<p>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I&rsquo;ve seen some beautiful things done in <code>d3</code> and javascript. But, of course, I wanted to make it in <code>R</code>. Turns out a bunch of other people have great ideas for how to go about it. Thus, I&rsquo;m borrowing heavily from them<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</p>
-
+                <p>I like how the commit heatmap looks in Github. I wanted to play with something that could be plotted that way. I&rsquo;ve seen some beautiful things done in <code>d3</code> and javascript. But, of course, I wanted to make it in <code>R</code>. Turns out a bunch of other people have great ideas for how to go about it. Thus, I&rsquo;m borrowing heavily from them<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <pre><code class="language-r">library(ggplot2)
 library(dplyr)
 library(lubridate)
 library(viridis)  # Color palette
 library(ggthemes) # theme tufte
 </code></pre>
-
 <p>Let&rsquo;s generate a <code>data.frame</code> for May 2018.</p>
-
 <pre><code class="language-r"># choose dates
 start_date &lt;- ymd(&quot;2018-05-01&quot;)
 end_date &lt;- ymd(&quot;2018-05-31&quot;)
@@ -155,12 +143,9 @@ d &lt;- tibble::tibble(
                  levels = rev(c(&quot;Mon&quot;, &quot;Tue&quot;, &quot;Wed&quot;, &quot;Thu&quot;,
                                 &quot;Fri&quot;, &quot;Sat&quot;, &quot;Sun&quot;))))
 </code></pre>
-
 <p>This is how our data looks like now</p>
-
 <pre><code class="language-r">head(d)
 </code></pre>
-
 <pre><code>## # A tibble: 6 x 5
 ##   date       month year   week day  
 ##   &lt;date&gt;     &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt; &lt;fct&gt;
@@ -171,12 +156,9 @@ d &lt;- tibble::tibble(
 ## 5 2018-05-05     5 2018     19 Sat  
 ## 6 2018-05-06     5 2018     19 Sun
 </code></pre>
-
 <p>Now, let&rsquo;s assume I registered some events in my life and that my data looks something like: A date column (<em>date</em>), and the number of events that happened on a particular date (<em>n</em>).</p>
-
 <pre><code class="language-r">df
 </code></pre>
-
 <pre><code>## # A tibble: 13 x 2
 ##    date           n
 ##    &lt;date&gt;     &lt;int&gt;
@@ -194,9 +176,7 @@ d &lt;- tibble::tibble(
 ## 12 2018-05-26     1
 ## 13 2018-05-27     4
 </code></pre>
-
 <p>I can join both <code>data.frames</code> and visualize!</p>
-
 <pre><code class="language-r">df_plot &lt;- d %&gt;% left_join(df, by = &quot;date&quot;) 
 
 df_plot %&gt;%
@@ -208,11 +188,8 @@ df_plot %&gt;%
   theme(panel.background = element_rect(colour = &quot;black&quot;))+
   ylab(&quot;Number of events&quot;)
 </code></pre>
-
-<p><img src="/post/2018-05-27-github-style-calendar-heatmap/index_files/figure-html/line-plot-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>My goal is not to analyze long term trends like seasonality. Thus, this plot is rather unremarkable. Not only because it is a small toy-like dataset, but because it fails to inform calendar information. Let&rsquo;s try to make it better!</p>
-
 <pre><code class="language-r">calendar_plot &lt;- function(data, color.scale = &quot;viridis&quot;,
                           viridis.pal = &quot;D&quot;, dir = 1){
     
@@ -280,48 +257,34 @@ df_plot %&gt;%
     print(p)
 }
 </code></pre>
-
 <p>We can use <code>calendar_plot()</code> function now to make a plot in <em>calendar-like</em> shape. It is easier to see the data, even with such as small dataset. Below there are two color scale representations of the same data.</p>
-
 <pre><code class="language-r">calendar_plot(df_plot, 'greens')
 </code></pre>
-
-<p><img src="/post/2018-05-27-github-style-calendar-heatmap/index_files/figure-html/calendar-plot-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <pre><code class="language-r">calendar_plot(df_plot, viridis.pal = &quot;B&quot;)
 </code></pre>
-
-<p><img src="/post/2018-05-27-github-style-calendar-heatmap/index_files/figure-html/calendar-plot-2.png" width="672" /></p>
-
-<hr />
-
+<p><!-- raw HTML omitted --></p>
+<hr>
 <h2 id="update">UPDATE</h2>
-
 <p>I was curious about how data would look like for a longer span. Here&rsquo;s the data for a longer time interval.</p>
-
 <pre><code>## Warning: `data_frame()` is deprecated as of tibble 1.1.0.
 ## Please use `tibble()` instead.
 ## This warning is displayed once every 8 hours.
 ## Call `lifecycle::last_warnings()` to see where this warning was generated.
 </code></pre>
-
 <pre><code class="language-r">calendar_plot(df_plot)
 </code></pre>
-
-<p><img src="/post/2018-05-27-github-style-calendar-heatmap/index_files/figure-html/update-plot-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>When I did this update, I realized that my <code>calendar_plot()</code> function should handle internally the creation of the <code>data.frame</code> named <code>d</code> that serves as a placeholder. I guess that will happen in a following update <code>:)</code>.</p>
-
-<hr />
-<div class="footnotes">
-
-<hr />
-
+<hr>
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">Great resources  <a href="https://vuorre.netlify.com/post/2016/2016-03-24-github-waffle-plot/" target="_blank">here</a>, <a href="http://ethen8181.github.io/Business-Analytics/articles/calendar_heatmaps/calendar_heatmaps.html" target="_blank">and here</a>
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>Great resources  <a href="https://vuorre.netlify.com/post/2016/2016-03-24-github-waffle-plot/">here</a>, <a href="http://ethen8181.github.io/Business-Analytics/articles/calendar_heatmaps/calendar_heatmaps.html">and here</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
             </div>
         </article>
@@ -350,7 +313,7 @@ df_plot %&gt;%
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
+            <span>&copy; 2022</span>
             <span><a href="/">Matias Andina</a></span>
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
@@ -371,7 +334,7 @@ df_plot %&gt;%
 
 
 
- <script type="text/javascript" src="/bundle.min.af435e44374f1e99a669ea8cd5bb9a2fceed80588941a451bfddb66b86a67c9f40b0f417e9543a763f809aa7e9300d7b1d69bf99615810ba02ac70396d50fad5.js"></script>
+ <script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js"></script>
 
 
 

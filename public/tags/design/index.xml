@@ -6,10 +6,15 @@
     <description>Recent content in design on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inequality</title>
+      <link>/2022/10/inequality/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/10/inequality/</guid>
+      <description>I love Future Crunch. The idea of receiving positive news that I wouldn&amp;rsquo;t otherwise get is fantastic and I appreciate the work they do. However, during one of the latests edition I got a pyramid plot coming from Credit Suisse which was really hard to read. Moreover, the people who made the plot were trying to make the case that the world is a better place, because there is less inequality.</description>
+    </item>
     
     <item>
       <title>Queen&#39;s Gambit</title>
@@ -38,7 +43,7 @@ library(ggplot2) library(dplyr) library(lubridate) library(viridis) # Color pale
       
       <guid>/2018/05/making-atlas-images/</guid>
       <description>This post contains a quick description/recipe for making vectorial brain atlas images suitable for publication and presentations. This post is as much for communication as for personal records.
-Step 1 - The atlas itself Starting material should be as good quality as possible. I used .eps files from Paxinos Rat Brain Atlas for doing this. On the cheap side of life, a very nice online resource can be found here.</description>
+Step 1 - The atlas itself Starting material should be as good quality as possible. I used .eps files from Paxinos Rat Brain Atlas for doing this. On the cheap side of life, a very nice online resource can be found here. Images could be imported to most image processing freeware and processed in a very similar way.</description>
     </item>
     
   </channel>

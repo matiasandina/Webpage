@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Matias Andina">
 <meta name="description" content="I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media." />
+  Problems in mind Where do you live? Code files usually live in one folder, which is also a GitHub folder that you and your team commit/push to." />
 <meta name="keywords" content="homepage, blog, neuroscience, science, programming, freelancer, R" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -26,7 +26,7 @@
 
 
 
-<link rel="stylesheet" href="/main.9dd6e34900c7146ef761cb3cc94cf93488cd14f263324c6c86dc875864b46698.css">
+<link rel="stylesheet" href="/main.2ad92dc1899f3589710c8dec68a643400183a43d0b7bf38ed3e21bb2dfd96b3d.css">
 
 
 
@@ -35,23 +35,16 @@
 
 <meta itemprop="name" content="On pipelines">
 <meta itemprop="description" content="I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.">
-
-
-<meta itemprop="datePublished" content="2019-11-14T00:00:00&#43;00:00" />
+  Problems in mind Where do you live? Code files usually live in one folder, which is also a GitHub folder that you and your team commit/push to."><meta itemprop="datePublished" content="2019-11-14T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-15T08:03:58-05:00" />
-<meta itemprop="wordCount" content="1268">
-
-
-
+<meta itemprop="wordCount" content="1183"><meta itemprop="image" content="/img/m-gray.jpg"/>
 <meta itemprop="keywords" content="R," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/img/m-gray.jpg"/>
 
 <meta name="twitter:title" content="On pipelines"/>
 <meta name="twitter:description" content="I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media."/>
+  Problems in mind Where do you live? Code files usually live in one folder, which is also a GitHub folder that you and your team commit/push to."/>
 
 
 
@@ -129,112 +122,48 @@
             
 
             <div class="post-content">
-                
-
-<p>I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.</p>
-
-<hr />
-
-<p><!--html_preserve--><blockquote>
-<p>I write fiction and non-fiction.<br/>
-I write open-source software.<br/>
-I create generative art.  </p></p>
-
-<p><p>All of these are available for free in different media.
-If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
-</blockquote>
-<!--/html_preserve--><!--html_preserve--><table style="width:100%">
-  <tr>
-  <th>Patreon</th>
-  <td>
-  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-  </td>
-  <tr>
-    <td>
-    </td>
-  </tr>
-  <tr>
-  <th>Paypal</th>
-  <td>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form></p>
-
-<p></td>
-  </tr>
-</table>
-<!--/html_preserve--></p>
-
-<hr />
-
+                <p>I have been thinking about different problems I have when writing code and the things that I normally try to do to keep my projects clean and functional. I wrote this post to put this thoughts out there, hopefully I will receive input from the great software engineers out there.</p>
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
 <h2 id="problems-in-mind">Problems in mind</h2>
-
 <h3 id="where-do-you-live">Where do you live?</h3>
-
 <p>Code files usually live in one folder, which is also a GitHub folder that you and your team commit/push to. So far, so good. But what do you do with the data to feed that monster pipeline of yours?</p>
-
 <p>I will assume that your concerns with data privacy are minor or you handled them accordingly (only private parties have access to the data).</p>
-
 <p>Now, you still have the problem of <em>where</em> to put this other folder, which is basically a size problem.</p>
-
 <blockquote>
 <p>Small files can live with your data</p>
 </blockquote>
-
 <p>This is the case for small and few text files of some thousand rows. Easy enough, you just go with your <code>/repo-name/data/</code> and live happily ever after.</p>
-
 <blockquote>
 <p>Medium size files</p>
 </blockquote>
-
 <p>These files are big enough to be a problem for hosting on GitHub. File formats start to be an issue here, images and video will not be easily accessible anywhere you take it.</p>
-
 <p><strong>Options:</strong></p>
-
 <ul>
 <li>Cloud</li>
 </ul>
-
 <p><strong>Pros:</strong> It&rsquo;s fluffy. Now, seriously, it&rsquo;s good that your code can point to one place, download the stuff into local and use it. Every computer can do the same and there <em>should</em> be no problem. Because your sizes are not huge, you <em>should</em> be fine.</p>
-
-<p><strong>Cons:</strong> You need internet. No, internet it&rsquo;s not everywhere all the time<sup class="footnote-ref" id="fnref:maybe"><a href="#fn:maybe">1</a></sup>. Internet is not in my cellphone on a second basement in a concrete building. Even with the fastest internet, it&rsquo;s not trivial to setup <code>your-favorite-cloud-service</code> to allow access to <code>the-sketchy-script-you-wrote</code><sup class="footnote-ref" id="fnref:borrow"><a href="#fn:borrow">2</a></sup>.</p>
-
-<p><center>
-<img src="/img/simple_credentials.jpg" alt="" />
-</center></p>
-
+<p><strong>Cons:</strong> You need internet. No, internet it&rsquo;s not everywhere all the time<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Internet is not in my cellphone on a second basement in a concrete building. Even with the fastest internet, it&rsquo;s not trivial to setup <code>your-favorite-cloud-service</code> to allow access to <code>the-sketchy-script-you-wrote</code><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<!-- raw HTML omitted -->
 <ul>
 <li>Good old-fashioned external hard drive.</li>
 </ul>
-
 <p><strong>Pros:</strong> This is a good one if your data size is in the Gb range and you don&rsquo;t really need to share it with too many people.</p>
-
 <p><strong>Cons:</strong> Hard drives fail. Are you ready to lose your data? It starts to get really annoying when you have to do back-ups of your data and your data is big enough that you can&rsquo;t use your computer&rsquo;s hard drive (that&rsquo;s why you chose an external hard drive in the first place). Should you have an external hard drive for the external hard drive? Are you planning to write the output of your code on those hard drives? Brace for impact.</p>
-
-<p><center>
-<img src="/img/spiderman_pointing_meme.jpg" alt="" />
-</center></p>
-
+<!-- raw HTML omitted -->
 <p>External hard-drives might have paths that change depending on which computer is connected to. This can easily be a path inferno. Moreover, some hard drives don&rsquo;t work if you try to use them in different OS.</p>
-
 <blockquote>
 <p>Large sizes</p>
 </blockquote>
-
 <p>I work with brains. Last time I checked, one mouse brain is <code>~2TB</code>, n=1, just a few channels, not even the best resolution we can get.</p>
-
-<p>I think local/cloud servers are the only way to go here<sup class="footnote-ref" id="fnref:yet"><a href="#fn:yet">3</a></sup>. I don&rsquo;t have a lot of experience with this, but I have suffered internet upload/download speed problems when I try to sync with my cloud back-ups or share image/video files with my team.</p>
-
+<p>I think local/cloud servers are the only way to go here<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. I don&rsquo;t have a lot of experience with this, but I have suffered internet upload/download speed problems when I try to sync with my cloud back-ups or share image/video files with my team.</p>
 <h3 id="paths-need-to-be-absolute">Paths need to be absolute</h3>
-
-<p>Because your working directory is the folder where your code lives<sup class="footnote-ref" id="fnref:wd"><a href="#fn:wd">4</a></sup>, but your data folder lives elsewhere, you kind of need to use absolute paths all the time.</p>
-
+<p>Because your working directory is the folder where your code lives<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, but your data folder lives elsewhere, you kind of need to use absolute paths all the time.</p>
 <p>I have only been able to fix this issue using functions that attempt to fix this when running the script.</p>
-
 <pre><code class="language-r">fix_working_environment &lt;- function(saved_path,
                                     local_path){
   # if the folder structure doesn't work as expected...
@@ -244,76 +173,55 @@ If you like what I do, and want me to keep creating, you can contribute using th
                        local_path)
 }
 </code></pre>
-
 <p>This is particularly annoying when you have to run commands that involve calling things from console.</p>
-
 <p>Let&rsquo;s call <code>ImageJ</code> from R.</p>
-
 <pre><code class="language-r">system(paste(&quot;/home/matias/Downloads/Fiji.app/ImageJ-linux64 --run&quot;,
              macro_to_run))
 </code></pre>
-
 <p>The moment somebody changes the Fiji folder, or tries to call ImageJ from another computer, that code brakes. I&rsquo;m unaware of how to make sure these things bullet-proof, <strong>please enlighten me</strong>.</p>
-
 <p>Let&rsquo;s call <code>python</code> from R. Wait, what version of python do you want? I rest my case.</p>
-
 <h3 id="processes-are-identified-by-the-files">Processes are identified by the files</h3>
-
 <p>I have this problem quite often. It might be because my pipelines follow this logic.</p>
-
-<p><!--html_preserve--><div id="htmlwidget-84b14bd91d256db947e5" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-84b14bd91d256db947e5">{&ldquo;x&rdquo;:{&ldquo;diagram&rdquo;:&rdquo;\n\ngraph LR\nD(Raw Data)\nA[List all files] &ndash;&gt;|Apply functions| B[Write computation]\nD &ndash;&gt; A\nB &ndash;&gt; C(New files)\nC &ndash;&gt; A\n\nlinkStyle 0 stroke-width:2px,fill:none,stroke:pink;\nlinkStyle 1 stroke-width:2px,fill:none,stroke:pink;\nlinkStyle 2 stroke-width:2px,fill:none,stroke:pink;\nlinkStyle 3 stroke-width:2px,fill:none,stroke:pink;     style A fill:#f9f, stroke:#333,stroke-width:1px        \nstyle B fill:#f9f,stroke:#333,stroke-width:1px        \n        &ldquo;},&ldquo;evals&rdquo;:[],&ldquo;jsHooks&rdquo;:[]}</script><!--/html_preserve--></p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>It&rsquo;s quite difficult to escape the infinite <code>list all files</code> &ndash;&gt; <code>apply function to all files</code> &ndash;&gt; <code>write computations into new files</code> loop. I don&rsquo;t really know what&rsquo;s on the other side.</p>
-
 <p>The main problem is that your previous, current, and next files always serve as identifiers and you need to carry over their absolute path (to be able to read them form your data folder). Whenever these paths get corrupted (or you change your computer) things stop working.</p>
-
 <p>This problem might stem from the fact that I normally have to process experimental units through the pipeline. I have to do many things to an experimental unit and have many many experimental units composing the data for one pipeline. That&rsquo;s when my inner voice goes:</p>
-
 <blockquote>
 <p>But I would also like to have the possibility to run or re-run just one (or just a few experimental units).</p>
 </blockquote>
-
 <p>The way I handle this is by leaving open the door to hand selection of files (aka interactive mode, not fun). However, interactive mode somewhat helps with the problem below.</p>
-
-<h3 id="don-t-move-my-files">Don&rsquo;t move my files</h3>
-
-<p>People do stuff people normally do, like moving folders around&hellip;that&rsquo;s BAD, REALLY BAD. It&rsquo;s also quite difficult to communicate the need to keep the file structure without casting the magic spells of <em>everything will break</em><sup class="footnote-ref" id="fnref:yourcomputer"><a href="#fn:yourcomputer">5</a></sup>.</p>
-
+<h3 id="dont-move-my-files">Don&rsquo;t move my files</h3>
+<p>People do stuff people normally do, like moving folders around&hellip;that&rsquo;s BAD, REALLY BAD. It&rsquo;s also quite difficult to communicate the need to keep the file structure without casting the magic spells of <em>everything will break</em><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <p>I don&rsquo;t feel good with the level of dependency on file structure that my projects always end up having. <strong>Please enlighten me on this one too!</strong></p>
-
-<h3 id="don-t-rename-my-files">Don&rsquo;t rename my files</h3>
-
+<h3 id="dont-rename-my-files">Don&rsquo;t rename my files</h3>
 <p>Don&rsquo;t rename my files, except when I do. That would be a better subtitle of this section. A great way of not dealing with multiple copies of the same files. For example, let&rsquo;s say you applied a mask to an image and then cropped, and rotated it. How many files do you keep? What if your image size was 1 Gb?</p>
-
 <p>My hack around this is to rename the files (this include the cases where I just want to move files to specific sub-folders). Because I rely so much on the file names, this renaming usually comes back to bite me. I just 🤷.</p>
-
 <h3 id="operating-systems">Operating systems</h3>
-
 <p>I&rsquo;m writing this in 2019, I thought the OS problem was solved. Turns out it&rsquo;s not solved at all and developers shy away from it more often than they should. I understand them, developing for every OS is a huge pain and requires you to constantly check in multiple machines (or have access to a teammate that breaks your code as soon as you push it).</p>
-
-<hr />
-
+<hr>
 <h2 id="what-is-your-approach">What is your approach?</h2>
-
 <p>This is something I will continue to think for a long time, and my approach might need to be adjusted to each situation. What is your current approach?</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:maybe">Maybe I should say moderately fast and stable internet.
- <a class="footnote-return" href="#fnref:maybe"><sup>[return]</sup></a></li>
-<li id="fn:borrow">Image borrowed from <a href="https://freek.dev/459-how-to-setup-and-use-the-google-calendar-api" target="_blank">here</a>
- <a class="footnote-return" href="#fnref:borrow"><sup>[return]</sup></a></li>
-<li id="fn:yet">And yet, for many practical reasons, I never do this.
- <a class="footnote-return" href="#fnref:yet"><sup>[return]</sup></a></li>
-<li id="fn:wd">And you should <strong>never</strong> forcefully set the working directory elsewhere.
- <a class="footnote-return" href="#fnref:wd"><sup>[return]</sup></a></li>
-<li id="fn:yourcomputer">Yes, your computer is on the line! And I will get all your passwords (?).
- <a class="footnote-return" href="#fnref:yourcomputer"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>Maybe I should say moderately fast and stable internet.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Image borrowed from <a href="https://freek.dev/459-how-to-setup-and-use-the-google-calendar-api">here</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>And yet, for many practical reasons, I never do this.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>And you should <strong>never</strong> forcefully set the working directory elsewhere.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Yes, your computer is on the line! And I will get all your passwords (?).&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
             </div>
         </article>
@@ -340,7 +248,7 @@ If you like what I do, and want me to keep creating, you can contribute using th
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
+            <span>&copy; 2022</span>
             <span><a href="/">Matias Andina</a></span>
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
@@ -361,7 +269,7 @@ If you like what I do, and want me to keep creating, you can contribute using th
 
 
 
- <script type="text/javascript" src="/bundle.min.af435e44374f1e99a669ea8cd5bb9a2fceed80588941a451bfddb66b86a67c9f40b0f417e9543a763f809aa7e9300d7b1d69bf99615810ba02ac70396d50fad5.js"></script>
+ <script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js"></script>
 
 
 

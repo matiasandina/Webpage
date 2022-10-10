@@ -6,11 +6,7 @@
     <description>Recent content in learning on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Checklist</title>
       <link>/2020/01/writing-checklist/</link>
@@ -27,7 +23,7 @@
       
       <guid>/2019/11/fitbit-analysis/</guid>
       <description>It&amp;rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&amp;rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
- I write fiction and non-fiction. I write open-source software.</description>
+  Let&amp;rsquo;s first see a glimpse of the data, just to know what type of data we are dealing with.</description>
     </item>
     
     <item>
@@ -48,7 +44,7 @@ En general, a mí me interesa más debatir sobre la implementación de política
       <guid>/2019/04/data-visualization-challenge-2/</guid>
       <description>This post is made as a backup for the data visualization challenge number 2. Data comes from the daily posts of the members of the Data Visualization Society (DVS) on the DVS Slack channels. You can see everybody&amp;rsquo;s submissions for the challenge here.
 I am also very motivated to explore the dark versions of the ggplot themes. The package I&amp;rsquo;m going to be using is called ggdark.
- I write fiction and non-fiction.</description>
+  Dive in These are the libraries we&amp;rsquo;ll need:</description>
     </item>
     
     <item>
@@ -58,7 +54,7 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
       
       <guid>/2019/04/email-analysis/</guid>
       <description>I am keen on tracking things. Some people call this personal analytics, I call it fun. In this post, I will explore how to extract your email information using python and R. My goal is to do some analysis on the data and, hopefully, explore different visualizations that can inform future behavior.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
+  Emails from Gmail Reading emails in python is quite simple, we need to import the mailbox library.</description>
     </item>
     
     <item>
@@ -68,7 +64,7 @@ I am also very motivated to explore the dark versions of the ggplot themes. The 
       
       <guid>/2019/01/r-pipeline-its-a-trap/</guid>
       <description>Here&amp;rsquo;s how the story usually goes. It starts with you, sitting in front of the computer screen, thinking: What a lovely day for some data analysis!. This day is great because you have collected some data or maybe because you happened to find some data somewhere, begging to be part of a smoking good plot.
- I write fiction and non-fiction. I write open-source software. I create generative art. All of these are available for free in different media.</description>
+  Raw data Having data feels so good, that itching feeling in your fingers, the rush to know.</description>
     </item>
     
     <item>

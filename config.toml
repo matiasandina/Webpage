@@ -5,6 +5,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "UNPUBLISHED", 
 DefaultContentLanguage = "en"
 theme = "hello-friend-ng"
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 pygmentsCodefences = false
 pygmentsUseClasses = true
 

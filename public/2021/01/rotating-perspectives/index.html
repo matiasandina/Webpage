@@ -26,7 +26,7 @@ Something interesting about all of this is how well it plays into common sense. 
 
 
 
-<link rel="stylesheet" href="/main.9dd6e34900c7146ef761cb3cc94cf93488cd14f263324c6c86dc875864b46698.css">
+<link rel="stylesheet" href="/main.2ad92dc1899f3589710c8dec68a643400183a43d0b7bf38ed3e21bb2dfd96b3d.css">
 
 
 
@@ -35,17 +35,10 @@ Something interesting about all of this is how well it plays into common sense. 
 
 <meta itemprop="name" content="Rotating perspectives">
 <meta itemprop="description" content="I have been asked to unveil a bit of what&rsquo;s under the hood on this post. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.
-Something interesting about all of this is how well it plays into common sense. Looking at things from a different perspective, in this case adding just a rotation, can yield outstanding results.">
-
-
-<meta itemprop="datePublished" content="2021-01-03T00:00:00&#43;00:00" />
+Something interesting about all of this is how well it plays into common sense. Looking at things from a different perspective, in this case adding just a rotation, can yield outstanding results."><meta itemprop="datePublished" content="2021-01-03T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-03-14T16:19:05-04:00" />
-<meta itemprop="wordCount" content="417">
-
-
-
+<meta itemprop="wordCount" content="370"><meta itemprop="image" content="/img/m-gray.jpg"/>
 <meta itemprop="keywords" content="generative-art,R," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/img/m-gray.jpg"/>
 
@@ -129,54 +122,16 @@ Something interesting about all of this is how well it plays into common sense. 
             
 
             <div class="post-content">
-                
-
-<p>I have been asked to unveil a bit of what&rsquo;s under the hood on <a href="https://matiasandina.netlify.app/2021/01/art-in-a-new-year/" target="_blank">this post</a>. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.</p>
-
+                <p>I have been asked to unveil a bit of what&rsquo;s under the hood on <a href="https://matiasandina.netlify.app/2021/01/art-in-a-new-year/">this post</a>. I decided to make a new post to share how my creative process took place and maybe inspire others to play along.</p>
 <p>Something interesting about all of this is how well it plays into common sense. Looking at things from a different perspective, in this case adding just a rotation, can yield outstanding results.</p>
-
-<hr />
-
-<p><!--html_preserve--><blockquote>
-<p>I write fiction and non-fiction.<br/>
-I write open-source software.<br/>
-I create generative art.  </p></p>
-
-<p><p>All of these are available for free in different media.
-If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
-</blockquote>
-<!--/html_preserve--><!--html_preserve--><table style="width:100%">
-  <tr>
-  <th>Patreon</th>
-  <td>
-  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-  </td>
-  <tr>
-    <td>
-    </td>
-  </tr>
-  <tr>
-  <th>Paypal</th>
-  <td>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form></p>
-
-<p></td>
-  </tr>
-</table>
-<!--/html_preserve--></p>
-
-<hr />
-
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
 <h3 id="the-shapes">The shapes</h3>
-
 <p>First of all, we are going to use the shapes provided by <code>ggforce::geom_regon()</code>.</p>
-
 <pre><code class="language-r">library(tidyverse)
 library(ggforce)
 
@@ -199,13 +154,9 @@ ggplot(df)+
         axis.ticks.y = element_blank(),
         plot.title = element_text(hjust=0.5))
 </code></pre>
-
-<p><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/show-shapes-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h3 id="the-twist">The twist</h3>
-
 <p>Now we can implement a rotation to each figure. We will use the previous <code>df</code> and <code>expand_grid()</code> to add an angle rotation to the regular polygon. The greater the number of sides, the closer we get to a circular shape illusion when we rotate and overlap the polygons. For <code>n&gt;6</code> it didn&rsquo;t generate the type of look I was looking after during my experimentation.</p>
-
 <pre><code class="language-r">df &lt;- expand_grid(df, angle = seq(0, 0.5, 0.1))
 
  
@@ -222,11 +173,8 @@ ggplot(df)+
         axis.ticks.y = element_blank(), 
         plot.title = element_text(hjust=0.5))
 </code></pre>
-
-<p><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/rotations-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>We can tinker with the <code>alpha</code> and <code>fill</code> to make some nice looking shapes. I&rsquo;m not going to modify <code>color</code> but it&rsquo;s also a possibility.</p>
-
 <pre><code class="language-r">ggplot(df)+
   # notice we use angle = angle now and fil=factor(x0)
   geom_regon(aes(x0=x0,y0=y0,r=r, sides=x0, angle=angle,
@@ -244,21 +192,15 @@ ggplot(df)+
 
 print(p)
 </code></pre>
-
-<p><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/color-tinkering-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h3 id="make-it-pallette">Make it pallette</h3>
-
 <p>We can have unlimited color combinations. Just as a start, two places I like to use when dealing with color pallettes in R:</p>
-
 <ul>
-<li><a href="https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html" target="_blank">R Color Brewer Pallettes</a></li>
-<li><a href="https://color.adobe.com" target="_blank">Adobe Color Picker</a></li>
+<li><a href="https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html">R Color Brewer Pallettes</a></li>
+<li><a href="https://color.adobe.com">Adobe Color Picker</a></li>
 </ul>
-
 <p>We will use <code>scale_fill_*()</code> functions of <code>ggplot</code>. I normally use <code>scale_fill_manual()</code> if I want to handpick the values, but <code>scale_fill_viridis()</code> and <code>scale_fill_brewer()</code> often do a nice job too!</p>
-
-<p><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/pallettes-1.png" width="672" /><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/pallettes-2.png" width="672" /><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/pallettes-3.png" width="672" /><img src="/post/2021-01-03-rotating-perspectives/index_files/figure-html/pallettes-4.png" width="672" /></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
             </div>
         </article>
@@ -286,7 +228,7 @@ print(p)
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
+            <span>&copy; 2022</span>
             <span><a href="/">Matias Andina</a></span>
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
@@ -307,7 +249,7 @@ print(p)
 
 
 
- <script type="text/javascript" src="/bundle.min.af435e44374f1e99a669ea8cd5bb9a2fceed80588941a451bfddb66b86a67c9f40b0f417e9543a763f809aa7e9300d7b1d69bf99615810ba02ac70396d50fad5.js"></script>
+ <script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js"></script>
 
 
 

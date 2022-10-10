@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="/main.9dd6e34900c7146ef761cb3cc94cf93488cd14f263324c6c86dc875864b46698.css">
+<link rel="stylesheet" href="/main.2ad92dc1899f3589710c8dec68a643400183a43d0b7bf38ed3e21bb2dfd96b3d.css">
 
 
 
@@ -37,17 +37,10 @@
 <meta itemprop="name" content="Matlab list_files">
 <meta itemprop="description" content="For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let&rsquo;s be honest, Matlab can do powerful things, it&rsquo;s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in R mode. Something along the lines of:
  Gimme all the files in&hellip;
- Will be easily accomplished in R">
-
-
-<meta itemprop="datePublished" content="2018-04-24T00:00:00&#43;00:00" />
+ Will be easily accomplished in R"><meta itemprop="datePublished" content="2018-04-24T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-15T08:03:58-05:00" />
-<meta itemprop="wordCount" content="530">
-
-
-
+<meta itemprop="wordCount" content="530"><meta itemprop="image" content="/img/m-gray.jpg"/>
 <meta itemprop="keywords" content="learning,ideas,R,Matlab," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/img/m-gray.jpg"/>
 
@@ -132,21 +125,14 @@
             
 
             <div class="post-content">
-                
-
-<p>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let&rsquo;s be honest, Matlab can do powerful things, it&rsquo;s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in <code>R</code> mode. Something along the lines of:</p>
-
+                <p>For many purposes, I find myself in need of a Graphical User Interface (GUI). Thus, I experienced a forceful transition to Matlab. Let&rsquo;s be honest, Matlab can do powerful things, it&rsquo;s a great language to attempt to dominate (note to self: learn python!). However, I find myself over and over thinking in <code>R</code> mode. Something along the lines of:</p>
 <blockquote>
 <p>Gimme all the files in&hellip;</p>
 </blockquote>
-
 <p>Will be easily accomplished in <code>R</code></p>
-
 <pre><code class="language-r">list.files(...)
 </code></pre>
-
 <p>This command can handle many many options, with <code>pattern</code> being among my favorite. More importantly, this command returns a useful <code>character</code> vector. No extra dots, no list of lists, no array. Just, useful. On the other hand, Matlab has <code>dir</code> and <code>ls</code> both of which are not satisfactory.</p>
-
 <pre><code class="language-octave">dir
 
 .                                                      
@@ -156,9 +142,7 @@ something_else.m
 LookHere.m
 
 </code></pre>
-
 <p>Yes&hellip;Matlab&rsquo;s version can also handle some form of regular expression matching. But, mind the dots and the structure! Matlab&rsquo;s <code>dir</code> has a ton of things on it.</p>
-
 <pre><code class="language-octave">&gt;&gt; q = dir
 
 q = 
@@ -172,9 +156,7 @@ q =
     isdir
     datenum
 </code></pre>
-
 <p>Matlab <code>ls</code> function is also full of deadly traps.</p>
-
 <pre><code class="language-octave">qq = ls
 
 qq =
@@ -186,13 +168,9 @@ qq =
     'many_things_here.ext        '
 
 </code></pre>
-
 <h2 id="the-solution">The solution</h2>
-
 <p>I found myself fighting for a character vector or array (<code>nx1</code>) I can feed into a function/loop/whatever.</p>
-
 <p>So after many many many times fighting against classes, with functions that expect <code>char</code> instead of <code>string</code>, or <code>cell</code>, or <code>whatever</code>, I decided to create something that resembles (at least partially) the functionality I was looking for. It&rsquo;s not perfect, in fact, please enlighten me with a better approach. For now, I will be using <code>list_files.m</code>. Wanna use it? Be my guest, see below:</p>
-
 <pre><code class="language-octave">
 % The idea of this function is to have something that works to list files
 % Matlab has too many weird things with dir/patterns/etc...
@@ -304,7 +282,7 @@ end
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
+            <span>&copy; 2022</span>
             <span><a href="/">Matias Andina</a></span>
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
@@ -325,7 +303,7 @@ end
 
 
 
- <script type="text/javascript" src="/bundle.min.af435e44374f1e99a669ea8cd5bb9a2fceed80588941a451bfddb66b86a67c9f40b0f417e9543a763f809aa7e9300d7b1d69bf99615810ba02ac70396d50fad5.js"></script>
+ <script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js"></script>
 
 
 

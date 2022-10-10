@@ -6,11 +6,7 @@
     <description>Recent content in tracking on Matias Andina</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/tracking/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tracking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fitbit Analysis</title>
       <link>/2019/11/fitbit-analysis/</link>
@@ -18,7 +14,7 @@
       
       <guid>/2019/11/fitbit-analysis/</guid>
       <description>It&amp;rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&amp;rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
- I write fiction and non-fiction. I write open-source software.</description>
+  Let&amp;rsquo;s first see a glimpse of the data, just to know what type of data we are dealing with.</description>
     </item>
     
   </channel>

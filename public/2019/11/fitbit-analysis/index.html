@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Matias Andina">
 <meta name="description" content="It&amp;rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&amp;rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
- I write fiction and non-fiction. I write open-source software." />
+  Let&amp;rsquo;s first see a glimpse of the data, just to know what type of data we are dealing with." />
 <meta name="keywords" content="homepage, blog, neuroscience, science, programming, freelancer, tracking, learning, R" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -26,7 +26,7 @@
 
 
 
-<link rel="stylesheet" href="/main.9dd6e34900c7146ef761cb3cc94cf93488cd14f263324c6c86dc875864b46698.css">
+<link rel="stylesheet" href="/main.2ad92dc1899f3589710c8dec68a643400183a43d0b7bf38ed3e21bb2dfd96b3d.css">
 
 
 
@@ -35,23 +35,16 @@
 
 <meta itemprop="name" content="Fitbit Analysis">
 <meta itemprop="description" content="It&rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
- I write fiction and non-fiction. I write open-source software.">
-
-
-<meta itemprop="datePublished" content="2019-11-22T00:00:00&#43;00:00" />
+  Let&rsquo;s first see a glimpse of the data, just to know what type of data we are dealing with."><meta itemprop="datePublished" content="2019-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-15T08:03:58-05:00" />
-<meta itemprop="wordCount" content="961">
-
-
-
+<meta itemprop="wordCount" content="914"><meta itemprop="image" content="/img/m-gray.jpg"/>
 <meta itemprop="keywords" content="tracking,learning,R," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/img/m-gray.jpg"/>
 
 <meta name="twitter:title" content="Fitbit Analysis"/>
 <meta name="twitter:description" content="It&rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.
- I write fiction and non-fiction. I write open-source software."/>
+  Let&rsquo;s first see a glimpse of the data, just to know what type of data we are dealing with."/>
 
 
 
@@ -129,50 +122,14 @@
             
 
             <div class="post-content">
-                
-
-<p>It&rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.</p>
-
-<hr />
-
-<p><!--html_preserve--><blockquote>
-<p>I write fiction and non-fiction.<br/>
-I write open-source software.<br/>
-I create generative art.  </p></p>
-
-<p><p>All of these are available for free in different media.
-If you like what I do, and want me to keep creating, you can contribute using the links below.</p>
-</blockquote>
-<!--/html_preserve--><!--html_preserve--><table style="width:100%">
-  <tr>
-  <th>Patreon</th>
-  <td>
-  <a href="https://www.patreon.com/bePatron?u=25827926" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-  </td>
-  <tr>
-    <td>
-    </td>
-  </tr>
-  <tr>
-  <th>Paypal</th>
-  <td>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="BWWTTZ2XSDAZ8" />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form></p>
-
-<p></td>
-  </tr>
-</table>
-<!--/html_preserve--></p>
-
-<hr />
-
+                <p>It&rsquo;s been a bit more than a year since I got a fitbit and I have been pretty excited about tracking my activity and heart rate. I should say I&rsquo;m quite surprised about the sleep data. Tracking sleep has been, in fact, the most exciting feature, and I now strive to get at least 7 hours of sleep per night.</p>
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
 <p>Let&rsquo;s first see a glimpse of the data, just to know what type of data we are dealing with.</p>
-
 <pre><code># A tibble: 5 x 8
   date_time           dateTime   dataset_time variable value total_value
   &lt;dttm&gt;              &lt;date&gt;     &lt;time&gt;       &lt;chr&gt;    &lt;dbl&gt;       &lt;dbl&gt;
@@ -183,101 +140,54 @@ If you like what I do, and want me to keep creating, you can contribute using th
 5 2018-06-10 00:04:00 2018-06-10 04'00&quot;       steps        0        7256
 # … with 2 more variables: date &lt;lgl&gt;, time &lt;lgl&gt;
 </code></pre>
-
 <h2 id="density-plots">Density plots</h2>
-
 <p>Let&rsquo;s now inspect the overall distribution for heart rate and step values.</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h2 id="when-do-i-move">When do I move?</h2>
-
 <p>I will start by focusing on the data for steps.</p>
-
 <p>I&rsquo;m curious to see what times of the day have the most activity. Because I have a quite large amount of data points (~751 K) I will use <code>geom_hex()</code> to count for me and simplify rendering.</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/steps-1-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>Well, I should have remembered that for the vast majority of minutes (regardless of the hour of the day), the count is exactly zero. Let&rsquo;s only look at the positive counts:</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/steps-2-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>We see now some patches that have high activity (&gt; 100 steps), particularly around 9:00, 12:00 and 18:00. These mostly correspond to &ldquo;going to work&rdquo;, &ldquo;activity around lunch time (?)&rdquo;, and &ldquo;going home / physical activity&rdquo;. For all other cases, it looks like I move around 10-20 steps per minute, regardless of the minute within the hour.</p>
-
 <h3 id="last-10-minutes">Last 10 minutes</h3>
-
 <p>The result above is interesting because I usually have to be reminded by Fitbit to &ldquo;move up to 250 steps in the hour&rdquo;. I receive this notification on the last 10 minutes of the hour and I would think that during those 10 minutes I put more steps than during the first 50. Data show I&rsquo;m wrong:</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/last-10-plot-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>That being said, I want to keep my reminder on. I feel like having it turned on definitely adds ~ 1000-2000 steps per day.</p>
-
 <h3 id="daily-average">Daily average</h3>
-
 <p>Let&rsquo;s get one level above and aggregate each day as a unit. This plot shows a nice trend, with months from May to August showing an increase on the number of steps. Keep in mind that November will show little average steps because for that month we have incomplete data (last day in database is 2019-11-13),</p>
-
 <pre><code>`summarise()` ungrouping output (override with `.groups` argument)
 </code></pre>
-
 <pre><code>`geom_smooth()` using formula 'y ~ x'
 </code></pre>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/steps-3-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>At this part of the analysis, I should make clear that I took vacations from <code>2019-06-27</code> to <code>2019-07-11</code>. We will use this information in the analysis to make some things clear.</p>
-
 <h2 id="distribution">Distribution</h2>
-
 <p>We looked at the average daily steps for each month, how about the distribution of daily steps? We see that most days I come quite close to the default target of 10K steps. There are some days with very little steps (see below) and, obviously, some days with extreme number of steps.</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/typical-events-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h2 id="extreme-events">Extreme events</h2>
-
 <p>Using the boxplot below, we can define <em>extreme events</em> as instances where I walked more than 20K steps. I chose to plot this by day of the week, to get an insight about periodicity of events.</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>Because I walked a lot during the vacations, I highlighted the days on top of the previous boxplot. Most of the extreme events are definitely during the vacations. Moreover, none of the days I walked less than 10K steps, pretty amazing!</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/vacations-2-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>There are some extreme <em>low</em> events, these are quite likely the days I just don&rsquo;t wear the fitbit (or days I forget to wear it for most of the day). Just because I can order the data and make another plot, I went ahead and did it!</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/arranged-steps-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>We usually go for walks on Saturdays and/or Sundays. Knowing this little piece of data, it&rsquo;s quite expected to see Saturdays being the days with higher number of steps (and hence higher success rate on the 10K target).</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h2 id="season">Season</h2>
-
-<p>I want to turn the focus now to the seasonality of the data. I will use a helper function <code>getSeason()</code> that I took from <a href="https://stackoverflow.com/questions/9500114/find-which-season-a-particular-date-belongs-to" target="_blank">StackOverflow</a>.</p>
-
+<p>I want to turn the focus now to the seasonality of the data. I will use a helper function <code>getSeason()</code> that I took from <a href="https://stackoverflow.com/questions/9500114/find-which-season-a-particular-date-belongs-to">StackOverflow</a>.</p>
 <p>We can inspect the effect of season on my walking.</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>The plot above is not good, it fails to communicate. I think this is a better way to show the data.</p>
-
-<p><img src="/post/2019-11-22-fitbit-analysis/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-
-<h2 id="a-year-s-heart-rate-in-one-plot">A year&rsquo;s heart rate in one plot</h2>
-
-<p>I&rsquo;m borrowing <strong>heavily</strong> from <a href="https://livefreeordichotomize.com/2017/12/27/a-year-as-told-by-fitbit/" target="_blank">Nick</a> here. But I thought it was a brilliant plot, so I took it for a ride with my data. I actually changed a few things, I decided to keep the native sampling rate and use <code>geom_line()</code> instead of down-sampling and using <code>geom_tile()</code>. The overall trend is clear, movements during the morning and the afternoon that correlate well with going and coming back from work. Somewhere around July 2019 you can see the change in timezone when I took vacations. There are a couple of days in late May with continuously high or lacking values, I take this as one of the days I forgot the fitbit at home, likely spurious measures.</p>
-
-<p><center>
-<img src="/img/heart_plot.png" alt="" />
-</center></p>
-
+<p><!-- raw HTML omitted --></p>
+<h2 id="a-years-heart-rate-in-one-plot">A year&rsquo;s heart rate in one plot</h2>
+<p>I&rsquo;m borrowing <strong>heavily</strong> from <a href="https://livefreeordichotomize.com/2017/12/27/a-year-as-told-by-fitbit/">Nick</a> here. But I thought it was a brilliant plot, so I took it for a ride with my data. I actually changed a few things, I decided to keep the native sampling rate and use <code>geom_line()</code> instead of down-sampling and using <code>geom_tile()</code>. The overall trend is clear, movements during the morning and the afternoon that correlate well with going and coming back from work. Somewhere around July 2019 you can see the change in timezone when I took vacations. There are a couple of days in late May with continuously high or lacking values, I take this as one of the days I forgot the fitbit at home, likely spurious measures.</p>
+<!-- raw HTML omitted -->
 <h2 id="code">Code</h2>
-
-<p>The code for this post is quite long and I thought it would get in the way. I am happy to share upon request, hit me up on <a href="https://twitter.com/NeuroMLA" target="_blank">Twitter</a>.</p>
-
+<p>The code for this post is quite long and I thought it would get in the way. I am happy to share upon request, hit me up on <a href="https://twitter.com/NeuroMLA">Twitter</a>.</p>
 <h2 id="sources">Sources</h2>
-
 <ul>
-<li><a href="https://livefreeordichotomize.com/2017/12/27/a-year-as-told-by-fitbit/" target="_blank">https://livefreeordichotomize.com/2017/12/27/a-year-as-told-by-fitbit/</a></li>
+<li><a href="https://livefreeordichotomize.com/2017/12/27/a-year-as-told-by-fitbit/">https://livefreeordichotomize.com/2017/12/27/a-year-as-told-by-fitbit/</a></li>
 </ul>
 
             </div>
@@ -307,7 +217,7 @@ If you like what I do, and want me to keep creating, you can contribute using th
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2021</span>
+            <span>&copy; 2022</span>
             <span><a href="/">Matias Andina</a></span>
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
@@ -328,7 +238,7 @@ If you like what I do, and want me to keep creating, you can contribute using th
 
 
 
- <script type="text/javascript" src="/bundle.min.af435e44374f1e99a669ea8cd5bb9a2fceed80588941a451bfddb66b86a67c9f40b0f417e9543a763f809aa7e9300d7b1d69bf99615810ba02ac70396d50fad5.js"></script>
+ <script type="text/javascript" src="/bundle.min.2ce64ea6ea44a72b13dd812fc2eb5cca3efe878cce258a47c137c17edf46e0602a05e422b618a5b80b5939c731b7a293351c2f2222a21f6ee27e54a8448dd20e.js"></script>
 
 
 

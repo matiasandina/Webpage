@@ -1,0 +1,72 @@
+---
+title: "Projects"
+comments: False
+---
+
+## Primary Sites
+
+-   Homepage: [matiasandina.netlify.com](https://matiasandina.netlify.com)
+
+-   Academic Research: [Google Scholar](https://scholar.google.com/citations?hl=en&user=PnTVdPAAAAAJ)
+
+## Software Development
+
+### R
+
+-   ggethos:
+
+    -   docs: [matiasandina.github.io/ggethos/](https://matiasandina.github.io/ggethos/)
+
+-   fed3:
+
+    -   repo: [matiasandina.github.io/fed3/](https://matiasandina.github.io/fed3/)
+
+-   nobrainr:
+
+    -   repo: [github.com/matiasandina/nobrainr](https://github.com/matiasandina/nobrainr)
+
+-   choices:
+
+    -   repo: [github.com/matiasandina/choices](https://github.com/matiasandina/choices)
+
+-   stepfinder
+
+    -   repo: [github.com/matiasandina/stepfinder](https://github.com/matiasandina/stepfinder)
+
+### Python
+
+-   send_ip:
+
+    -   repo: <https://github.com/matiasandina/send_ip>
+
+    -   pypi: <https://pypi.org/project/send-ip/>
+
+-   rlist_files:
+
+    -   docs: [https://rlist-files.readthedocs.io](https://rlist-files.readthedocs.io/)
+
+    -   pypi: <https://pypi.org/project/rlist-files/>
+
+-   phototdt:
+
+    -   docs: [https://phototdt.readthedocs.io](https://phototdt.readthedocs.io/)
+
+    -   repo: [github.com/matiasandina/phototdt](https://github.com/matiasandina/phototdt)
+
+-   FEDWatcher:
+
+    -   repo: [github.com/matiasandina/FEDWatcher](https://github.com/matiasandina/FEDWatcher)
+
+## Data Visualization
+
+-   Life Viz:
+
+    -   live: [matias-andina.shinyapps.io/lifeviz](https://matias-andina.shinyapps.io/lifeviz)
+
+    -   repo: [https://github.com/matiasandina/lifeviz](github.com/matiasandina/lifeviz)
+
+## Writing
+
+-   [matiasandina.netlify.com/writing](https://matiasandina.netlify.com/writing)
+
+-   [matiasandina.netlify.com/escritos](https://matiasandina.netlify.com/escritos)

@@ -1,0 +1,33 @@
+---
+title: "Academic Research"
+comments: False
+---
+
+I have been lucky to be involved in different research projects. 
+For a brief description, check the sections below. You can also find my publications in [Google Scholar](https://scholar.google.com/citations?user=PnTVdPAAAAAJ&hl=en).
+
+## Hunger & sleep Interactions
+
+My current research involves understanding the interactions between hunger and sleep circuits.
+
+## Social Deficits
+
+A subset of children with autism spectrum disorder appear to show an improvement in their behavioural symptoms during the course of a fever. I have been fortunate to integrate a team studying the effects of the inflammatory response (mainly the role of Interleukin 17a) in mouse models of social deficits. 
+
+Our work was published as [**IL-17a promotes sociability in mouse models of neurodevelopmental disorders**](https://rdcu.be/bZlsm)
+
+## Maternal Behavior
+
+During my time in the University of Massachusetts Amherst I studied maternal behavior in rats. I learned several new techniques and had my first experience working with rodents (actually switched from invertebrates to vertebrates!). 
+
+This work materialized in my MSc. thesis: [**Mapping a pup-resposive pathway from medial preoptic area to ventral tegmental area.**](https://www.scholarworks.umass.edu/masters_theses_2/701/)
+
+## Learning and Memory
+
+### Learning in Crabs
+
+In Argentina, my research was focused in Contextual Pavlovian Conditioning of the crab *Neohelice granulata*. The original paradigm was thoroughly described by [*Fustiñana et al., 2013*](https://www.ncbi.nlm.nih.gov/pubmed/23114692). We were able to expand this paradigm and unveil new unexpected long-term memories. Working in the Neurobiology of the Memory Lab has been a fulfilling experience. My research was materialized in my graduation thesis and a [subsecuent publication](https://www.sciencedirect.com/science/article/abs/pii/S016643282100019X).
+
+
+
+

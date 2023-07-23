@@ -1,0 +1,78 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "Matias Andina"
+  site-url: "https://matiasandina.netlify.app"
+  repo-url: "https://github.com/matiasandina/Webpage"
+  repo-actions: [edit, issue]
+  
+  search:
+    location: navbar
+    type: overlay
+    copy-button: true
+    
+  comments:
+    utterances:
+      repo: matiasandina/Webpage
+      label: "Comment"
+      theme: github-dark
+
+  #page-footer:
+    # using footer in _metadata
+    #right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    #left: "&copy; CC-By Matias Andina, 2023"
+  
+  navbar: 
+    background: secondary
+    search: true
+    left:
+      #- text: "Home"
+      #  icon: house
+      #  file: index.qmd
+      - text: "Posts"
+        file: posts/index.qmd
+      - text: "Projects"
+        file: projects/index.qmd
+      - text: "Research"
+        file: research/index.qmd
+      - text: "CV"
+        href: https://matiasandina.github.io/cv/
+    right: 
+      - icon: github
+        href: https://github.com/matiasandina/
+      - icon: twitter
+        href: https://twitter.com/neuroMLA
+      - icon: rss
+        href: index.xml
+
+  sidebar:
+    #logo: "images/T.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/matiasandina/
+        text: "Github"
+      - icon: twitter
+        href: https://twitter.com/neuroMLA
+        text: "Twitter"
+
+    style: "docked"
+    collapse-level: 1
+    contents:
+      - href: posts/index.qmd
+        text: Posts
+# 
+
+format:
+  html:
+    theme:
+      light: cosmo #[cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
+      dark: cosmo #[cosmo, theme-dark.scss] # from https://raw.githubusercontent.com/sta210-s22/website/main/theme-dark.scss
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+editor: visual

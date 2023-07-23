@@ -1,0 +1,26 @@
+---
+title: "Matias Andina"
+comments: False
+about:
+  template: jolla
+  image: profile.jpg
+  links:
+    - icon: envelope
+      text: Mail
+      href: mailto:matiasandina@gmail.com
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/NeuroMLA
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/matiasandina/
+    - icon: github
+      text: Github
+      href: https://github.com/matiasandina
+    - icon: stackoverflow
+      text: StackOverflow
+      href: https://stackoverflow.com/users/3215940/matias-andina
+
+---
+
+Neuroscientist. Writer. Software Developer.

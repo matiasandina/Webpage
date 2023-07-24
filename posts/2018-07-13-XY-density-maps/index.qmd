@@ -1,7 +1,6 @@
 ---
 title: "XY-density-maps"
 date: 2018-07-13
-output: html_document
 categories: ["R"]
 execute: 
   echo: true

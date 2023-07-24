@@ -1,4 +1,4 @@
- ---
+---
 title: Page Not Found
 listing:
   contents: posts

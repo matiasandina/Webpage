@@ -1,8 +1,7 @@
 ---
 title: Writing challenge Day 21
-author: "Matias Andina"
 date: 2018-09-20
-tags: ["research", "writing", "learning", "DocumentingLearning"]
+categories: ["research", "writing", "learning", "DocumentingLearning"]
 ---
 
 Third week has had ups and downs. I finished another short story. But I keep losing the word count battle. Yes, again, work.

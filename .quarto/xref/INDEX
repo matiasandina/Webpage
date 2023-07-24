@@ -85,5 +85,80 @@
   },
   "posts/2022-10-10-Inequality/index.qmd": {
     "index.html": "2cd0ef16"
+  },
+  "posts/2018-01-07-instead-of-research/index.qmd": {
+    "index.html": "213b010f"
+  },
+  "posts/2017-12-16-about-student-motivation/index.qmd": {
+    "index.html": "f9cc62cb"
+  },
+  "posts/2017-12-28-rules-composition/index.qmd": {
+    "index.html": "b3ba2446"
+  },
+  "posts/2019-02-01-r-pipeline-its-a-trap/index.qmd": {
+    "index.html": "f5c2a588"
+  },
+  "posts/2020-07-05-Unique/index.qmd": {
+    "index.html": "d873e782"
+  },
+  "posts/2018-09-05-writing-challenge-day-7/index.qmd": {
+    "index.html": "683c3ad6"
+  },
+  "posts/data_for_posts/index.qmd": {
+    "index.html": "c60424bf"
+  },
+  "posts/2018-07-13-XY-density-maps/index.rmarkdown": {
+    "index.html": "ff9fdfff"
+  },
+  "posts/2020-09-06-calories/index.qmd": {
+    "index.html": "00a450aa"
+  },
+  "posts/2018-09-27-writing-challenge-day-28/index.qmd": {
+    "index.html": "d2a1e6c2"
+  },
+  "posts/2019-04-06-email-analysis/index.rmarkdown": {
+    "index.html": "94225a1e"
+  },
+  "posts/2020-11-02-Russian-roulette/index.qmd": {
+    "index.html": "5ea7c413"
+  },
+  "posts/2017-11-16-about-teaching-nonsense/index.qmd": {
+    "index.html": "bdd35b1a"
+  },
+  "posts/2021-04-25-Icebreaker/index.qmd": {
+    "index.html": "be55c5e2"
+  },
+  "posts/2018-11-23-query-pubmed-in-r/index.qmd": {
+    "index.html": "d1c7096f"
+  },
+  "posts/2020-01-02-escribiendo-en-pocas-palabras/index.qmd": {
+    "index.html": "af7ec194"
+  },
+  "posts/2018-05-18-making-atlas-images/index.qmd": {
+    "index.html": "6ec17453"
+  },
+  "posts/2018-09-20-writing-challenge-day-21/index.qmd": {
+    "index.html": "d5dd02e2"
+  },
+  "posts/2017-11-30-about-good-discussions/index.qmd": {
+    "index.html": "788f57f5"
+  },
+  "posts/2020-01-20-The-power-of-compounding/index.qmd": {
+    "index.html": "d4850671"
+  },
+  "posts/2021-01-16-lifeviz/index.qmd": {
+    "index.html": "e6889828"
+  },
+  "posts/2017-12-17-any-questions/index.qmd": {
+    "index.html": "d04f8750"
+  },
+  "posts/2017-12-17-list-common-errors/index.qmd": {
+    "index.html": "e40c8c5a"
+  },
+  "posts/2018-09-13-writing-challenge-day-14/index.qmd": {
+    "index.html": "d345faa5"
+  },
+  "404.qmd": {
+    "404.html": "d1b337d8"
   }
 }

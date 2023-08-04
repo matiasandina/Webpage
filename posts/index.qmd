@@ -7,10 +7,10 @@ listing:
   sort-ui: true
   filter-ui: true
   fields: [date, title, reading-time, description, categories]
-  feed: true
+  feed:
+    categories: [R, posts]
 page-layout: full
 title-block-banner: false
 ---
 
 Below is a list of all posts in this site.
-

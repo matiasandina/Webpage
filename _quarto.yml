@@ -3,10 +3,16 @@ project:
 
 website:
   page-navigation: true
+  reader-mode: false
   title: "Matias Andina"
+  favicon: webpage_logo.png
   site-url: "https://matiasandina.netlify.app"
   repo-url: "https://github.com/matiasandina/Webpage"
   repo-actions: [edit, issue]
+  open-graph: true
+  twitter-card:
+    creator: "@NeuroMLA"
+    card-style: summary_large_image
   
   search:
     location: navbar
@@ -67,12 +73,17 @@ website:
 # 
 
 format:
-  html:
+  html: 
     theme:
-      light: cosmo #[cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
-      dark: cosmo #[cosmo, theme-dark.scss] # from https://raw.githubusercontent.com/sta210-s22/website/main/theme-dark.scss
+      light: [flatly, theme.scss] 
+      dark: [darkly, dark.scss]
     code-copy: true
     code-overflow: wrap
     toc: true
-
+    # page formatting
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
 editor: visual

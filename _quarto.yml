@@ -53,23 +53,23 @@ website:
       - icon: rss
         href: posts/index.xml
 
-  sidebar:
-    #logo: "images/T.png"
-    pinned: true
-    align: center
-    tools:
-      - icon: github
-        href: https://github.com/matiasandina/
-        text: "Github"
-      - icon: twitter
-        href: https://twitter.com/neuroMLA
-        text: "Twitter"
+  #sidebar:
+  #  #logo: "images/T.png"
+  #  pinned: true
+  #  align: center
+  #  tools:
+  #    - icon: github
+  #      href: https://github.com/matiasandina/
+  #      text: "Github"
+  #    - icon: twitter
+  #      href: https://twitter.com/neuroMLA
+  #      text: "Twitter"
 
-    style: "docked"
-    collapse-level: 1
-    contents:
-      - href: posts/index.qmd
-        text: Posts
+  #  style: "docked"
+  #  collapse-level: 1
+  #  contents:
+  #    - href: posts/index.qmd
+  #      text: Posts
 # 
 
 format:
@@ -82,7 +82,7 @@ format:
     toc: true
     # page formatting
     grid:
-      sidebar-width: 300px
+      #sidebar-width: 300px
       body-width: 900px
       margin-width: 300px
       gutter-width: 1.5rem

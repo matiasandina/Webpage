@@ -163,5 +163,14 @@
   },
   "blogroll/index.qmd": {
     "index.html": "0170a511"
+  },
+  "posts/goodreads/index.qmd": {
+    "index.html": "fc86468b"
+  },
+  "posts/2023-06-10-goodreads/index.qmd": {
+    "index.html": "9af422b3"
+  },
+  "posts/2023-08-19-the-power-to-normalize/index.qmd": {
+    "index.html": "31666541"
   }
 }

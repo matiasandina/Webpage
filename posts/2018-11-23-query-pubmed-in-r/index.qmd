@@ -1,7 +1,7 @@
 ---
 title: Query Pubmed in R
 date: 2018-11-23
-categories: ["r","phd"]
+categories: ["R","PhD"]
 execute: 
   cache: true
 ---

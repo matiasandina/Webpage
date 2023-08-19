@@ -1,7 +1,7 @@
 ---
 title: "Writing Checklist"
 date: 2020-01-02
-categories: ["writing", "learning", "documentinglearning", "R"]
+categories: ["writing", "learning", "DocumentingLearning", "R"]
 execute: 
   echo: true
 ---

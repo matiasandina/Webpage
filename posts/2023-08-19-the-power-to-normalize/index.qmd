@@ -109,6 +109,33 @@ I am not a huge fan of data transformations, but that is a very nice transformat
 
 [^2]: The devil is on the details. Always check the parameters and be careful on data interpretation when transforming your data!
 
+### What about logs
+
+There's another typical transformation that we can do to the data: `log10(x+1)`. Let's see how it looks like!
+
+```{r}
+df_log10 <- select(spam, where(is.numeric)) %>% 
+  mutate_all(.funs = function(x) log10(x + 1))
+# check the new distributions
+df_log10$yesno <- spam$yesno
+df_log10 %>% 
+  pivot_longer(-yesno) %>% 
+  ggplot(aes(yesno, value, fill = yesno)) +
+  geom_violin() +
+  facet_wrap(~name, scales = "free", nrow=3) +
+  scale_y_continuous(labels = label_number(scale_cut = cut_short_scale()))+
+  scale_fill_paletteer_d("awtools::a_palette") +
+  ggthemes::theme_base() +
+  theme(legend.position = "bottom",
+        plot.background =  element_rect(color = NA),
+        legend.background = element_rect(fill = "gray90"),
+        legend.key = element_rect(fill = "gray90"),
+        panel.background = element_rect(fill="#81AE5C")) +
+  labs(fill = element_blank(), x = element_blank(), y = element_blank())
+```
+
+In this case, it's not a very helpful transform. In my opinion, the Yeo--Johnson transform does a better job. We could potentially eliminate all the zeros from the data, in which case the log10 transform would do a better job but that's not the approach we are after here.
+
 ## Second PCA
 
 We can now check how the second PCA looks like. It's not a panacea, but we have made large improvements. Check the side by side comparisons:

@@ -2,7 +2,7 @@
 title: "goodreads"
 description: "My 2023 challenge to read more women authors"
 date: "2023-08-06"
-categories: ["R"]
+categories: ["R", "books"]
 code-fold: true
 echo: true
 ---
@@ -246,7 +246,7 @@ df %>%
   scale_y_continuous(limits = c(0, 800))
 ```
 
-## Show me the Ratios
+## Show me the Ratios {#show-me-the-ratios}
 
 I promised to check the gender ratios. So I used the `gender` package to predict gender using the information in the author's name. There's a few caveats:
 
@@ -254,9 +254,9 @@ I promised to check the gender ratios. So I used the `gender` package to predict
 
 -   There are some authors that might fail to parse. Since this is a simple analysis, I didn't want to delve too much on fixing things.
 
--   Some books are written by more than one author[^rightnow]. For simplicity's sake, I'm going to go with the first author (I doubt it would change the ratio anyway). In goodreads' database, we have an `author_l_f` column with only one person. So that's what I am going to be using.
+-   Some books are written by more than one author[^2]. For simplicity's sake, I'm going to go with the first author (I doubt it would change the ratio anyway). In goodreads' database, we have an `author_l_f` column with only one person. So that's what I am going to be using.
 
-[^rightnow]: I am reading [Poor Economics](https://www.goodreads.com/book/show/10245602-poor-economics) co-written by a man and a woman. This approach would remove Duflo from the analysis. 
+[^2]: I am reading [Poor Economics](https://www.goodreads.com/book/show/10245602-poor-economics) co-written by a man and a woman. This approach would remove Duflo from the analysis.
 
 ```{r}
 # Before doing anything, only look at data from before 2023
@@ -275,7 +275,6 @@ The gender dataset looks like this
 ```{r}
 gender_prediction
 ```
-
 
 The ratio of predicted names is `r round(nrow(gender_prediction)/length(author_names), 2)`, which is not bad. There are some authors missing that failed to parse. For example, J.K. Rowling:
 
@@ -320,15 +319,14 @@ gender_prediction %>%
   gt::gt(caption = "Number of Books by Gender after 2023")
 ```
 
-This is WAY better: 42.3%! Yes, I did have to search google for good titles written by women. And yes, I do have access to a bookworm at home who happens to be my wife and can recommend me great pieces of writing. The good news is that the bar to find content by women was really low. It didn't require extra effort on my side to vastly improve my reading experience.  
+This is WAY better: 42.3%! Yes, I did have to search google for good titles written by women. And yes, I do have access to a bookworm at home who happens to be my wife and can recommend me great pieces of writing. The good news is that the bar to find content by women was really low. It didn't require extra effort on my side to vastly improve my reading experience.
 
 The reading experience is the most important thing. I was missing out on great work. I cannot help but wonder why it was so difficult for me to get exposed to these pieces.
 
 ## What I have learnt
 
-I confirmed my own bias (~10% of content written by women) and found ways to improve it (currently getting to 50% for 2023!). 
+I confirmed my own bias (\~10% of content written by women) and found ways to improve it (currently getting to 50% for 2023!).
 
-I have found amazing books written by female authors this year. To name a few, I have read *Educated*, *Infidel*, *Tomorrow, and Tomorrow, and Tomorrow*, *I'm Glad My Mom Died*, and *My year of meats*. All of them 5 stars! The lessons learned are outside the scope of this piece.
+I have found amazing books written by female authors this year. To name a few, I have read [*Educated*](https://amzn.to/3Hhq6JP), [*Infidel*](https://amzn.to/47Gr1yw), [*Tomorrow, and Tomorrow, and Tomorrow*](https://amzn.to/48TYpmn), [*I'm Glad My Mom Died*](https://amzn.to/3NZUVq9), and [*My year of meats*](https://amzn.to/48xIcDo). All of them 5 stars! The lessons learned are outside the scope of this piece.
 
 I am confident that there's much else to learn from female voices. A huge world that I would never experience if I were to stay within my biased interpretation of reality. I hope to continue pushing for a higher women ratio. It's not that I was actively trying to avoid reading women, but it's quite telling that even these masterpieces didn't make it to my reading list without me purposefully searching for "Good books by women" and the like.
-

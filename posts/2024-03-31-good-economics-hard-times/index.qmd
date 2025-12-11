@@ -1,0 +1,67 @@
+---
+title: "Good Economics"
+description: "My thoughts about reading Good Economics For Hard Times"
+date: "2024-03-31"
+categories: ["learning", "policy", "books"]
+code-fold: true
+echo: true
+image: "market.png"
+---
+
+## The year of policy
+
+The first trimester of 2024 started strong on policy and economics. I read [Recoding America](https://amzn.to/3RSow6h), [Poverty by America](https://amzn.to/4cxkr0R), and [Good Economics](https://amzn.to/3TYzdq4) almost back to back.
+
+I had read their previous [Poor Economics](https://amzn.to/4cBFShg) a while ago and let me start by saying this: These are the same authors writing a very similar book, but it's a different product.
+
+In contrast to their previous book, this book is distinctively about the situation in the developed world. It draws from their experience working in marginalized communities in development. It adds a chunk of prescriptive economics at the end.
+
+## Good Economics
+
+Economists seem to disagree a lot. I am often surprised by that. For people who are so smart, and far well versed in mathematics than I am, to disagree that much seems a bit preposterous. Don't get me wrong, I am for math. The thing is math is cool to model reality, but you actually checked with reality, right?
+
+![](images/image-981694769.png)
+
+But why would we bother checking what reality does? That is below us, we have the all seeing math eye and personal interests to back our theory. Don't take it from me. Take it from [Good Economics](https://amzn.to/3TYzdq4), where Banerjee and Duflo spend a good chunk of text lashing out against the myopic economists of the XX Century. Is it a cat fight? No, it's a data fight.
+
+> Economics is too important to be left to economists --- Good Economics for Hard Times
+
+## Opinionated?
+
+In this version the authors are a bit more prescriptive an opinionated. Do I have qualms over that? No, thank you for asking. My only qualm about this book might not be about the book. It might just be that I am not the target audience for it. Many of the main point of this book are self-evident to me, but they might not be to you (see Summary).
+
+I didn't need much convincing before reading the book but, all in all, I think they are at their best when they talk about data. These are scientists, so that's expected.
+
+The last three chapters get into the more prescriptive commentary and I enjoyed the most. A couple of ideas that I found interesting/surprising:
+
+-   We would all be better if Governments paid companies to keep workers above 55 who wouldn't be able to re-train. That's a strong (but specific) social subsidy. Interesting idea.
+
+-   The math for Universal Basic Income at say \$1000 per month just doesn't pan out however you cut it. But UBI is super necessary, so we need to implement a Lower Value "Universal" Basic Income that is not worth it for the top 25% to bother receiving (e.g., something like \$500 per month, but make people show up once a week to get the funds transferred).
+
+## Summary
+
+Maybe you have been fed a bunch of nonsense not supported by data from some Nobel Laureates (e.g., hello Milton). Maybe you need to hear this from *these* Nobel Laureates, who happen to actually do science. Don't worry if you don't trust my summary. In the book, they make the case over and over and you can always go find their papers. Here's the summary:
+
+-   The United States pales in comparison to Europe and other OECD countries in terms of social policy. It often pales in comparison to India and China too. It's not even close. We are talking 2-10X worse.
+
+-    Wealth redistribution must be one of the top priorities of Government. Well-being should be another one.
+
+-   We should all pay more taxes.
+
+-   Working class[^1] people have been crushed during the last 50 years by a myriad of macro trends (e.g., automation, globalization, and increasing costs of housing, health and education). It's no wonder that any populist of any flavor who claims to be able to simplify complex reality and shift blame towards *the* *others* will win elections.
+
+-   In God we trust. All economists should drop the nonsense theorizing and bring data. Real. World. Data.
+
+-   Speaking of data, there is no evidence that giving unconditional cash to those in need makes them lazy and drop out of the labor force.
+
+-   Governments exist because there are primary societal functions that we need to accomplish. Those functions cannot be accomplished by markets. There are a group of secondary functions where there is no evidence towards market solutions being better. There are some functions that Governments try to do but likely shouldn't. That is what markets are good for. Curious? Go read the book.
+
+-   Being poor is a matter of lacking cash. But it is also a matter of human dignity being taken away. We take dignity away when we think *we* know better. We take dignity away when *we* judge the decisions poor people make on a daily bases, as if they didn't have functioning brains, as if they could *just* do things the way *we* do them.
+
+[^1]: That is middle class if you ask me, but don't get too picky about the shade of gray here
+
+## Closing 
+
+I want to close with a direct quote, because it brings me hope and hope is something worth amplifying.
+
+> The spirit of this book is to emphasize that there are no iron laws of economics keeping us from building a more humane world, but there are many people whose blind faith, self-interest, or simple lack of understanding of economics makes them claim this is the case.

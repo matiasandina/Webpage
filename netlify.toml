@@ -1,6 +1,15 @@
 [build]
-  command = "quarto render"
   publish = "_site"
+  command = """
+  bash -lc '
+    if ! command -v quarto >/dev/null 2>&1; then
+      mkdir -p $HOME/.local/bin
+      curl -L -o quarto.tar.gz https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.32/quarto-1.7.32-linux-amd64.tar.gz
+      tar -xzf quarto.tar.gz
+      mv quarto/bin/quarto $HOME/.local/bin/
+    fi
+    export PATH="$HOME/.local/bin:$PATH"
+    quarto render
+  '
+  """
 
-[[plugins]]
-package = "@quarto/netlify-plugin-quarto"

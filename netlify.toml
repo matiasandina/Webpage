@@ -1,18 +1,19 @@
 [build]
   publish = "_site"
   command = """
-	if ! command -v quarto >/dev/null 2>&1; then
-	  mkdir -p "$HOME/.local/bin"
-	  curl -L -o quarto.tar.gz "https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.32/quarto-1.7.32-linux-amd64.tar.gz"
-	  tar -xzf quarto.tar.gz
-	  # move quarto binary from whichever extracted folder contains it
-	  if [ -f "quarto/bin/quarto" ]; then
-	    mv "quarto/bin/quarto" "$HOME/.local/bin/"
-	  else
-	    mv $(find . -maxdepth 2 -type f -path "*/bin/quarto" | head -n1) "$HOME/.local/bin/" || { echo "quarto binary not found after extraction"; exit 1; }
-	  fi
-	fi
-	export PATH="$HOME/.local/bin:$PATH"
-	quarto render
-"""
+  bash -lc '
+    set -e
+
+    QVER=1.7.32
+    DEB=quarto-${QVER}-linux-amd64.deb
+
+    curl -fsSL -o ${DEB} \
+      https://github.com/quarto-dev/quarto-cli/releases/download/v${QVER}/${DEB}
+
+    dpkg -x ${DEB} .
+
+    ./usr/bin/quarto --version
+    ./usr/bin/quarto render
+  '
+  """
 

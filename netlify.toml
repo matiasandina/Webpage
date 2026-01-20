@@ -12,8 +12,9 @@
 
     dpkg -x ${DEB} .
 
-    ./usr/bin/quarto --version
-    ./usr/bin/quarto render
+    dpkg -L quarto
+    /usr/local/bin/quarto --version
+    /usr/local/bin/quarto render
   '
   """
 

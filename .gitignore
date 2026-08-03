@@ -13,3 +13,5 @@
 /.quarto/
 /_site/
 *.epub
+
+**/*.quarto_ipynb

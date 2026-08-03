@@ -11,8 +11,8 @@ You are welcome to try to interpret the plot on its source, [here's the link aga
 
 ```{r}
 #| label: data
-#| warning: !expr F
-#| message: !expr F
+#| warning: false
+#| message: false
 library(tidyverse)
 library(waffle)
 ranges <- 1:4

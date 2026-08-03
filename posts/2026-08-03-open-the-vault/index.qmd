@@ -1,0 +1,79 @@
+---
+title: "Open the Vault"
+description: "Why the work is not done until it has a path out."
+date: "2026-08-03"
+categories: ["rawdata", "science", "tools", "open-source", "writing"]
+code-fold: true
+echo: true
+---
+
+::: {.callout-note}
+This post was first published at [rawdata lab](https://rawdatalab.substack.com/p/open-the-valut).
+:::
+
+
+## The default logic
+
+My default logic goes something like this:
+
+* I dislike self-promotion.
+* The tools that I make are not good enough to share with other people.
+* The tools that I make might be cited on an academic paper some day, and that is possibly enough sharing
+* I do not need to engage in other ways of promoting the tools 
+
+## To share or not to share
+
+There are a few things I dislike about promotion. 
+
+First, promotion is not the work. It is about me pointing at the work, and I would rather have people look at the work than at me [^3].  Second, working on marketing distracts me from the actual work. I know it can blur the objectives and shift myself into chasing clicks. This is probably why all the strategies converge into attention grabbing blurbs[^4].  Third, if the work is good enough, it should not need so much promotion.  On a practical side, there is also no obvious correct amount of sharing or definitive software release cadence [^5].  
+
+I know these edges are too blunt, but this logic feels reasonable to me. I am not here trying to point fingers, I am saying how it feels inside my head.  My logic is weak, and I am still trying to grow.  All in all, I am somewhat allergic to marketing, I don't like the theater around it. 
+
+## Why bother?
+
+I am not here to paint a purely altruistic point of view. When I make something, it's because I need it and it solves a particular pain that I am having at a particular moment. But I don't try to only solve my problem. I think about a generic user. I think about how they should be interacting with the tool during an experiment. I try to make it as generic as possible, often way beyond the particular thing that I needed to solve in the first place. 
+
+For a scientific tool, the user I envision is usually another scientist. Often a biologist. Often somebody who does not like the command line, does not want to learn to customize 3 software layers, and does not want to put up with multiple hours of nonsense[^2] before they can get something useful done. 
+
+## The tools and the work
+
+I tell myself that the tool is not the work, and if the work is any good, it will be cited on a *real* academic paper at some point.  This is a true statement in the obvious sense. A keyboard is not a novel. A hammer is not a bed. A pipette tip is not a vaccine. The tool is not the work. What is the work of a toolmaker though? What is the work but that which is limited by the tools that we have at our disposal? I digress. 
+
+The truth is that my logic is too convenient. The tool goes to the methods section and people can take it from there. It has an open source repository with documentation after all. People can go check. 
+
+If you know, you know that there is a gap between "open source repo" and tool running on your machine. A public repository is not the same thing as a tool reaching the people who could use it. Documentation is not the same thing as a scientist understanding whether this thing will save them time, or whether it will become yet another afternoon fighting someone else's setup.
+
+Being included, or even cited, in a paper is too little, too late. I am not saying this from the reward side but from the effort side: too little effort, too late for it to be meaningful. Any argument that starts with "if people just read the docs" is another extension of my weak logic. I am trying to grow.
+
+## The obligation
+
+The role of a scientist does not end at figuring stuff out. The role of a toolmaker does not end when the tool works on their own shop. Solving for `n=1` is not solving much.  We have the obligation to disseminate the work.  
+
+Not because every object needs an audience. Not because every thought deserves a post. Certainly not because I need to become a personal brand, whatever that means. I believe that we fail to fulfill our mission as scientists and toolmakers if we are not able to reach outside of our own walls. What is our mission? What are we trying to do here? I digress.
+
+## The new logic
+
+I need to flip my default logic into something closer to this:
+
+* The tool will never be good enough.
+* The idea will never be finished enough.
+* There will always be something missing.
+* The fastest way for a tool/idea to improve is to share it with others who can provide feedback.
+
+Fine. The fastest path to making it better is letting another person see it, use it, misunderstand it, criticize it, break it, or ignore it. If I truly have a minimal aspiration for other people to use the stuff I make, I have to embrace it all.  
+
+This means I will have to do some things I find uncomfortable. I will have to post about the tools. I will have to write short notes when a longer essay is not ready. I will have to put things on the blog, or Substack, or Bluesky, or whatever channel makes the thing more likely to reach the few people who might care/benefit. I do not expect to enjoy that part. I only need to stop pretending it is separate from the work.
+
+I am committing to sharing what I made during my PhD work and whatever I make afterwards[^1].  Not everything goes into the same "scientific toolbox" bucket. Some things are code. Some things are ideas and observations about science. Some things are probably just posts. Depending on the channel, people might get blasted with several unrelated things. I am truly sorry about that, and that is part of the discomfort too.
+
+The vault is open.
+
+[^1]: Not looking forward to signing a non-disclosure agreement but, just in case, I am also committing to not going to jail.
+
+[^2]: virtual environments, package versions, GUIs, exports, clickable options, configuration files, hardware not talking to software, hardware not detected, etc.
+
+[^3]: At the same time, humans seem to need some sort of face to attach to the work. I do not know what to do with that. Humans are hard.
+
+[^4]: It's probably harder to try to scream to the void and get no echo back than emitting no sound. We can't take that, we adapt to strategies that resonate and so it goes.
+
+[^5]: How often should I post? What style is acceptable? How many things need to change before a software version bump? How many features are enough to justify bothering people again? I do not know.

@@ -13,7 +13,7 @@ The word count data is somewhat similar to what I've seen for last week. Definit
 ```{r}
 #| echo: false
 #| results: hold
-#| message: !expr F
+#| message: false
 #| warning: false
 library(ggplot2)
 library(dplyr)
@@ -97,7 +97,7 @@ cowplot::plot_grid(p1, p2)
 
 
 ```{r}
-#| echo: !expr F
+#| echo: false
 #| warning: false
 #| eval: false
 

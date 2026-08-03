@@ -54,7 +54,7 @@ p2 <- ggplot()+
 ```
 
 ```{r}  
-#| echo: !expr F
+#| echo: false
 #| fig.asp: 0.5
 p0 + p1 + p2
 ```

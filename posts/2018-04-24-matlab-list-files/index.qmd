@@ -24,7 +24,7 @@ list.files(...)
 This command can handle many many options, with `pattern` being among my favorite. More importantly, this command returns a useful `character` vector. No extra dots, no list of lists, no array. Just, useful. On the other hand, Matlab has `dir` and `ls` both of which are not satisfactory.   
 
 ```{octave}
-#| eval: !expr F
+#| eval: false
 #| echo: true
 dir
 
@@ -40,7 +40,7 @@ LookHere.m
 Yes... Matlab's version can also handle some form of regular expression matching. But, mind the dots and the structure! Matlab's `dir` has a ton of things on it.  
 
 ```{octave}
-#| eval: !expr F
+#| eval: false
 #| echo: true
 >> q = dir
 
@@ -59,7 +59,7 @@ q =
 Matlab `ls` function is also full of deadly traps.  
 
 ```{octave}
-#| eval: !expr F
+#| eval: false
 #| echo: true
 qq = ls
 
@@ -81,7 +81,7 @@ I found myself fighting for a character vector or array (`nx1`) that I could fee
 Thus, after many many many times fighting against classes, with functions that expect `char` instead of `string`, or `cell`, or `whatever`, I decided to create something that resembles (at least partially) the functionality I was looking for. It's not perfect. Please enlighten me with a better approach. For now, I will be using `list_files.m`. Wanna use it? Be my guest, see below:
 
 ```{octave}
-#| eval: !expr F
+#| eval: false
 #| echo: true
 #| code-fold: true
 #| code-summary: Show Matlab Code 

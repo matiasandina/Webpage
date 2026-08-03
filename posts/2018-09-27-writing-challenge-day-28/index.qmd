@@ -13,7 +13,7 @@ This month has been fast. The writing has been really interesting, I was able to
 #| label: setup
 #| echo: false
 #| results: hold
-#| message: !expr F
+#| message: false
 #| warning: false
 library(ggplot2)
 library(dplyr)

@@ -20,8 +20,8 @@ We will need a few packages to generate this plot.
 
 ```{r}
 #| label: setup
-#| message: !expr F
-#| warning: !expr F
+#| message: false
+#| warning: false
 
 library(ggplot2)
 library(dplyr)
@@ -66,7 +66,7 @@ Now, let's assume I registered some events in my life and that my data looks som
 
 ```{r}
 #| label: toy-data
-#| echo: !expr F
+#| echo: false
 
 df <- structure(list(date = structure(c(17666, 17667, 17668, 17669, 
 17670, 17671, 17672, 17673, 17674, 17675, 17676, 17677, 17678

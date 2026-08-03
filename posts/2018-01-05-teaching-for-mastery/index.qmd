@@ -6,9 +6,9 @@ categories: ["teaching", "learning", "ideas"]
 
 ```{r}
 #| label: libraries
-#| echo: !expr F
-#| message: !expr F
-#| warning: !expr F
+#| echo: false
+#| message: false
+#| warning: false
 
 library(ggplot2)
 suppressPackageStartupMessages(library(dplyr))
@@ -37,7 +37,7 @@ If these were true, we would then likely see that our students make progress at 
 
 ```{r}
 #| label: grading_progres
-#| echo: !expr F
+#| echo: false
 
 # set seed
 set.seed(123456)
@@ -101,7 +101,7 @@ We can look at the performance summary in the following table. Both students per
 
 ```{r}
 #| label: table_1
-#| echo: !expr F
+#| echo: false
 
 table_1 <- para_progress %>% 
   group_by(student) %>% 
@@ -122,7 +122,7 @@ Maybe our assumptions are wrong, maybe not all the students learn at the same ra
 
 ```{r}
 #| label: inter_progress
-#| echo: !expr F
+#| echo: false
 
 # Data frame with interaction
 
@@ -163,7 +163,7 @@ Let's take a look at the summary table.
 
 ```{r}
 #| label: table_2
-#| echo: !expr F
+#| echo: false
 
 table_2 <- inter_progress %>% 
   group_by(student) %>% 
@@ -192,7 +192,7 @@ The path matters. We can think about learning in terms of packets of knowledge, 
 
 ```{r}
 #| label: path_plot_1
-#| echo: !expr F
+#| echo: false
 
 arrows <- 
   tibble(
@@ -242,7 +242,7 @@ Using current technologies, it is possible to teach individualized lessons and t
 
 ```{r}
 #| label: fast_slow
-#| echo: !expr F
+#| echo: false
 
 fast_progress <- pivot_longer(data.frame(time=mytime, Faster=Faster, Slower=Slower), cols = -time)
 

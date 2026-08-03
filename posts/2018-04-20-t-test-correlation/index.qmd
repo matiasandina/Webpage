@@ -24,8 +24,8 @@ Correlation and factor analysis are essentially different. Continuous vs discret
 
 ```{r}
 #| label: factor-t
-#| echo: !expr F
-#| warning: !expr F
+#| echo: false
+#| warning: false
 
 suppressPackageStartupMessages(library(ggplot2))
 mtcars$am_factor <- ifelse(mtcars$am==0, 'Automatic', 'Manual')
@@ -41,7 +41,7 @@ Moreover, we are trying to collapse the groups into a comparison of their means,
 
 ```{r}
 #| label: mean-comp
-#| echo: !expr F
+#| echo: false
 
 ggplot(mtcars, aes(am_factor, mpg)) +
   stat_summary(fun.y = 'mean', geom='point', size=2, color='red')+
@@ -55,7 +55,7 @@ The underlying question is: Are these 2 values *statistically* different? We can
 
 ```{r}
 #| label: am-ttest
-#| echo: !expr F
+#| echo: false
 
 ttest_table <- broom::tidy(t.test(mpg~am, data=mtcars))
 
@@ -67,7 +67,7 @@ On the other hand, we could be interested in studying the relationship between t
 
 ```{r}
 #| label: wt-mpg
-#| echo: !expr F
+#| echo: false
 
 ggplot(mtcars, aes(wt, mpg)) + geom_point(size=2, alpha=0.8) +
   theme_light() + 

@@ -58,8 +58,8 @@ Yes, grades are communication tools, but they are also variables used for **infe
 
 ```{r}
 #| label: distributions
-#| echo: !expr F
-#| warning: !expr F
+#| echo: false
+#| warning: false
 
 library(ggplot2)
 invisible(suppressPackageStartupMessages(library(cowplot)))
@@ -113,8 +113,8 @@ Now, we should try to see what happens when we progressively skew grades from ze
 
 ```{r}
 #| label: skewed
-#| echo: !expr F
-#| message: !expr F
+#| echo: false
+#| message: false
 
 library(tidyr)
 

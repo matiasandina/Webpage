@@ -17,7 +17,7 @@ The word count has been erratic. This week, I have had a couple of days in which
 ```{r}
 #| echo: false
 #| results: hold
-#| message: !expr F
+#| message: false
 #| warning: false
 library(ggplot2)
 library(dplyr)
